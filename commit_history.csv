@@ -1,0 +1,182 @@
+a2d18ce25e976a24b163ee056d224330500470a2,Bernardo Martins,2024-12-13,Update cheatsheet.md (#130)
+9dac6178dc5c1c1e296910153cfbb917a907e2ba,Michael Herrmann,2024-08-23,Bump version to 5.1.0
+2100561745de5236b585665ef8ed1271d8c0d771,Michael Herrmann,2024-08-23,Add support for input type=date and ...=time
+eac576f40ae670d3320d8238da4cf3a6e8b6bdba,Michael Herrmann,2024-08-14,Bump version to 5.0.6
+f9b0949f1f4036bcb300029cd536c1c37d3f238b,Michael Herrmann,2024-08-14,Fix small but crucial bug in find_all
+654ded16b8528b1149ff7300d054d67a9c38063a,Michael Herrmann,2024-08-14,Bump version to 5.0.5
+3115acee7acc69ad7abe0242867959b6a6c2e19c,Michael Herrmann,2024-08-14,Avoid some FramesChangedWhileIterating errors
+b90ead01b8e59c041fb2848cebcabd08412410b4,Michael Herrmann,2024-08-14,Bump version to 5.0.4
+8a8bf2aa8f642595db0a5c01b6bc890890c2b5f5,Michael Herrmann,2024-08-14,Fix NoSuchElementException when printing elements
+6ae8ecb69fa5b5547276ebb7c5a828423d15a8d5,Michael Herrmann,2024-07-23,Update README.md
+466b4c0cdc58a30175c344831f2c7c834a2cabaf,Michael Herrmann,2024-07-23,Bump version to 5.0.3
+db189800f59aaf35607c0ba997b71a48a923ad20,Michael Herrmann,2024-07-23,Handle FramesChangedWhileIterating in wait_until
+1f390b29f37bd72bd3b977fb457c941b780ed02f,Michael Herrmann,2024-07-16,Update README.md
+0accf2e53781a7a7da742bdd80898f20e64531a0,Michael Herrmann,2024-07-16,Update README.md
+47ae2048f9b145965c1322ef403c4f8749d7caf3,Michael Herrmann,2024-07-16,Update README.md
+99c3f42ff8c13f07e497a3b724f93dfc5dac9877,Michael Herrmann,2024-07-16,Update README.md
+bc8b1b07e91ea67e6d469df90571981c2ef818df,Michael Herrmann,2024-07-16,Update README.md
+04006a212487b7355fc107781aea8209e1fb1158,Michael Herrmann,2024-07-11,Bump version to 5.0.2
+31aa128372df6a252b77228f4c7e539c2ec6a81b,Michael Herrmann,2024-07-11,Fix a TypeError
+849f99a361fe1683db0e7f32b5b650e59d1b374e,Michael Herrmann,2024-07-11,Bump version to 5.0.1
+88a46aa591e88f17fba2b9baba8c8299ef028e78,Michael Herrmann,2024-07-11,Fix a spurious StaleElementReferenceException
+a47f6838f96e48c6edc85b845ac620f51f04edda,Diego Molina,2024-04-16,Switch link (#122)
+fa8c3b7f903fdb0b6ef80d25510da0e82a99ac09,Michael Herrmann,2024-04-08,Fix small mistake in test
+0e9408f04a6502426d31b25f27051a6d9700dc19,Michael Herrmann,2024-04-08,Reformat to obey 80 char line limit
+1b9540a660ef74c5bcbb402b3170b3003023e370,Michael Herrmann,2024-04-08,Remove unused methods
+49076381e2a6baf405a0bb707704f5791ed176f9,Michael Herrmann,2024-02-09,Reformat to obey 80 character line length
+054c254541bd00c5323af35ab639fc42b84175e1,Michael Herrmann,2023-12-08,Bump version from 4.0.0 to 5.0.0
+6dcbbc9b4ff62764ebbaf78bb33df6dd4501e4ee,Michael Herrmann,2023-12-08,Switch to Selenium Manager for webdrivers
+fe10d38b6d3e999d794feec5e6fe682684a90d24,Michael Herrmann,2023-11-28,Update README.md
+f3031d2fa043dba0f4897221ab5f9955c4ce10a2,Michael Herrmann,2023-11-15,Update project URL
+f43cd7c66d2658f649829ffe3837b8a70d78ad49,Michael Herrmann,2023-11-15,Another attempt at fixing HTML docs
+66019b90e08a2afbf51c67c0ef3ff74fe76c34f3,Michael Herrmann,2023-11-15,Another attempt at fixing HTML docs
+b170b525c84ab47351bd44d30cd07eed7eaa83fd,Michael Herrmann,2023-11-15,Attempt to fix HTML docs
+6b60f8b53c9c179505621a64343e4bbae36ce1b1,Michael Herrmann,2023-11-15,Update .readthedocs.yaml
+244ff57d0512892f656fd8b5cdf4cf4d6505bea6,Michael Herrmann,2023-11-15,Add .readthedocs.yaml
+4429dd0ea2b3c6ced0ad6c692537b2f8a020bf71,Michael Herrmann,2023-11-15,Update README.md
+ea970056d04a48575e30985071a9b46d28f61fc4,Michael Herrmann,2023-11-15,Suppress webdriver-manager's log output
+ad19a15d9b3a573a4a1cc1d136cbc4d06fd9730e,Michael Herrmann,2023-11-15,Add change forgotten in previous commit
+d2383eaf96110368427e3dbcd0ae878db56c148d,Michael Herrmann,2023-11-15,Freeze dependency webdriver-manager
+82ad4d251a483165563b1ff507990d728feb00c6,Michael Herrmann,2023-11-15,Remove dead code
+722baceaaea8966b1aa800b5421b6b051a45bc95,Michael Herrmann,2023-11-15,Simplify code
+861dc6c236e55e3024be13113207dcb864925d00,Michael Herrmann,2023-11-15,Reformat code to obey 80 char line limit
+374656eb37f445f32258ec49aede91dcb38b08dc,Tim Powell,2023-11-14,Switch to Selenium 4.9 and support Python 3.11
+60d661130b18d1bc0dc41e338e5c18c54f847851,Michael Herrmann,2023-09-27,Set version number for release 3.2.6
+a0c3386051d33427dc4aa9cbd10f67b09f591190,Michael Herrmann,2023-09-27,Fix: Helium sometimes "found" too many elements
+204b7b18b057866cce4d8d9ab0c06528f9fba2e5,Michael Herrmann,2023-09-27,Simplify code
+c4d799852a6208d21eb65c96c2c60abfaffa92d6,Michael Herrmann,2023-08-03,Fix caching of chromedriver in start_chrome(...)
+821b16c32f8796899e09e4f69a63aba4ae7436e4,Michael Herrmann,2023-07-31,Fix PyPI installation
+c51161ff49c603c093ae43818a361c81c87edeba,Michael Herrmann,2023-07-31,Fix "Unable to find a ChromeDriver version"
+7cc6ea2f037696418c5d7ee5b465e99a308a9dfe,Michael Herrmann,2023-07-17,Set version number for release 3.2.2
+d78e49a0f9486ac540494b3d4b99018fddd3207c,Michael Herrmann,2023-07-17,Fix: find_all() sometimes returned elements twice
+1de8deced9bcd5a2b80621f4e01303e661f55bb8,Michael Herrmann,2023-07-05,Fix error in start_chrome
+68fadb3ec25b64aea62ba3e391ac9e2741d26103,Michael Herrmann,2023-07-05,Update README.md
+1a4f42417375ae552d686a4acaec0c0983c20dbb,Michael Herrmann,2023-07-05,Set version number for release 3.2.0
+2cf202f9b8592fb65928bc30d9f9f3b32c154a3f,Michael Herrmann,2023-07-05,Auto-install chromedriver from start_chrome(...)
+4c6546c7d7b6edc13549f021ec1bdc53ef812c16,Michael Herrmann,2023-07-03,Bump version for next development iteration
+054346f71bdad87997e20bbd32cd859fdbac3fb6,Michael Herrmann,2023-07-03,Set version number for release 3.1.0
+e8b8fe94c58d91a75b94bd9ab69cfd47b54cb6f6,Michael Herrmann,2023-07-03,Fix: Selenium calls were broken due to urllib3
+0d8b19b3a62124dd0cdbfc7d9c7bec1b69ef20a6,Michael Herrmann,2022-11-20,Bump version for next development iteration
+dd18851b997cb984224e8b5a35b1ab8b0f825ed0,Michael Herrmann,2022-11-20,Set version number for release 3.0.9
+6a363a80c1aeeaa01cb9041c71f655b52f04eb8d,Michael Herrmann,2022-11-20,Add 3.9 and 3.10 to supported Py versions
+e9f181da705ec7a7f176ec4dd6b0571f0d3dc83e,Alec,2022-11-20,Add `profile` param to start_firefox
+1ac91d82e286d90a3ce4c356d946a1fc4ab2b519,jerzybrzoska,2022-05-06,Correct repetition error / typo
+02f9a5a872871999d683c84461ac0d0b3e9da192,Michael Herrmann,2021-09-03,Bump version for next development iteration
+fd2567ac9afe18acd382a4c2ea31858d007f1149,Michael Herrmann,2021-09-03,Set version number for release 3.0.8
+e72fb9054669570c66ede4eae3ff02397b4d0083,Michael Herrmann,2021-09-03,Add `maximize` parameter to start_chrome
+c3c9f54345b28470d72438065ddb96ccc0ff7428,petrisorionel,2021-09-03,Add `capabilities` parameter to start_chrome
+03bb79f6e01eeadaedcb3b0b7975e3b4b3857b85,Michael Herrmann,2021-05-24,Bump version for next development iteration
+bfc323682b0bcc2ed1fb98a2ad5c4b481f84bc1f,Michael Herrmann,2021-05-24,Set version number for release 3.0.7
+dc8b817f929d1db8e7119fb54161755e890c4a2f,Michael Herrmann,2021-05-24,Fix StaleElementReferenceException
+12f983fd20f2298821069781236a1b7edffa4c65,Michael Herrmann,2021-03-23,Revert "Update README.md"
+8969331264a0cd1aeece2b5a9ba6e50778fed5d8,Michael Herrmann,2021-03-23,Remove obsolete import
+9b2615a0ed2351069ab680d5b2da1b09ba7c5262,Michael Herrmann,2021-03-19,Update README.md
+67e35bdabbf2978991ff4f1bbaf605e1f03c0b2f,Michael Herrmann,2021-03-19,Bump version for next development iteration
+955e4fcf8199c7e7fead0861f8096195c4b9a8a2,Michael Herrmann,2021-03-19,Set version number for release 3.0.6
+f58bb95db5ea823bd6d84982891b04bc1db1b790,Michael Herrmann,2021-03-19,Update requirements\test.txt
+68053527f17a308dd957b078c4a0740c22e2fd7a,Michael Herrmann,2021-03-18,Update to ChromeDriver 89.0.4389.23
+01e316245351336fc11dc56b31784bc78bc89161,Shubhendra Singh Chauhan,2021-01-04,Small code improvements
+3c7c46c58805842a9874043cd77033414f10659b,Michael Herrmann,2020-10-16,Update README.md
+0fadc82f96fb1510e825d78c8a74481e1272a279,Michael Herrmann,2020-10-13,Improve wording in documentation
+275cbb09186260ac01c50a966e68418f66426b37,Michael Herrmann,2020-10-13,Remove Module Index from docs
+aadddce868f70ea66c5a97486b07d0e65d8213dd,Michael Herrmann,2020-10-13,Rename docs file
+b0b1639d362da3c7902661150daba505a4ad60c7,Michael Herrmann,2020-10-13,Improve wording
+8d74d2ff631fc6465be8d23b037e894ed929f06b,Michael Herrmann,2020-10-13,Rename getting-started.rst to installation.rst
+c2eb49b48ae03b687a55f1f8cf9b824c762ba93a,Michael Herrmann,2020-10-13,Update README.md
+a0ad3a805170307d40f8ca0144b09ac5d37acdb9,Diptesh Choudhuri,2020-10-13,Extend Sphinx documentation (#43)
+ea0a3a128ff1e9f69ac1b22373c51f1a00d62aef,Michael Herrmann,2020-10-12,Update docs README
+06c4d910b160a0083c17ed997d3fc9198fe82d9c,Michael Herrmann,2020-10-12,Add requirements files
+b53cdf2b82f99a936ce3ff1f1ed5b2fd52a4249d,Michael Herrmann,2020-10-12,Improve my description as Contributor in docs
+c720e017327556f225cc51a7bd19b4f8b05ef7ad,Michael Herrmann,2020-10-12,Improve spelling of name "Helium" in docs
+b1be5653027b55c7350d9ead7f2d4a8907fc3513,Michael Herrmann,2020-10-12,Improve order of API members in documentation
+63eeb23f0f16abfd3cf2971d5feacf4d7a8cc5e4,Michael Herrmann,2020-10-12,Remove duplicate requirements files
+dff8c7abd8683bfe2fcbf20571675b05d8c78474,Michael Herrmann,2020-10-12,Correct spelling of Helium in Sphinx documentation
+389696ff992feb30e3398549a6e94912a77630e4,Michael Herrmann,2020-10-12,Always use latest year in Sphinx copyright notice
+665bef4e18e660f3c4e793f853ea4383ce27f33f,Michael Herrmann,2020-10-12,Add comments
+3389e9d4ec5074cf138adc181daf2bab2d9c5b19,Michael Herrmann,2020-10-12,Update project homepage in setup.py
+11ad06fdf025943bf6eb1758412823e0574ec9bf,Diptesh Choudhuri,2020-10-12,Add documentation with Sphinx (#42)
+0d5d0ef4602aad06f2103611d4c2fa4d19803680,Michael Herrmann,2020-09-14,Bump version for next development iteration
+8d39975dc8d7f70a185ee6418146ff78486d76bf,Michael Herrmann,2020-09-14,Set version number for release 3.0.5
+6b970dcf170968ffccb3c833d391b71fa14b8447,Michael Herrmann,2020-09-14,Use gecko-/chromedriver from PATH (if available)
+a3f8c0cb10de1ed4b603d1e640dabf802650ec69,Michael Herrmann,2020-05-06,Bump version for next development iteration
+ffdac9349ba52d74ec45da1cc12880a5170dcbaf,Michael Herrmann,2020-05-06,Set version number for release 3.0.4
+4f00b2ca6e2f8e9ad283b7507d7a6b352cd721ab,Michael Herrmann,2020-05-06,Improve support for dragging between `Point`s
+710ac9649ef4c49de8ae414e5d1f599ed526c2a7,Michael Herrmann,2020-05-04,Set version number for release 3.0.3
+fafdc4d3b0ae406701e6887a3ab687c5cc08206b,Michael Herrmann,2020-05-04,Improve test file for PointTest
+362b20813a5f4a77b7c31e5f53986f6e758f87d6,Michael Herrmann,2020-05-04,Merge pull request #22 from ftnext/i19-add-firefox-options
+82c628e7aeaf81480037511795ec917141dffd2a,ftnext,2020-05-04,Add `options` parameter to start_firefox(...)
+553bdf2beb2da86d09bf315dc512030159bf7fad,Michael Herrmann,2020-04-08,Update README.md
+5fcc72261197c16af56fd37cb49f6199bda43a90,Michael Herrmann,2020-04-02,Update README.md
+848e2038db2fa9ed4f0872db724cbdd3912f938b,Michael Herrmann,2020-03-25,Add Twitter Share link
+65b2ee88f76650f0aad2c997765b87f8f72c5c81,Michael Herrmann,2020-03-23,Update README.md
+e94506dd0e6107cd3a007a457875113718c97874,Michael Herrmann,2020-03-19,Set version number for release 3.0.2
+3e2f9f2ee8e2d38d1937c9b38be65ee50bd0e81e,Michael Herrmann,2020-03-19,Add `options` parameter to start_chrome(...)
+7b25791ccef7a7f3d19f3a69a720ad61e27d2c39,Michael Herrmann,2020-03-17,Bump psutil to version 5.6.6
+65cfa14b69b590a2a2519378eefcabd97a08842e,Michael Herrmann,2020-03-16,Update Cheatsheet
+17e52c557cd7b5826ccc8dd78cd1119cdd06be5d,Michael Herrmann,2020-03-16,Update README for SEO
+0166a02fbeb3e8b9deafa3b859f4894d821d7358,Michael Herrmann,2020-03-16,Update README for SEO
+fd18e0c34ee7f69ab8a36f098e6769eb0ae33caa,Michael Herrmann,2020-03-16,Update README for SEO
+ad46fca98ceeb7f959b6cae345ec24f3f81db242,Michael Herrmann,2020-02-27,Bump version number for release 3.0.1
+bc24b547cc8da4512b28da056f27c36fca5f91a0,Michael Herrmann,2020-02-27,Merge pull request #2 from tbp105/master
+893c7a4ac00ca2a62478b8f22cdca1f5ce56f150,Tim Powell,2020-02-27,message now contains stringified element, change the expression to not include it
+145ed4a025ec7b0f0dededd7024e3e01aac6d91d,Michael Herrmann,2020-02-27,Update README.md
+adc23e11b83a5d4dca765643ccd27fa3e29f69f6,Michael Herrmann,2020-02-27,Update README.md
+b746607b4b6fa4a16096b735ec89afb07d8cdc38,Michael Herrmann,2020-02-27,Improve README for newsletter
+7886308d9455e62623f9a95011bcc6ae5e14c3d3,Michael Herrmann,2020-02-27,Update README.md
+4391ce2d1a31f20a8479ecc0088ab89ec67dcedd,Michael Herrmann,2020-02-27,Update README.md
+f4aaba25e0ffbb7210b37b19aeefa7658e02b0ea,Michael Herrmann,2020-02-27,Update README.md
+f5c29c9d0b378418bcb11b2f75a65197c7a07dab,Michael Herrmann,2020-02-27,Update Cheatsheet.md
+5e81067fd1fb7a62b9c22b6b8702691ca2df53bb,Michael Herrmann,2020-02-27,Update Cheatsheet.md
+41f46f76238fe641b04d4fa8cf6e919c3d0015b8,Michael Herrmann,2020-02-27,Update README.md
+e493b9de462400d94909a80d15cc2b50d8b60ad8,Michael Herrmann,2020-02-27,Update README.md
+25570bade78008bc2e843fdbeefe096a4bf7bab2,Michael Herrmann,2020-02-27,Update README.md
+7b5f55b8e303bd2f423ed4f2cd64f723c44d736f,Michael Herrmann,2020-02-27,Update README.md
+00c977497a918ea9da8669e6a9aee53b5ab78b4e,Michael Herrmann,2020-02-27,Update README.md
+0ffd31ea80a811bedea4ac0343094487312e60b1,Michael Herrmann,2020-02-27,Update README.md
+3ba3f579358aa5412acd6789a88132c6e695532b,Michael Herrmann,2020-02-27,Update README.md
+229ccb8fc2190b5defa5961c100ce6847c62d21f,Michael Herrmann,2020-02-27,Update README.md
+333a1d659b4ee8bfd94cf41f925063a8b89fa12b,Michael Herrmann,2020-02-26,Update Cheatsheet.md
+494057f8cc96a82d173d3a6b7e52d6e5d66992e5,Michael Herrmann,2020-02-26,Update Cheatsheet.md
+760722d78a5edebb967378e5eb70e23f5251d429,Michael Herrmann,2020-02-26,Update README.md
+05ac0b2d5840a6cef3be0a4007c643b228a97c96,Michael Herrmann,2020-02-26,Update README.md
+09453d195ab6353af459093dafaefc5232435e67,Michael Herrmann,2020-02-26,Add Cheatsheet
+0667ddb9be531367a0d707ad8f5fcfb75c528521,Michael Herrmann,2020-02-26,Update README.md
+21b14d7d3cf4a6a85470d1ff6fd9b2e24cdff553,Michael Herrmann,2020-02-26,Update README.md
+1d606ddd806581bafc02d5a6119c4324d510f97f,Michael Herrmann,2020-02-26,Update README.md
+de212e4b9b3c42148d5450fea615b6d50748c294,Michael Herrmann,2020-02-26,Update README.md
+25fdd9ae968bdfc1d3fd65d593070473c2c2ccd6,Michael Herrmann,2020-02-26,Update README.md
+d6dd82987190dd59dbc59aaeadf7acd457665514,Michael Herrmann,2020-02-26,Update README.md
+8e475c438b3cddd74193f11049a2bdcfb44b0478,Michael Herrmann,2020-02-26,Update README.md
+10e6af5253d692c0d627c708b6bc261bb5a27866,Michael Herrmann,2020-02-26,Update README.md
+9d72ae6c672a12bfd95ea9ba9ceb141a689f1757,Michael Herrmann,2020-02-26,Update README.md
+e3a90c3a9487a28d114d326c8df054dcd3fa6314,Michael Herrmann,2020-02-26,Update README.md
+df2d187cc0a634d962ff3d69682601e6271e0640,Michael Herrmann,2020-02-26,Update README.md
+f0c85a4f5cfd5c3660c14dcf6762e8ad3db97840,Michael Herrmann,2020-02-26,Update README for SEO
+8525c3b0bf4032f3d085d5c75dc4fb257cf7cc0d,Michael Herrmann,2020-02-26,Update README.md
+f9b2b562f1d35872167338079ad1010cee637153,Michael Herrmann,2020-02-25,Update README
+c8c31309014e9b89bfeb064cff010be3043ca0ad,Michael Herrmann,2020-02-25,Add demo.gif
+bae769445cfa9db87fdb9bd657fdaaa0a1148ea4,Michael Herrmann,2020-02-25,Update README
+e3cf7d7dbb4a90780dc1f8eb586a2f4f0c48ae37,Michael Herrmann,2020-02-25,Update README
+67fc9a2d0bb9edb79a950cfd042878db292461c6,Michael Herrmann,2020-02-25,Update README
+c78e9a6901f88bd72d3da602c2a8b5a6ec78daae,Michael Herrmann,2020-02-25,Add README
+1f0e0151dfe1b05e2305974b0850a5ddaea8e71d,Michael Herrmann,2020-02-25,Remove obsolete ApplicationContext
+bf07000e7bb132a47376f2a7447b8932af6c8a0c,Michael Herrmann,2020-02-25,Remove helium._impl.environment
+aad1e1f8413dcc664da787b7a98b916b370eea47,Michael Herrmann,2020-02-25,Move webdrivers into helium._impl
+e12402e772a35d99f1d10b3a6b399280b4033cb6,Michael Herrmann,2020-02-25,Add files forgotten in previous commit
+4279e01d96889c000fa4f2ab9d875fb736907b34,Michael Herrmann,2020-02-25,Move non-public members into helium._impl
+85d66184e104ca598b9351243e2253eb06a57e34,Michael Herrmann,2020-02-25,Rename package helium.api_impl to helium._impl
+dc1ea33fd7c8f22ab011052be29f49d1f1aebc0b,Michael Herrmann,2020-02-25,Remove unused functions
+463707533c56dec64f87019de358639c250c3bb3,Michael Herrmann,2020-02-25,Rename "data" directory to "webdrivers"
+868eae6e47090740274bf1293da01eda776b20bb,Michael Herrmann,2020-02-25,Rename "win" to "windows"
+069a6ff5962c10522564acf618257ecaa71ef29e,Michael Herrmann,2020-02-25,Rename "macosx" to "mac"
+899614db58c4913e70445871a529415cceebcdcb,Michael Herrmann,2020-02-25,Rename function is_osx() to is_mac()
+db0b548dd1e3ae4efe3651dc5279705ebee40969,Michael Herrmann,2020-02-25,Remove empty line
+0b3cd72d4d8f9c0de112718a1cf75c5ca463a652,Michael Herrmann,2020-02-25,Remove obsolete import
+9a4160dc7bafc61429bce6643881688e2ddfae92,Michael Herrmann,2020-02-25,Move API functions from `helium.api` into `helium`
+012df24194738cd145d8d47d3e98e96054710e41,Michael Herrmann,2020-02-25,Fix typo
+862da7580b41c2f0b9a852fd36195fb2d1cef128,Michael Herrmann,2020-02-25,Delete Helium's Java and IE implementations
+0c5bea6d8b29ec8b424b34ca14c5801591daadc9,Michael Herrmann,2019-12-11,Remove unused code
+d0a020fb9db5e0512b32f56e9079f782538f11f1,Michael Herrmann,2019-12-11,Remove unused code
+ebb1a6512469b32fe741156fe27d226af6333565,Michael Herrmann,2019-12-11,Substantially modernize Helium
+51bfeeb27452a1779d39d55d1ffae84815c71b63,Michael Herrmann,2019-12-11,Change to MIT license
+a7d55bdc81737c9fa8ce33ecf00319a76fdbc6c1,Michael Herrmann,2019-11-26,Open source Helium's (originally proprietary) code
