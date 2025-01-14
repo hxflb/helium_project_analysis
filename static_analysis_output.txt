@@ -1,0 +1,3111 @@
+Analyzing: helium\setup.py
+Import Statements:
+Modules: []
+Aliases: []
+From Modules: []
+
+Function Definitions:
+
+Function Calls:
+
+Comment Count: 2
+
+Variables:
+
+Control Flow:
+
+Classes:
+========================================
+Analyzing: helium\docs\conf.py
+Import Statements:
+Modules: []
+Aliases: []
+From Modules: []
+
+Function Definitions:
+
+Function Calls:
+
+Comment Count: 10
+
+Variables:
+
+Control Flow:
+
+Classes:
+========================================
+Analyzing: helium\helium\__init__.py
+Import Statements:
+Modules: []
+Aliases: []
+From Modules: []
+
+Function Definitions:
+  - Name: start_chrome, Parameters: ['url', 'headless', 'maximize', 'options'], Has Docstring: True
+  - Name: start_firefox, Parameters: ['url', 'headless', 'options', 'profile'], Has Docstring: True
+  - Name: go_to, Parameters: ['url'], Has Docstring: True
+  - Name: set_driver, Parameters: ['driver'], Has Docstring: True
+  - Name: get_driver, Parameters: [], Has Docstring: True
+  - Name: write, Parameters: ['text', 'into'], Has Docstring: True
+  - Name: press, Parameters: ['key'], Has Docstring: True
+  - Name: click, Parameters: ['element'], Has Docstring: True
+  - Name: doubleclick, Parameters: ['element'], Has Docstring: True
+  - Name: drag, Parameters: ['element', 'to'], Has Docstring: True
+  - Name: press_mouse_on, Parameters: ['element'], Has Docstring: False
+  - Name: release_mouse_over, Parameters: ['element'], Has Docstring: False
+  - Name: find_all, Parameters: ['predicate'], Has Docstring: True
+  - Name: scroll_down, Parameters: ['num_pixels'], Has Docstring: True
+  - Name: scroll_up, Parameters: ['num_pixels'], Has Docstring: True
+  - Name: scroll_right, Parameters: ['num_pixels'], Has Docstring: True
+  - Name: scroll_left, Parameters: ['num_pixels'], Has Docstring: True
+  - Name: hover, Parameters: ['element'], Has Docstring: True
+  - Name: rightclick, Parameters: ['element'], Has Docstring: True
+  - Name: select, Parameters: ['combo_box', 'value'], Has Docstring: True
+  - Name: drag_file, Parameters: ['file_path', 'to'], Has Docstring: True
+  - Name: attach_file, Parameters: ['file_path', 'to'], Has Docstring: True
+  - Name: refresh, Parameters: [], Has Docstring: True
+  - Name: wait_until, Parameters: ['condition_fn', 'timeout_secs', 'interval_secs'], Has Docstring: True
+  - Name: switch_to, Parameters: ['window'], Has Docstring: True
+  - Name: kill_browser, Parameters: [], Has Docstring: True
+  - Name: highlight, Parameters: ['element'], Has Docstring: True
+  - Name: _get_api_impl, Parameters: [], Has Docstring: False
+
+Function Calls:
+  - Name: start_chrome_impl, Args: ['url', 'headless', 'maximize', 'options'], From Object: Call(
+    func=Name(
+        value='_get_api_impl',
+        lpar=[],
+        rpar=[],
+    ),
+    args=[],
+    lpar=[],
+    rpar=[],
+    whitespace_after_func=SimpleWhitespace(
+        value='',
+    ),
+    whitespace_before_args=SimpleWhitespace(
+        value='',
+    ),
+)
+  - Name: _get_api_impl, Args: [], From Object: 
+  - Name: start_firefox_impl, Args: ['url', 'headless', 'options', 'profile'], From Object: Call(
+    func=Name(
+        value='_get_api_impl',
+        lpar=[],
+        rpar=[],
+    ),
+    args=[],
+    lpar=[],
+    rpar=[],
+    whitespace_after_func=SimpleWhitespace(
+        value='',
+    ),
+    whitespace_before_args=SimpleWhitespace(
+        value='',
+    ),
+)
+  - Name: _get_api_impl, Args: [], From Object: 
+  - Name: go_to_impl, Args: ['url'], From Object: Call(
+    func=Name(
+        value='_get_api_impl',
+        lpar=[],
+        rpar=[],
+    ),
+    args=[],
+    lpar=[],
+    rpar=[],
+    whitespace_after_func=SimpleWhitespace(
+        value='',
+    ),
+    whitespace_before_args=SimpleWhitespace(
+        value='',
+    ),
+)
+  - Name: _get_api_impl, Args: [], From Object: 
+  - Name: set_driver_impl, Args: ['driver'], From Object: Call(
+    func=Name(
+        value='_get_api_impl',
+        lpar=[],
+        rpar=[],
+    ),
+    args=[],
+    lpar=[],
+    rpar=[],
+    whitespace_after_func=SimpleWhitespace(
+        value='',
+    ),
+    whitespace_before_args=SimpleWhitespace(
+        value='',
+    ),
+)
+  - Name: _get_api_impl, Args: [], From Object: 
+  - Name: get_driver_impl, Args: [], From Object: Call(
+    func=Name(
+        value='_get_api_impl',
+        lpar=[],
+        rpar=[],
+    ),
+    args=[],
+    lpar=[],
+    rpar=[],
+    whitespace_after_func=SimpleWhitespace(
+        value='',
+    ),
+    whitespace_before_args=SimpleWhitespace(
+        value='',
+    ),
+)
+  - Name: _get_api_impl, Args: [], From Object: 
+  - Name: write_impl, Args: ['text', 'into'], From Object: Call(
+    func=Name(
+        value='_get_api_impl',
+        lpar=[],
+        rpar=[],
+    ),
+    args=[],
+    lpar=[],
+    rpar=[],
+    whitespace_after_func=SimpleWhitespace(
+        value='',
+    ),
+    whitespace_before_args=SimpleWhitespace(
+        value='',
+    ),
+)
+  - Name: _get_api_impl, Args: [], From Object: 
+  - Name: press_impl, Args: ['key'], From Object: Call(
+    func=Name(
+        value='_get_api_impl',
+        lpar=[],
+        rpar=[],
+    ),
+    args=[],
+    lpar=[],
+    rpar=[],
+    whitespace_after_func=SimpleWhitespace(
+        value='',
+    ),
+    whitespace_before_args=SimpleWhitespace(
+        value='',
+    ),
+)
+  - Name: _get_api_impl, Args: [], From Object: 
+  - Name: click_impl, Args: ['element'], From Object: Call(
+    func=Name(
+        value='_get_api_impl',
+        lpar=[],
+        rpar=[],
+    ),
+    args=[],
+    lpar=[],
+    rpar=[],
+    whitespace_after_func=SimpleWhitespace(
+        value='',
+    ),
+    whitespace_before_args=SimpleWhitespace(
+        value='',
+    ),
+)
+  - Name: _get_api_impl, Args: [], From Object: 
+  - Name: doubleclick_impl, Args: ['element'], From Object: Call(
+    func=Name(
+        value='_get_api_impl',
+        lpar=[],
+        rpar=[],
+    ),
+    args=[],
+    lpar=[],
+    rpar=[],
+    whitespace_after_func=SimpleWhitespace(
+        value='',
+    ),
+    whitespace_before_args=SimpleWhitespace(
+        value='',
+    ),
+)
+  - Name: _get_api_impl, Args: [], From Object: 
+  - Name: drag_impl, Args: ['element', 'to'], From Object: Call(
+    func=Name(
+        value='_get_api_impl',
+        lpar=[],
+        rpar=[],
+    ),
+    args=[],
+    lpar=[],
+    rpar=[],
+    whitespace_after_func=SimpleWhitespace(
+        value='',
+    ),
+    whitespace_before_args=SimpleWhitespace(
+        value='',
+    ),
+)
+  - Name: _get_api_impl, Args: [], From Object: 
+  - Name: press_mouse_on_impl, Args: ['element'], From Object: Call(
+    func=Name(
+        value='_get_api_impl',
+        lpar=[],
+        rpar=[],
+    ),
+    args=[],
+    lpar=[],
+    rpar=[],
+    whitespace_after_func=SimpleWhitespace(
+        value='',
+    ),
+    whitespace_before_args=SimpleWhitespace(
+        value='',
+    ),
+)
+  - Name: _get_api_impl, Args: [], From Object: 
+  - Name: release_mouse_over_impl, Args: ['element'], From Object: Call(
+    func=Name(
+        value='_get_api_impl',
+        lpar=[],
+        rpar=[],
+    ),
+    args=[],
+    lpar=[],
+    rpar=[],
+    whitespace_after_func=SimpleWhitespace(
+        value='',
+    ),
+    whitespace_before_args=SimpleWhitespace(
+        value='',
+    ),
+)
+  - Name: _get_api_impl, Args: [], From Object: 
+  - Name: find_all_impl, Args: ['predicate'], From Object: Call(
+    func=Name(
+        value='_get_api_impl',
+        lpar=[],
+        rpar=[],
+    ),
+    args=[],
+    lpar=[],
+    rpar=[],
+    whitespace_after_func=SimpleWhitespace(
+        value='',
+    ),
+    whitespace_before_args=SimpleWhitespace(
+        value='',
+    ),
+)
+  - Name: _get_api_impl, Args: [], From Object: 
+  - Name: scroll_down_impl, Args: ['num_pixels'], From Object: Call(
+    func=Name(
+        value='_get_api_impl',
+        lpar=[],
+        rpar=[],
+    ),
+    args=[],
+    lpar=[],
+    rpar=[],
+    whitespace_after_func=SimpleWhitespace(
+        value='',
+    ),
+    whitespace_before_args=SimpleWhitespace(
+        value='',
+    ),
+)
+  - Name: _get_api_impl, Args: [], From Object: 
+  - Name: scroll_up_impl, Args: ['num_pixels'], From Object: Call(
+    func=Name(
+        value='_get_api_impl',
+        lpar=[],
+        rpar=[],
+    ),
+    args=[],
+    lpar=[],
+    rpar=[],
+    whitespace_after_func=SimpleWhitespace(
+        value='',
+    ),
+    whitespace_before_args=SimpleWhitespace(
+        value='',
+    ),
+)
+  - Name: _get_api_impl, Args: [], From Object: 
+  - Name: scroll_right_impl, Args: ['num_pixels'], From Object: Call(
+    func=Name(
+        value='_get_api_impl',
+        lpar=[],
+        rpar=[],
+    ),
+    args=[],
+    lpar=[],
+    rpar=[],
+    whitespace_after_func=SimpleWhitespace(
+        value='',
+    ),
+    whitespace_before_args=SimpleWhitespace(
+        value='',
+    ),
+)
+  - Name: _get_api_impl, Args: [], From Object: 
+  - Name: scroll_left_impl, Args: ['num_pixels'], From Object: Call(
+    func=Name(
+        value='_get_api_impl',
+        lpar=[],
+        rpar=[],
+    ),
+    args=[],
+    lpar=[],
+    rpar=[],
+    whitespace_after_func=SimpleWhitespace(
+        value='',
+    ),
+    whitespace_before_args=SimpleWhitespace(
+        value='',
+    ),
+)
+  - Name: _get_api_impl, Args: [], From Object: 
+  - Name: hover_impl, Args: ['element'], From Object: Call(
+    func=Name(
+        value='_get_api_impl',
+        lpar=[],
+        rpar=[],
+    ),
+    args=[],
+    lpar=[],
+    rpar=[],
+    whitespace_after_func=SimpleWhitespace(
+        value='',
+    ),
+    whitespace_before_args=SimpleWhitespace(
+        value='',
+    ),
+)
+  - Name: _get_api_impl, Args: [], From Object: 
+  - Name: rightclick_impl, Args: ['element'], From Object: Call(
+    func=Name(
+        value='_get_api_impl',
+        lpar=[],
+        rpar=[],
+    ),
+    args=[],
+    lpar=[],
+    rpar=[],
+    whitespace_after_func=SimpleWhitespace(
+        value='',
+    ),
+    whitespace_before_args=SimpleWhitespace(
+        value='',
+    ),
+)
+  - Name: _get_api_impl, Args: [], From Object: 
+  - Name: select_impl, Args: ['combo_box', 'value'], From Object: Call(
+    func=Name(
+        value='_get_api_impl',
+        lpar=[],
+        rpar=[],
+    ),
+    args=[],
+    lpar=[],
+    rpar=[],
+    whitespace_after_func=SimpleWhitespace(
+        value='',
+    ),
+    whitespace_before_args=SimpleWhitespace(
+        value='',
+    ),
+)
+  - Name: _get_api_impl, Args: [], From Object: 
+  - Name: drag_file_impl, Args: ['file_path', 'to'], From Object: Call(
+    func=Name(
+        value='_get_api_impl',
+        lpar=[],
+        rpar=[],
+    ),
+    args=[],
+    lpar=[],
+    rpar=[],
+    whitespace_after_func=SimpleWhitespace(
+        value='',
+    ),
+    whitespace_before_args=SimpleWhitespace(
+        value='',
+    ),
+)
+  - Name: _get_api_impl, Args: [], From Object: 
+  - Name: attach_file_impl, Args: ['file_path', 'to'], From Object: Call(
+    func=Name(
+        value='_get_api_impl',
+        lpar=[],
+        rpar=[],
+    ),
+    args=[],
+    lpar=[],
+    rpar=[],
+    whitespace_after_func=SimpleWhitespace(
+        value='',
+    ),
+    whitespace_before_args=SimpleWhitespace(
+        value='',
+    ),
+)
+  - Name: _get_api_impl, Args: [], From Object: 
+  - Name: refresh_impl, Args: [], From Object: Call(
+    func=Name(
+        value='_get_api_impl',
+        lpar=[],
+        rpar=[],
+    ),
+    args=[],
+    lpar=[],
+    rpar=[],
+    whitespace_after_func=SimpleWhitespace(
+        value='',
+    ),
+    whitespace_before_args=SimpleWhitespace(
+        value='',
+    ),
+)
+  - Name: _get_api_impl, Args: [], From Object: 
+  - Name: wait_until_impl, Args: ['condition_fn', 'timeout_secs', 'interval_secs'], From Object: Call(
+    func=Name(
+        value='_get_api_impl',
+        lpar=[],
+        rpar=[],
+    ),
+    args=[],
+    lpar=[],
+    rpar=[],
+    whitespace_after_func=SimpleWhitespace(
+        value='',
+    ),
+    whitespace_before_args=SimpleWhitespace(
+        value='',
+    ),
+)
+  - Name: _get_api_impl, Args: [], From Object: 
+  - Name: switch_to_impl, Args: ['window'], From Object: Call(
+    func=Name(
+        value='_get_api_impl',
+        lpar=[],
+        rpar=[],
+    ),
+    args=[],
+    lpar=[],
+    rpar=[],
+    whitespace_after_func=SimpleWhitespace(
+        value='',
+    ),
+    whitespace_before_args=SimpleWhitespace(
+        value='',
+    ),
+)
+  - Name: _get_api_impl, Args: [], From Object: 
+  - Name: kill_browser_impl, Args: [], From Object: Call(
+    func=Name(
+        value='_get_api_impl',
+        lpar=[],
+        rpar=[],
+    ),
+    args=[],
+    lpar=[],
+    rpar=[],
+    whitespace_after_func=SimpleWhitespace(
+        value='',
+    ),
+    whitespace_before_args=SimpleWhitespace(
+        value='',
+    ),
+)
+  - Name: _get_api_impl, Args: [], From Object: 
+  - Name: highlight_impl, Args: ['element'], From Object: Call(
+    func=Name(
+        value='_get_api_impl',
+        lpar=[],
+        rpar=[],
+    ),
+    args=[],
+    lpar=[],
+    rpar=[],
+    whitespace_after_func=SimpleWhitespace(
+        value='',
+    ),
+    whitespace_before_args=SimpleWhitespace(
+        value='',
+    ),
+)
+  - Name: _get_api_impl, Args: [], From Object: 
+  - Name: APIImpl, Args: [], From Object: 
+
+Comment Count: 9
+
+Variables:
+  - Name: _API_IMPL
+    - Assigned In: _get_api_impl, Value: {'name': 'APIImpl', 'args': []}
+
+Control Flow:
+
+Classes:
+  - Name: Config
+    Methods: []
+    Attributes: []
+  - Name: GUIElement
+    Methods: ['__init__', 'exists', 'with_impl', '_impl', '_impl', '__repr__', '_repr_constructor_args', '_is_bound']
+    Attributes: []
+  - Name: HTMLElement
+    Methods: ['__init__', 'width', 'height', 'x', 'y', 'top_left', 'web_element', '__repr__']
+    Attributes: []
+  - Name: S
+    Methods: ['__init__']
+    Attributes: []
+  - Name: Text
+    Methods: ['__init__', 'value']
+    Attributes: []
+  - Name: Link
+    Methods: ['__init__', 'href']
+    Attributes: []
+  - Name: ListItem
+    Methods: ['__init__']
+    Attributes: []
+  - Name: Button
+    Methods: ['__init__', 'is_enabled']
+    Attributes: []
+  - Name: Image
+    Methods: ['__init__']
+    Attributes: []
+  - Name: TextField
+    Methods: ['__init__', 'value', 'is_enabled', 'is_editable']
+    Attributes: []
+  - Name: ComboBox
+    Methods: ['__init__', 'is_editable', 'value', 'options']
+    Attributes: []
+  - Name: CheckBox
+    Methods: ['__init__', 'is_enabled', 'is_checked']
+    Attributes: []
+  - Name: RadioButton
+    Methods: ['__init__', 'is_selected']
+    Attributes: []
+  - Name: Window
+    Methods: ['__init__', 'title', 'handle', '__repr__']
+    Attributes: []
+  - Name: Alert
+    Methods: ['__init__', 'text', 'accept', 'dismiss', '__repr__']
+    Attributes: []
+  - Name: Point
+    Methods: ['__new__', '__init__', 'x', 'y', '__eq__', '__ne__', '__hash__', '__add__', '__radd__', '__sub__', '__rsub__']
+    Attributes: []
+========================================
+Analyzing: helium\helium\_impl\match_type.py
+Import Statements:
+Modules: []
+Aliases: []
+From Modules: []
+
+Function Definitions:
+
+Function Calls:
+
+Comment Count: 7
+
+Variables:
+
+Control Flow:
+
+Classes:
+  - Name: MatchType
+    Methods: ['xpath', 'text']
+    Attributes: []
+  - Name: PREFIX_IGNORE_CASE
+    Methods: ['xpath', 'text']
+    Attributes: []
+========================================
+Analyzing: helium\helium\_impl\selenium_wrappers.py
+Import Statements:
+Modules: []
+Aliases: []
+From Modules: []
+
+Function Definitions:
+  - Name: _translate_url_errors_caused_by_server_shutdown, Parameters: ['f'], Has Docstring: False
+  - Name: _is_caused_by_server_shutdown, Parameters: ['url_error'], Has Docstring: False
+  - Name: handle_element_being_in_other_frame, Parameters: ['f'], Has Docstring: False
+
+Function Calls:
+  - Name: f, Args: ['args', 'kwargs'], From Object: 
+  - Name: _is_caused_by_server_shutdown, Args: ['url_error'], From Object: 
+  - Name: StaleElementReferenceException, Args: ['ConcatenatedString(\n    left=SimpleString(\n        value="\'The Selenium server this element belonged to is no longer \'",\n        lpar=[],\n        rpar=[],\n    ),\n    right=SimpleString(\n        value="\'available.\'",\n        lpar=[],\n        rpar=[],\n    ),\n    lpar=[],\n    rpar=[],\n    whitespace_between=ParenthesizedWhitespace(\n        first_line=TrailingWhitespace(\n            whitespace=SimpleWhitespace(\n                value=\'\',\n            ),\n            comment=None,\n            newline=Newline(\n                value=None,\n            ),\n        ),\n        empty_lines=[],\n        indent=True,\n        last_line=SimpleWhitespace(\n            value=\'\\t\',\n        ),\n    ),\n)'], From Object: 
+  - Name: f, Args: ['self', 'args', 'kwargs'], From Object: 
+  - Name: f, Args: ['self', 'args', 'kwargs'], From Object: 
+  - Name: FrameIterator, Args: [{'name': 'parent', 'from_obj': "Attribute(\n    value=Name(\n        value='self',\n        lpar=[],\n        rpar=[],\n    ),\n    attr=Name(\n        value='target',\n        lpar=[],\n        rpar=[],\n    ),\n    dot=Dot(\n        whitespace_before=SimpleWhitespace(\n            value='',\n        ),\n        whitespace_after=SimpleWhitespace(\n            value='',\n        ),\n    ),\n    lpar=[],\n    rpar=[],\n)"}], From Object: 
+  - Name: switch_to_frame, Args: [{'name': 'frame_index', 'from_obj': 'self'}], From Object: frame_iterator
+  - Name: f, Args: ['self', 'args', 'kwargs'], From Object: 
+
+Comment Count: 4
+
+Variables:
+  - Name: CONNECTION_REFUSED
+    - Assigned In: _is_caused_by_server_shutdown, Value: 10061
+  - Name: frame_iterator
+    - Assigned In: handle_element_being_in_other_frame, Value: {'name': 'FrameIterator', 'args': ["Arg(\n    value=Attribute(\n        value=Attribute(\n            value=Name(\n                value='self',\n                lpar=[],\n                rpar=[],\n            ),\n            attr=Name(\n                value='target',\n                lpar=[],\n                rpar=[],\n            ),\n            dot=Dot(\n                whitespace_before=SimpleWhitespace(\n                    value='',\n                ),\n                whitespace_after=SimpleWhitespace(\n                    value='',\n                ),\n            ),\n            lpar=[],\n            rpar=[],\n        ),\n        attr=Name(\n            value='parent',\n            lpar=[],\n            rpar=[],\n        ),\n        dot=Dot(\n            whitespace_before=SimpleWhitespace(\n                value='',\n            ),\n            whitespace_after=SimpleWhitespace(\n                value='',\n            ),\n        ),\n        lpar=[],\n        rpar=[],\n    ),\n    keyword=None,\n    equal=MaybeSentinel.DEFAULT,\n    comma=MaybeSentinel.DEFAULT,\n    star='',\n    whitespace_after_star=SimpleWhitespace(\n        value='',\n    ),\n    whitespace_after_arg=SimpleWhitespace(\n        value='',\n    ),\n)"]}
+
+Control Flow:
+
+Classes:
+  - Name: Wrapper
+    Methods: ['__init__', '__getattr__', 'unwrap', '__hash__', '__eq__', '__ne__']
+    Attributes: []
+  - Name: WebDriverWrapper
+    Methods: ['__init__', 'action', 'get_distance_to_last_manipulated', 'is_firefox', 'browser_name', 'is_ie']
+    Attributes: []
+  - Name: WebElementWrapper
+    Methods: ['__init__', 'location', 'is_displayed', 'get_attribute', 'text', 'clear', 'send_keys', 'tag_name', 'unwrap', '__repr__']
+    Attributes: []
+  - Name: FrameIterator
+    Methods: ['__init__', '__iter__', 'switch_to_frame']
+    Attributes: []
+  - Name: FramesChangedWhileIterating
+    Methods: []
+    Attributes: []
+========================================
+Analyzing: helium\helium\_impl\__init__.py
+Import Statements:
+Modules: []
+Aliases: []
+From Modules: []
+
+Function Definitions:
+  - Name: might_spawn_window, Parameters: ['f'], Has Docstring: False
+  - Name: handle_unexpected_alert, Parameters: ['f'], Has Docstring: False
+
+Function Calls:
+  - Name: require_driver, Args: [], From Object: self
+  - Name: is_ie, Args: [], From Object: driver
+  - Name: exists, Args: [], From Object: Call(
+    func=Name(
+        value='AlertImpl',
+        lpar=[],
+        rpar=[],
+    ),
+    args=[
+        Arg(
+            value=Name(
+                value='driver',
+                lpar=[],
+                rpar=[],
+            ),
+            keyword=None,
+            equal=MaybeSentinel.DEFAULT,
+            comma=MaybeSentinel.DEFAULT,
+            star='',
+            whitespace_after_star=SimpleWhitespace(
+                value='',
+            ),
+            whitespace_after_arg=SimpleWhitespace(
+                value='',
+            ),
+        ),
+    ],
+    lpar=[],
+    rpar=[],
+    whitespace_after_func=SimpleWhitespace(
+        value='',
+    ),
+    whitespace_before_args=SimpleWhitespace(
+        value='',
+    ),
+)
+  - Name: AlertImpl, Args: ['driver'], From Object: 
+  - Name: f, Args: ['self', 'args', 'kwargs'], From Object: 
+  - Name: f, Args: ['self', 'args', 'kwargs'], From Object: 
+  - Name: is_ie, Args: [], From Object: driver
+  - Name: exists, Args: [], From Object: Call(
+    func=Name(
+        value='AlertImpl',
+        lpar=[],
+        rpar=[],
+    ),
+    args=[
+        Arg(
+            value=Name(
+                value='driver',
+                lpar=[],
+                rpar=[],
+            ),
+            keyword=None,
+            equal=MaybeSentinel.DEFAULT,
+            comma=MaybeSentinel.DEFAULT,
+            star='',
+            whitespace_after_star=SimpleWhitespace(
+                value='',
+            ),
+            whitespace_after_arg=SimpleWhitespace(
+                value='',
+            ),
+        ),
+    ],
+    lpar=[],
+    rpar=[],
+    whitespace_after_func=SimpleWhitespace(
+        value='',
+    ),
+    whitespace_before_args=SimpleWhitespace(
+        value='',
+    ),
+)
+  - Name: AlertImpl, Args: ['driver'], From Object: 
+  - Name: is_firefox, Args: [], From Object: driver
+  - Name: sleep, Args: ["Float(\n    value='.2',\n    lpar=[],\n    rpar=[],\n)"], From Object: 
+  - Name: window, Args: ["Subscript(\n    value=Name(\n        value='new_window_handles',\n        lpar=[],\n        rpar=[],\n    ),\n    slice=[\n        SubscriptElement(\n            slice=Index(\n                value=Integer(\n                    value='0',\n                    lpar=[],\n                    rpar=[],\n                ),\n                star=None,\n                whitespace_after_star=None,\n            ),\n            comma=MaybeSentinel.DEFAULT,\n        ),\n    ],\n    lbracket=LeftSquareBracket(\n        whitespace_after=SimpleWhitespace(\n            value='',\n        ),\n    ),\n    rbracket=RightSquareBracket(\n        whitespace_before=SimpleWhitespace(\n            value='',\n        ),\n    ),\n    lpar=[],\n    rpar=[],\n    whitespace_after_value=SimpleWhitespace(\n        value='',\n    ),\n)"], From Object: Attribute(
+    value=Name(
+        value='driver',
+        lpar=[],
+        rpar=[],
+    ),
+    attr=Name(
+        value='switch_to',
+        lpar=[],
+        rpar=[],
+    ),
+    dot=Dot(
+        whitespace_before=SimpleWhitespace(
+            value='',
+        ),
+        whitespace_after=SimpleWhitespace(
+            value='',
+        ),
+    ),
+    lpar=[],
+    rpar=[],
+)
+  - Name: f, Args: ['args', 'kwargs'], From Object: 
+  - Name: UnexpectedAlertPresentException, Args: ['ConcatenatedString(\n    left=SimpleString(\n        value=\'"This command is not supported when an alert is present. To "\',\n        lpar=[],\n        rpar=[],\n    ),\n    right=ConcatenatedString(\n        left=SimpleString(\n            value=\'"accept the alert (this usually corresponds to clicking \\\'OK\\\') "\',\n            lpar=[],\n            rpar=[],\n        ),\n        right=ConcatenatedString(\n            left=SimpleString(\n                value=\'"use `Alert().accept()`. To dismiss the alert (ie. \\\'cancel\\\' "\',\n                lpar=[],\n                rpar=[],\n            ),\n            right=ConcatenatedString(\n                left=SimpleString(\n                    value=\'"it), use `Alert().dismiss()`. If the alert contains a text "\',\n                    lpar=[],\n                    rpar=[],\n                ),\n                right=ConcatenatedString(\n                    left=SimpleString(\n                        value=\'"field, you can use write(...) to set its value. "\',\n                        lpar=[],\n                        rpar=[],\n                    ),\n                    right=SimpleString(\n                        value=\'"Eg.: `write(\\\'hi there!\\\')`."\',\n                        lpar=[],\n                        rpar=[],\n                    ),\n                    lpar=[],\n                    rpar=[],\n                    whitespace_between=ParenthesizedWhitespace(\n                        first_line=TrailingWhitespace(\n                            whitespace=SimpleWhitespace(\n                                value=\'\',\n                            ),\n                            comment=None,\n                            newline=Newline(\n                                value=None,\n                            ),\n                        ),\n                        empty_lines=[],\n                        indent=True,\n                        last_line=SimpleWhitespace(\n                            value=\'\\t\',\n                        ),\n                    ),\n                ),\n                lpar=[],\n                rpar=[],\n                whitespace_between=ParenthesizedWhitespace(\n                    first_line=TrailingWhitespace(\n                        whitespace=SimpleWhitespace(\n                            value=\'\',\n                        ),\n                        comment=None,\n                        newline=Newline(\n                            value=None,\n                        ),\n                    ),\n                    empty_lines=[],\n                    indent=True,\n                    last_line=SimpleWhitespace(\n                        value=\'\\t\',\n                    ),\n                ),\n            ),\n            lpar=[],\n            rpar=[],\n            whitespace_between=ParenthesizedWhitespace(\n                first_line=TrailingWhitespace(\n                    whitespace=SimpleWhitespace(\n                        value=\'\',\n                    ),\n                    comment=None,\n                    newline=Newline(\n                        value=None,\n                    ),\n                ),\n                empty_lines=[],\n                indent=True,\n                last_line=SimpleWhitespace(\n                    value=\'\\t\',\n                ),\n            ),\n        ),\n        lpar=[],\n        rpar=[],\n        whitespace_between=ParenthesizedWhitespace(\n            first_line=TrailingWhitespace(\n                whitespace=SimpleWhitespace(\n                    value=\'\',\n                ),\n                comment=None,\n                newline=Newline(\n                    value=None,\n                ),\n            ),\n            empty_lines=[],\n            indent=True,\n            last_line=SimpleWhitespace(\n                value=\'\\t\',\n            ),\n        ),\n    ),\n    lpar=[],\n    rpar=[],\n    whitespace_between=ParenthesizedWhitespace(\n        first_line=TrailingWhitespace(\n            whitespace=SimpleWhitespace(\n                value=\'\',\n            ),\n            comment=None,\n            newline=Newline(\n                value=None,\n            ),\n        ),\n        empty_lines=[],\n        indent=True,\n        last_line=SimpleWhitespace(\n            value=\'\\t\',\n        ),\n    ),\n)'], From Object: 
+
+Comment Count: 55
+
+Variables:
+  - Name: driver
+    - Assigned In: might_spawn_window, Value: {'name': 'require_driver', 'from_obj': 'self', 'args': []}
+  - Name: window_handles_before
+    - Assigned In: might_spawn_window, Value: Subscript(
+    value=Attribute(
+        value=Name(
+            value='driver',
+            lpar=[],
+            rpar=[],
+        ),
+        attr=Name(
+            value='window_handles',
+            lpar=[],
+            rpar=[],
+        ),
+        dot=Dot(
+            whitespace_before=SimpleWhitespace(
+                value='',
+            ),
+            whitespace_after=SimpleWhitespace(
+                value='',
+            ),
+        ),
+        lpar=[],
+        rpar=[],
+    ),
+    slice=[
+        SubscriptElement(
+            slice=Slice(
+                lower=None,
+                upper=None,
+                step=None,
+                first_colon=Colon(
+                    whitespace_before=SimpleWhitespace(
+                        value='',
+                    ),
+                    whitespace_after=SimpleWhitespace(
+                        value='',
+                    ),
+                ),
+                second_colon=MaybeSentinel.DEFAULT,
+            ),
+            comma=MaybeSentinel.DEFAULT,
+        ),
+    ],
+    lbracket=LeftSquareBracket(
+        whitespace_after=SimpleWhitespace(
+            value='',
+        ),
+    ),
+    rbracket=RightSquareBracket(
+        whitespace_before=SimpleWhitespace(
+            value='',
+        ),
+    ),
+    lpar=[],
+    rpar=[],
+    whitespace_after_value=SimpleWhitespace(
+        value='',
+    ),
+)
+  - Name: result
+    - Assigned In: might_spawn_window, Value: {'name': 'f', 'args': ["Arg(\n    value=Name(\n        value='self',\n        lpar=[],\n        rpar=[],\n    ),\n    keyword=None,\n    equal=MaybeSentinel.DEFAULT,\n    comma=Comma(\n        whitespace_before=SimpleWhitespace(\n            value='',\n        ),\n        whitespace_after=SimpleWhitespace(\n            value=' ',\n        ),\n    ),\n    star='',\n    whitespace_after_star=SimpleWhitespace(\n        value='',\n    ),\n    whitespace_after_arg=SimpleWhitespace(\n        value='',\n    ),\n)", "Arg(\n    value=Name(\n        value='args',\n        lpar=[],\n        rpar=[],\n    ),\n    keyword=None,\n    equal=MaybeSentinel.DEFAULT,\n    comma=Comma(\n        whitespace_before=SimpleWhitespace(\n            value='',\n        ),\n        whitespace_after=SimpleWhitespace(\n            value=' ',\n        ),\n    ),\n    star='*',\n    whitespace_after_star=SimpleWhitespace(\n        value='',\n    ),\n    whitespace_after_arg=SimpleWhitespace(\n        value='',\n    ),\n)", "Arg(\n    value=Name(\n        value='kwargs',\n        lpar=[],\n        rpar=[],\n    ),\n    keyword=None,\n    equal=MaybeSentinel.DEFAULT,\n    comma=MaybeSentinel.DEFAULT,\n    star='**',\n    whitespace_after_star=SimpleWhitespace(\n        value='',\n    ),\n    whitespace_after_arg=SimpleWhitespace(\n        value='',\n    ),\n)"]}
+  - Name: new_window_handles
+    - Assigned In: might_spawn_window, Value: ListComp(
+    elt=Name(
+        value='h',
+        lpar=[],
+        rpar=[],
+    ),
+    for_in=CompFor(
+        target=Name(
+            value='h',
+            lpar=[],
+            rpar=[],
+        ),
+        iter=Attribute(
+            value=Name(
+                value='driver',
+                lpar=[],
+                rpar=[],
+            ),
+            attr=Name(
+                value='window_handles',
+                lpar=[],
+                rpar=[],
+            ),
+            dot=Dot(
+                whitespace_before=SimpleWhitespace(
+                    value='',
+                ),
+                whitespace_after=SimpleWhitespace(
+                    value='',
+                ),
+            ),
+            lpar=[],
+            rpar=[],
+        ),
+        ifs=[
+            CompIf(
+                test=Comparison(
+                    left=Name(
+                        value='h',
+                        lpar=[],
+                        rpar=[],
+                    ),
+                    comparisons=[
+                        ComparisonTarget(
+                            operator=NotIn(
+                                whitespace_before=SimpleWhitespace(
+                                    value=' ',
+                                ),
+                                whitespace_between=SimpleWhitespace(
+                                    value=' ',
+                                ),
+                                whitespace_after=SimpleWhitespace(
+                                    value=' ',
+                                ),
+                            ),
+                            comparator=Name(
+                                value='window_handles_before',
+                                lpar=[],
+                                rpar=[],
+                            ),
+                        ),
+                    ],
+                    lpar=[],
+                    rpar=[],
+                ),
+                whitespace_before=ParenthesizedWhitespace(
+                    first_line=TrailingWhitespace(
+                        whitespace=SimpleWhitespace(
+                            value='',
+                        ),
+                        comment=None,
+                        newline=Newline(
+                            value=None,
+                        ),
+                    ),
+                    empty_lines=[],
+                    indent=True,
+                    last_line=SimpleWhitespace(
+                        value='\t',
+                    ),
+                ),
+                whitespace_before_test=SimpleWhitespace(
+                    value=' ',
+                ),
+            ),
+        ],
+        inner_for_in=None,
+        asynchronous=None,
+        whitespace_before=SimpleWhitespace(
+            value=' ',
+        ),
+        whitespace_after_for=SimpleWhitespace(
+            value=' ',
+        ),
+        whitespace_before_in=SimpleWhitespace(
+            value=' ',
+        ),
+        whitespace_after_in=SimpleWhitespace(
+            value=' ',
+        ),
+    ),
+    lbracket=LeftSquareBracket(
+        whitespace_after=ParenthesizedWhitespace(
+            first_line=TrailingWhitespace(
+                whitespace=SimpleWhitespace(
+                    value='',
+                ),
+                comment=None,
+                newline=Newline(
+                    value=None,
+                ),
+            ),
+            empty_lines=[],
+            indent=True,
+            last_line=SimpleWhitespace(
+                value='\t',
+            ),
+        ),
+    ),
+    rbracket=RightSquareBracket(
+        whitespace_before=ParenthesizedWhitespace(
+            first_line=TrailingWhitespace(
+                whitespace=SimpleWhitespace(
+                    value='',
+                ),
+                comment=None,
+                newline=Newline(
+                    value=None,
+                ),
+            ),
+            empty_lines=[],
+            indent=True,
+            last_line=SimpleWhitespace(
+                value='',
+            ),
+        ),
+    ),
+    lpar=[],
+    rpar=[],
+)
+
+Control Flow:
+
+Classes:
+  - Name: APIImpl
+    Methods: ['__init__', 'start_firefox_impl', '_start_firefox_driver', 'start_chrome_impl', '_start_chrome_driver', '_get_chrome_options', '_kill_service', '_start', 'go_to_impl', 'set_driver_impl', 'get_driver_impl', 'write_impl', '_write_no_alert', '_write_with_alert', '_handle_alerts', 'press_impl', 'click_impl', 'doubleclick_impl', 'hover_impl', 'rightclick_impl', 'press_mouse_on_impl', 'release_mouse_over_impl', '_click', '_doubleclick', '_hover', '_rightclick', '_press_mouse_on', '_release_mouse_over', '_move_to_element', 'drag_impl', '_perform_mouse_action', '_unwrap_clickable_element', '_point_to_element_and_offset', 'find_all_impl', 'scroll_down_impl', 'scroll_up_impl', 'scroll_right_impl', 'scroll_left_impl', '_scroll_by', 'select_impl', '_manipulate', 'drag_file_impl', 'attach_file_impl', 'refresh_impl', '_refresh_no_alert', '_refresh_with_alert', 'wait_until_impl', 'switch_to_impl', 'kill_browser_impl', 'highlight_impl', 'require_driver']
+    Attributes: []
+  - Name: DragHelper
+    Methods: ['__init__', '__enter__', 'start_dragging', 'drop_on_target', '_attempt_html_5_drag', '_complete_html_5_drag', '__exit__', '_execute_script']
+    Attributes: []
+  - Name: DragAndDropFile
+    Methods: ['__init__', 'begin', '_create_file_input_element', 'drag_over_document', '_dispatch_event', '_prepare_continuous_event', '_prepare_dispatch_event', 'drop_on', 'end']
+    Attributes: []
+  - Name: JavaScriptInterval
+    Methods: ['__init__', 'start', 'stop']
+    Attributes: []
+  - Name: GUIElementImpl
+    Methods: ['__init__', 'iter_all', '_is_bound', 'iter_all_occurrences', 'bound_to_occurrence', 'exists', 'first_occurrence', '_bind_to_first_occurrence', 'perform', '_perform_no_wait', 'should_ignore_exception']
+    Attributes: []
+  - Name: HTMLElementImpl
+    Methods: ['__init__', 'find_anywhere_in_curr_frame', 'width', 'height', 'x', 'y', 'top_left', 'web_element', 'iter_all_occurrences', '_handle_closed_window', '_find_all_in_curr_frame', '_get_search_regions_in_curr_frame', '_is_in_any_search_region', '_is_enabled', '_unwrap_element']
+    Attributes: []
+  - Name: SImpl
+    Methods: ['__init__', 'find_anywhere_in_curr_frame']
+    Attributes: []
+  - Name: HTMLElementIdentifiedByXPath
+    Methods: ['find_anywhere_in_curr_frame', '_sort_search_result', 'get_xpath', 'get_sort_index']
+    Attributes: []
+  - Name: HTMLElementContainingText
+    Methods: ['__init__', 'get_xpath', 'get_xpath_node_selector']
+    Attributes: []
+  - Name: TextImpl
+    Methods: ['__init__', 'value', 'get_xpath', '_get_search_text_xpath']
+    Attributes: []
+  - Name: FreeText
+    Methods: ['get_xpath_node_selector', 'get_xpath']
+    Attributes: []
+  - Name: LinkImpl
+    Methods: ['get_xpath_node_selector', 'get_xpath', 'href']
+    Attributes: []
+  - Name: ListItemImpl
+    Methods: ['get_xpath_node_selector']
+    Attributes: []
+  - Name: ButtonImpl
+    Methods: ['get_xpath_node_selector', 'is_enabled', 'get_xpath', 'get_input_button_xpath']
+    Attributes: []
+  - Name: ImageImpl
+    Methods: ['__init__', 'get_xpath']
+    Attributes: []
+  - Name: LabelledElement
+    Methods: ['__init__', 'find_anywhere_in_curr_frame', '_find_elts', '_find_elts_by_free_text', 'get_xpath', 'get_primary_search_direction', 'get_secondary_search_direction', '_filter_elts_belonging_to_labels', '_get_labels_with_explicit_elts', '_get_related_elts', '_are_related', '_ensure_at_most_one_label_per_elt', '_retain_closest', '_find_closest', '_compute_distance']
+    Attributes: []
+  - Name: CompositeElement
+    Methods: ['__init__', 'first_element', 'find_anywhere_in_curr_frame', 'get_elements', 'get_element_types']
+    Attributes: []
+  - Name: ClickableText
+    Methods: ['get_element_types']
+    Attributes: []
+  - Name: TextFieldImpl
+    Methods: ['get_element_types', 'value', 'is_enabled', 'is_editable']
+    Attributes: []
+  - Name: StandardTextFieldWithLabel
+    Methods: ['value', 'is_enabled', 'is_editable', 'get_xpath']
+    Attributes: []
+  - Name: AriaTextFieldWithLabel
+    Methods: ['value', 'is_enabled', 'is_editable', 'get_xpath']
+    Attributes: []
+  - Name: StandardTextFieldWithPlaceholder
+    Methods: ['__init__', 'value', 'is_enabled', 'is_editable', 'get_xpath']
+    Attributes: []
+  - Name: FileInput
+    Methods: ['get_xpath']
+    Attributes: []
+  - Name: ComboBoxImpl
+    Methods: ['get_element_types', 'is_editable', 'value', 'options', '_select_driver']
+    Attributes: []
+  - Name: ComboBoxIdentifiedByLabel
+    Methods: ['get_xpath']
+    Attributes: []
+  - Name: ComboBoxIdentifiedByDisplayedValue
+    Methods: ['get_xpath_node_selector', 'get_xpath', 'find_anywhere_in_curr_frame']
+    Attributes: []
+  - Name: CheckBoxImpl
+    Methods: ['is_enabled', 'is_checked', 'get_xpath', 'get_primary_search_direction', 'get_secondary_search_direction']
+    Attributes: []
+  - Name: RadioButtonImpl
+    Methods: ['is_selected', 'get_xpath', 'get_primary_search_direction', 'get_secondary_search_direction']
+    Attributes: []
+  - Name: WindowImpl
+    Methods: ['__init__', 'iter_all_occurrences', 'title', 'handle']
+    Attributes: []
+  - Name: AlertImpl
+    Methods: ['__init__', 'iter_all_occurrences', 'text', 'accept', 'dismiss', '_write']
+    Attributes: []
+========================================
+Analyzing: helium\helium\_impl\util\dictionary.py
+Import Statements:
+Modules: []
+Aliases: []
+From Modules: []
+
+Function Definitions:
+  - Name: inverse, Parameters: ['dictionary'], Has Docstring: True
+
+Function Calls:
+  - Name: items, Args: [], From Object: dictionary
+  - Name: set, Args: [], From Object: 
+  - Name: add, Args: ['key'], From Object: Subscript(
+    value=Name(
+        value='result',
+        lpar=[],
+        rpar=[],
+    ),
+    slice=[
+        SubscriptElement(
+            slice=Index(
+                value=Name(
+                    value='value',
+                    lpar=[],
+                    rpar=[],
+                ),
+                star=None,
+                whitespace_after_star=None,
+            ),
+            comma=MaybeSentinel.DEFAULT,
+        ),
+    ],
+    lbracket=LeftSquareBracket(
+        whitespace_after=SimpleWhitespace(
+            value='',
+        ),
+    ),
+    rbracket=RightSquareBracket(
+        whitespace_before=SimpleWhitespace(
+            value='',
+        ),
+    ),
+    lpar=[],
+    rpar=[],
+    whitespace_after_value=SimpleWhitespace(
+        value='',
+    ),
+)
+
+Comment Count: 0
+
+Variables:
+  - Name: result
+    - Assigned In: inverse, Value: Dict(
+    elements=[],
+    lbrace=LeftCurlyBrace(
+        whitespace_after=SimpleWhitespace(
+            value='',
+        ),
+    ),
+    rbrace=RightCurlyBrace(
+        whitespace_before=SimpleWhitespace(
+            value='',
+        ),
+    ),
+    lpar=[],
+    rpar=[],
+)
+
+Control Flow:
+
+Classes:
+========================================
+Analyzing: helium\helium\_impl\util\geom.py
+Import Statements:
+Modules: []
+Aliases: []
+From Modules: []
+
+Function Definitions:
+
+Function Calls:
+
+Comment Count: 2
+
+Variables:
+
+Control Flow:
+
+Classes:
+  - Name: Rectangle
+    Methods: ['__init__', 'from_w_h', 'from_tuple_l_t_w_h', 'from_tuple_w_h', 'from_struct_l_t_r_b', 'from_l_t_r_b', 'width', 'height', 'center', 'east', 'west', 'north', 'south', 'northeast', 'southeast', 'southwest', 'northwest', 'area', '__contains__', 'translate', 'clip', 'intersect', 'intersects', 'as_numpy_slice', 'is_to_left_of', 'is_to_right_of', 'is_above', 'is_below', 'is_in_direction', 'distance_to', '__eq__', '__ne__', '__bool__', '__repr__', '__hash__']
+    Attributes: []
+  - Name: Point
+    Methods: ['__new__', '__init__', 'from_tuple', '__eq__', '__ne__', '__add__', '__radd__', '__sub__', '__rsub__', '__mul__', '__rmul__', '__div__', '__bool__']
+    Attributes: []
+  - Name: Direction
+    Methods: ['__init__', 'iterate_points_starting_at', 'is_horizontal', 'is_vertical', 'orthog_vector', '__eq__', '__repr__']
+    Attributes: []
+========================================
+Analyzing: helium\helium\_impl\util\html.py
+Import Statements:
+Modules: []
+Aliases: []
+From Modules: []
+
+Function Definitions:
+  - Name: strip_tags, Parameters: ['html'], Has Docstring: False
+  - Name: get_easily_readable_snippet, Parameters: ['html'], Has Docstring: False
+  - Name: normalize_whitespace, Parameters: ['html'], Has Docstring: False
+
+Function Calls:
+  - Name: TagStripper, Args: [], From Object: 
+  - Name: feed, Args: ['html'], From Object: s
+  - Name: get_data, Args: [], From Object: s
+  - Name: normalize_whitespace, Args: ['html'], From Object: 
+  - Name: index, Args: ["'>'"], From Object: html
+  - Name: rindex, Args: ["'<'", 'inner_start'], From Object: html
+  - Name: len, Args: ['inner'], From Object: 
+  - Name: strip, Args: [], From Object: html
+  - Name: sub, Args: ["r'\\s+'", "' '", 'result'], From Object: re
+  - Name: replace, Args: ["' <'", "'<'"], From Object: Call(
+    func=Attribute(
+        value=Name(
+            value='result',
+            lpar=[],
+            rpar=[],
+        ),
+        attr=Name(
+            value='replace',
+            lpar=[],
+            rpar=[],
+        ),
+        dot=Dot(
+            whitespace_before=SimpleWhitespace(
+                value='',
+            ),
+            whitespace_after=SimpleWhitespace(
+                value='',
+            ),
+        ),
+        lpar=[],
+        rpar=[],
+    ),
+    args=[
+        Arg(
+            value=SimpleString(
+                value="'> '",
+                lpar=[],
+                rpar=[],
+            ),
+            keyword=None,
+            equal=MaybeSentinel.DEFAULT,
+            comma=Comma(
+                whitespace_before=SimpleWhitespace(
+                    value='',
+                ),
+                whitespace_after=SimpleWhitespace(
+                    value=' ',
+                ),
+            ),
+            star='',
+            whitespace_after_star=SimpleWhitespace(
+                value='',
+            ),
+            whitespace_after_arg=SimpleWhitespace(
+                value='',
+            ),
+        ),
+        Arg(
+            value=SimpleString(
+                value="'>'",
+                lpar=[],
+                rpar=[],
+            ),
+            keyword=None,
+            equal=MaybeSentinel.DEFAULT,
+            comma=MaybeSentinel.DEFAULT,
+            star='',
+            whitespace_after_star=SimpleWhitespace(
+                value='',
+            ),
+            whitespace_after_arg=SimpleWhitespace(
+                value='',
+            ),
+        ),
+    ],
+    lpar=[],
+    rpar=[],
+    whitespace_after_func=SimpleWhitespace(
+        value='',
+    ),
+    whitespace_before_args=SimpleWhitespace(
+        value='',
+    ),
+)
+  - Name: replace, Args: ["'> '", "'>'"], From Object: result
+
+Comment Count: 2
+
+Variables:
+  - Name: s
+    - Assigned In: strip_tags, Value: {'name': 'TagStripper', 'args': []}
+  - Name: html
+    - Assigned In: get_easily_readable_snippet, Value: {'name': 'normalize_whitespace', 'args': ["Arg(\n    value=Name(\n        value='html',\n        lpar=[],\n        rpar=[],\n    ),\n    keyword=None,\n    equal=MaybeSentinel.DEFAULT,\n    comma=MaybeSentinel.DEFAULT,\n    star='',\n    whitespace_after_star=SimpleWhitespace(\n        value='',\n    ),\n    whitespace_after_arg=SimpleWhitespace(\n        value='',\n    ),\n)"]}
+  - Name: inner_start
+    - Assigned In: get_easily_readable_snippet, Value: {'left': {'name': 'index', 'from_obj': 'html', 'args': ['Arg(\n    value=SimpleString(\n        value="\'>\'",\n        lpar=[],\n        rpar=[],\n    ),\n    keyword=None,\n    equal=MaybeSentinel.DEFAULT,\n    comma=MaybeSentinel.DEFAULT,\n    star=\'\',\n    whitespace_after_star=SimpleWhitespace(\n        value=\'\',\n    ),\n    whitespace_after_arg=SimpleWhitespace(\n        value=\'\',\n    ),\n)']}, 'operator': "Add(\n    whitespace_before=SimpleWhitespace(\n        value=' ',\n    ),\n    whitespace_after=SimpleWhitespace(\n        value=' ',\n    ),\n)", 'right': '1'}
+  - Name: inner_end
+    - Assigned In: get_easily_readable_snippet, Value: {'name': 'rindex', 'from_obj': 'html', 'args': ['Arg(\n    value=SimpleString(\n        value="\'<\'",\n        lpar=[],\n        rpar=[],\n    ),\n    keyword=None,\n    equal=MaybeSentinel.DEFAULT,\n    comma=Comma(\n        whitespace_before=SimpleWhitespace(\n            value=\'\',\n        ),\n        whitespace_after=SimpleWhitespace(\n            value=\' \',\n        ),\n    ),\n    star=\'\',\n    whitespace_after_star=SimpleWhitespace(\n        value=\'\',\n    ),\n    whitespace_after_arg=SimpleWhitespace(\n        value=\'\',\n    ),\n)', "Arg(\n    value=Name(\n        value='inner_start',\n        lpar=[],\n        rpar=[],\n    ),\n    keyword=None,\n    equal=MaybeSentinel.DEFAULT,\n    comma=MaybeSentinel.DEFAULT,\n    star='',\n    whitespace_after_star=SimpleWhitespace(\n        value='',\n    ),\n    whitespace_after_arg=SimpleWhitespace(\n        value='',\n    ),\n)"]}
+  - Name: opening_tag
+    - Assigned In: get_easily_readable_snippet, Value: Subscript(
+    value=Name(
+        value='html',
+        lpar=[],
+        rpar=[],
+    ),
+    slice=[
+        SubscriptElement(
+            slice=Slice(
+                lower=None,
+                upper=Name(
+                    value='inner_start',
+                    lpar=[],
+                    rpar=[],
+                ),
+                step=None,
+                first_colon=Colon(
+                    whitespace_before=SimpleWhitespace(
+                        value='',
+                    ),
+                    whitespace_after=SimpleWhitespace(
+                        value='',
+                    ),
+                ),
+                second_colon=MaybeSentinel.DEFAULT,
+            ),
+            comma=MaybeSentinel.DEFAULT,
+        ),
+    ],
+    lbracket=LeftSquareBracket(
+        whitespace_after=SimpleWhitespace(
+            value='',
+        ),
+    ),
+    rbracket=RightSquareBracket(
+        whitespace_before=SimpleWhitespace(
+            value='',
+        ),
+    ),
+    lpar=[],
+    rpar=[],
+    whitespace_after_value=SimpleWhitespace(
+        value='',
+    ),
+)
+  - Name: closing_tag
+    - Assigned In: get_easily_readable_snippet, Value: Subscript(
+    value=Name(
+        value='html',
+        lpar=[],
+        rpar=[],
+    ),
+    slice=[
+        SubscriptElement(
+            slice=Slice(
+                lower=Name(
+                    value='inner_end',
+                    lpar=[],
+                    rpar=[],
+                ),
+                upper=None,
+                step=None,
+                first_colon=Colon(
+                    whitespace_before=SimpleWhitespace(
+                        value='',
+                    ),
+                    whitespace_after=SimpleWhitespace(
+                        value='',
+                    ),
+                ),
+                second_colon=MaybeSentinel.DEFAULT,
+            ),
+            comma=MaybeSentinel.DEFAULT,
+        ),
+    ],
+    lbracket=LeftSquareBracket(
+        whitespace_after=SimpleWhitespace(
+            value='',
+        ),
+    ),
+    rbracket=RightSquareBracket(
+        whitespace_before=SimpleWhitespace(
+            value='',
+        ),
+    ),
+    lpar=[],
+    rpar=[],
+    whitespace_after_value=SimpleWhitespace(
+        value='',
+    ),
+)
+  - Name: inner
+    - Assigned In: get_easily_readable_snippet, Value: Subscript(
+    value=Name(
+        value='html',
+        lpar=[],
+        rpar=[],
+    ),
+    slice=[
+        SubscriptElement(
+            slice=Slice(
+                lower=Name(
+                    value='inner_start',
+                    lpar=[],
+                    rpar=[],
+                ),
+                upper=Name(
+                    value='inner_end',
+                    lpar=[],
+                    rpar=[],
+                ),
+                step=None,
+                first_colon=Colon(
+                    whitespace_before=SimpleWhitespace(
+                        value='',
+                    ),
+                    whitespace_after=SimpleWhitespace(
+                        value='',
+                    ),
+                ),
+                second_colon=MaybeSentinel.DEFAULT,
+            ),
+            comma=MaybeSentinel.DEFAULT,
+        ),
+    ],
+    lbracket=LeftSquareBracket(
+        whitespace_after=SimpleWhitespace(
+            value='',
+        ),
+    ),
+    rbracket=RightSquareBracket(
+        whitespace_before=SimpleWhitespace(
+            value='',
+        ),
+    ),
+    lpar=[],
+    rpar=[],
+    whitespace_after_value=SimpleWhitespace(
+        value='',
+    ),
+)
+  - Name: result
+    - Assigned In: normalize_whitespace, Value: {'name': 'strip', 'from_obj': 'html', 'args': []}
+    - Assigned In: normalize_whitespace, Value: {'name': 'sub', 'from_obj': 're', 'args': ['Arg(\n    value=SimpleString(\n        value="r\'\\\\s+\'",\n        lpar=[],\n        rpar=[],\n    ),\n    keyword=None,\n    equal=MaybeSentinel.DEFAULT,\n    comma=Comma(\n        whitespace_before=SimpleWhitespace(\n            value=\'\',\n        ),\n        whitespace_after=SimpleWhitespace(\n            value=\' \',\n        ),\n    ),\n    star=\'\',\n    whitespace_after_star=SimpleWhitespace(\n        value=\'\',\n    ),\n    whitespace_after_arg=SimpleWhitespace(\n        value=\'\',\n    ),\n)', 'Arg(\n    value=SimpleString(\n        value="\' \'",\n        lpar=[],\n        rpar=[],\n    ),\n    keyword=None,\n    equal=MaybeSentinel.DEFAULT,\n    comma=Comma(\n        whitespace_before=SimpleWhitespace(\n            value=\'\',\n        ),\n        whitespace_after=SimpleWhitespace(\n            value=\' \',\n        ),\n    ),\n    star=\'\',\n    whitespace_after_star=SimpleWhitespace(\n        value=\'\',\n    ),\n    whitespace_after_arg=SimpleWhitespace(\n        value=\'\',\n    ),\n)', "Arg(\n    value=Name(\n        value='result',\n        lpar=[],\n        rpar=[],\n    ),\n    keyword=None,\n    equal=MaybeSentinel.DEFAULT,\n    comma=MaybeSentinel.DEFAULT,\n    star='',\n    whitespace_after_star=SimpleWhitespace(\n        value='',\n    ),\n    whitespace_after_arg=SimpleWhitespace(\n        value='',\n    ),\n)"]}
+    - Assigned In: normalize_whitespace, Value: {'name': 'replace', 'from_obj': 'Call(\n    func=Attribute(\n        value=Name(\n            value=\'result\',\n            lpar=[],\n            rpar=[],\n        ),\n        attr=Name(\n            value=\'replace\',\n            lpar=[],\n            rpar=[],\n        ),\n        dot=Dot(\n            whitespace_before=SimpleWhitespace(\n                value=\'\',\n            ),\n            whitespace_after=SimpleWhitespace(\n                value=\'\',\n            ),\n        ),\n        lpar=[],\n        rpar=[],\n    ),\n    args=[\n        Arg(\n            value=SimpleString(\n                value="\'> \'",\n                lpar=[],\n                rpar=[],\n            ),\n            keyword=None,\n            equal=MaybeSentinel.DEFAULT,\n            comma=Comma(\n                whitespace_before=SimpleWhitespace(\n                    value=\'\',\n                ),\n                whitespace_after=SimpleWhitespace(\n                    value=\' \',\n                ),\n            ),\n            star=\'\',\n            whitespace_after_star=SimpleWhitespace(\n                value=\'\',\n            ),\n            whitespace_after_arg=SimpleWhitespace(\n                value=\'\',\n            ),\n        ),\n        Arg(\n            value=SimpleString(\n                value="\'>\'",\n                lpar=[],\n                rpar=[],\n            ),\n            keyword=None,\n            equal=MaybeSentinel.DEFAULT,\n            comma=MaybeSentinel.DEFAULT,\n            star=\'\',\n            whitespace_after_star=SimpleWhitespace(\n                value=\'\',\n            ),\n            whitespace_after_arg=SimpleWhitespace(\n                value=\'\',\n            ),\n        ),\n    ],\n    lpar=[],\n    rpar=[],\n    whitespace_after_func=SimpleWhitespace(\n        value=\'\',\n    ),\n    whitespace_before_args=SimpleWhitespace(\n        value=\'\',\n    ),\n)', 'args': ['Arg(\n    value=SimpleString(\n        value="\' <\'",\n        lpar=[],\n        rpar=[],\n    ),\n    keyword=None,\n    equal=MaybeSentinel.DEFAULT,\n    comma=Comma(\n        whitespace_before=SimpleWhitespace(\n            value=\'\',\n        ),\n        whitespace_after=SimpleWhitespace(\n            value=\' \',\n        ),\n    ),\n    star=\'\',\n    whitespace_after_star=SimpleWhitespace(\n        value=\'\',\n    ),\n    whitespace_after_arg=SimpleWhitespace(\n        value=\'\',\n    ),\n)', 'Arg(\n    value=SimpleString(\n        value="\'<\'",\n        lpar=[],\n        rpar=[],\n    ),\n    keyword=None,\n    equal=MaybeSentinel.DEFAULT,\n    comma=MaybeSentinel.DEFAULT,\n    star=\'\',\n    whitespace_after_star=SimpleWhitespace(\n        value=\'\',\n    ),\n    whitespace_after_arg=SimpleWhitespace(\n        value=\'\',\n    ),\n)']}
+
+Control Flow:
+
+Classes:
+  - Name: TagStripper
+    Methods: ['__init__', 'handle_data', 'get_data']
+    Attributes: []
+========================================
+Analyzing: helium\helium\_impl\util\inspect_.py
+Import Statements:
+Modules: []
+Aliases: []
+From Modules: []
+
+Function Definitions:
+  - Name: repr_args, Parameters: ['f', 'args', 'kwargs', 'repr_fn'], Has Docstring: False
+
+Function Calls:
+  - Name: getfullargspec, Args: ['f'], From Object: inspect
+  - Name: isbound, Args: ['f'], From Object: 
+  - Name: len, Args: ['defaults'], From Object: 
+  - Name: len, Args: ['arg_names'], From Object: 
+  - Name: enumerate, Args: ['arg_names'], From Object: 
+  - Name: len, Args: ['arg_names'], From Object: 
+  - Name: len, Args: ['args'], From Object: 
+  - Name: append, Args: [{'left': 'prefix', 'operator': "Add(\n    whitespace_before=SimpleWhitespace(\n        value=' ',\n    ),\n    whitespace_after=SimpleWhitespace(\n        value=' ',\n    ),\n)", 'right': {'name': 'repr_fn', 'args': ["Arg(\n    value=Name(\n        value='value',\n        lpar=[],\n        rpar=[],\n    ),\n    keyword=None,\n    equal=MaybeSentinel.DEFAULT,\n    comma=MaybeSentinel.DEFAULT,\n    star='',\n    whitespace_after_star=SimpleWhitespace(\n        value='',\n    ),\n    whitespace_after_arg=SimpleWhitespace(\n        value='',\n    ),\n)"]}}], From Object: result
+  - Name: repr_fn, Args: ['value'], From Object: 
+  - Name: len, Args: ['arg_names'], From Object: 
+  - Name: append, Args: [{'name': 'repr_fn', 'args': ["Arg(\n    value=Name(\n        value='vararg',\n        lpar=[],\n        rpar=[],\n    ),\n    keyword=None,\n    equal=MaybeSentinel.DEFAULT,\n    comma=MaybeSentinel.DEFAULT,\n    star='',\n    whitespace_after_star=SimpleWhitespace(\n        value='',\n    ),\n    whitespace_after_arg=SimpleWhitespace(\n        value='',\n    ),\n)"]}], From Object: result
+  - Name: repr_fn, Args: ['vararg'], From Object: 
+  - Name: append, Args: [{'left': {'left': 'kwarg', 'operator': "Add(\n    whitespace_before=SimpleWhitespace(\n        value=' ',\n    ),\n    whitespace_after=SimpleWhitespace(\n        value=' ',\n    ),\n)", 'right': "'='"}, 'operator': "Add(\n    whitespace_before=SimpleWhitespace(\n        value=' ',\n    ),\n    whitespace_after=SimpleWhitespace(\n        value=' ',\n    ),\n)", 'right': {'name': 'repr_fn', 'args': ["Arg(\n    value=Subscript(\n        value=Name(\n            value='kwargs',\n            lpar=[],\n            rpar=[],\n        ),\n        slice=[\n            SubscriptElement(\n                slice=Index(\n                    value=Name(\n                        value='kwarg',\n                        lpar=[],\n                        rpar=[],\n                    ),\n                    star=None,\n                    whitespace_after_star=None,\n                ),\n                comma=MaybeSentinel.DEFAULT,\n            ),\n        ],\n        lbracket=LeftSquareBracket(\n            whitespace_after=SimpleWhitespace(\n                value='',\n            ),\n        ),\n        rbracket=RightSquareBracket(\n            whitespace_before=SimpleWhitespace(\n                value='',\n            ),\n        ),\n        lpar=[],\n        rpar=[],\n        whitespace_after_value=SimpleWhitespace(\n            value='',\n        ),\n    ),\n    keyword=None,\n    equal=MaybeSentinel.DEFAULT,\n    comma=MaybeSentinel.DEFAULT,\n    star='',\n    whitespace_after_star=SimpleWhitespace(\n        value='',\n    ),\n    whitespace_after_arg=SimpleWhitespace(\n        value='',\n    ),\n)"]}}], From Object: result
+  - Name: repr_fn, Args: ["Subscript(\n    value=Name(\n        value='kwargs',\n        lpar=[],\n        rpar=[],\n    ),\n    slice=[\n        SubscriptElement(\n            slice=Index(\n                value=Name(\n                    value='kwarg',\n                    lpar=[],\n                    rpar=[],\n                ),\n                star=None,\n                whitespace_after_star=None,\n            ),\n            comma=MaybeSentinel.DEFAULT,\n        ),\n    ],\n    lbracket=LeftSquareBracket(\n        whitespace_after=SimpleWhitespace(\n            value='',\n        ),\n    ),\n    rbracket=RightSquareBracket(\n        whitespace_before=SimpleWhitespace(\n            value='',\n        ),\n    ),\n    lpar=[],\n    rpar=[],\n    whitespace_after_value=SimpleWhitespace(\n        value='',\n    ),\n)"], From Object: 
+  - Name: join, Args: ['result'], From Object: SimpleString(
+    value="', '",
+    lpar=[],
+    rpar=[],
+)
+
+Comment Count: 4
+
+Variables:
+  - Name: args
+    - Assigned In: repr_args, Value: []
+  - Name: kwargs
+    - Assigned In: repr_args, Value: Dict(
+    elements=[],
+    lbrace=LeftCurlyBrace(
+        whitespace_after=SimpleWhitespace(
+            value='',
+        ),
+    ),
+    rbrace=RightCurlyBrace(
+        whitespace_before=SimpleWhitespace(
+            value='',
+        ),
+    ),
+    lpar=[],
+    rpar=[],
+)
+  - Name: arg_names
+    - Assigned In: repr_args, Value: Subscript(
+    value=Name(
+        value='arg_names',
+        lpar=[],
+        rpar=[],
+    ),
+    slice=[
+        SubscriptElement(
+            slice=Slice(
+                lower=Integer(
+                    value='1',
+                    lpar=[],
+                    rpar=[],
+                ),
+                upper=None,
+                step=None,
+                first_colon=Colon(
+                    whitespace_before=SimpleWhitespace(
+                        value='',
+                    ),
+                    whitespace_after=SimpleWhitespace(
+                        value='',
+                    ),
+                ),
+                second_colon=MaybeSentinel.DEFAULT,
+            ),
+            comma=MaybeSentinel.DEFAULT,
+        ),
+    ],
+    lbracket=LeftSquareBracket(
+        whitespace_after=SimpleWhitespace(
+            value='',
+        ),
+    ),
+    rbracket=RightSquareBracket(
+        whitespace_before=SimpleWhitespace(
+            value='',
+        ),
+    ),
+    lpar=[],
+    rpar=[],
+    whitespace_after_value=SimpleWhitespace(
+        value='',
+    ),
+)
+  - Name: num_defaults
+    - Assigned In: repr_args, Value: IfExp(
+    test=Comparison(
+        left=Name(
+            value='defaults',
+            lpar=[],
+            rpar=[],
+        ),
+        comparisons=[
+            ComparisonTarget(
+                operator=Is(
+                    whitespace_before=SimpleWhitespace(
+                        value=' ',
+                    ),
+                    whitespace_after=SimpleWhitespace(
+                        value=' ',
+                    ),
+                ),
+                comparator=Name(
+                    value='None',
+                    lpar=[],
+                    rpar=[],
+                ),
+            ),
+        ],
+        lpar=[],
+        rpar=[],
+    ),
+    body=Integer(
+        value='0',
+        lpar=[],
+        rpar=[],
+    ),
+    orelse=Call(
+        func=Name(
+            value='len',
+            lpar=[],
+            rpar=[],
+        ),
+        args=[
+            Arg(
+                value=Name(
+                    value='defaults',
+                    lpar=[],
+                    rpar=[],
+                ),
+                keyword=None,
+                equal=MaybeSentinel.DEFAULT,
+                comma=MaybeSentinel.DEFAULT,
+                star='',
+                whitespace_after_star=SimpleWhitespace(
+                    value='',
+                ),
+                whitespace_after_arg=SimpleWhitespace(
+                    value='',
+                ),
+            ),
+        ],
+        lpar=[],
+        rpar=[],
+        whitespace_after_func=SimpleWhitespace(
+            value='',
+        ),
+        whitespace_before_args=SimpleWhitespace(
+            value='',
+        ),
+    ),
+    lpar=[],
+    rpar=[],
+    whitespace_before_if=SimpleWhitespace(
+        value=' ',
+    ),
+    whitespace_after_if=SimpleWhitespace(
+        value=' ',
+    ),
+    whitespace_before_else=SimpleWhitespace(
+        value=' ',
+    ),
+    whitespace_after_else=SimpleWhitespace(
+        value=' ',
+    ),
+)
+  - Name: num_requireds
+    - Assigned In: repr_args, Value: {'left': {'name': 'len', 'args': ["Arg(\n    value=Name(\n        value='arg_names',\n        lpar=[],\n        rpar=[],\n    ),\n    keyword=None,\n    equal=MaybeSentinel.DEFAULT,\n    comma=MaybeSentinel.DEFAULT,\n    star='',\n    whitespace_after_star=SimpleWhitespace(\n        value='',\n    ),\n    whitespace_after_arg=SimpleWhitespace(\n        value='',\n    ),\n)"]}, 'operator': "Subtract(\n    whitespace_before=SimpleWhitespace(\n        value=' ',\n    ),\n    whitespace_after=SimpleWhitespace(\n        value=' ',\n    ),\n)", 'right': 'num_defaults'}
+  - Name: result
+    - Assigned In: repr_args, Value: []
+  - Name: has_default
+    - Assigned In: repr_args, Value: Comparison(
+    left=Name(
+        value='i',
+        lpar=[],
+        rpar=[],
+    ),
+    comparisons=[
+        ComparisonTarget(
+            operator=GreaterThanEqual(
+                whitespace_before=SimpleWhitespace(
+                    value=' ',
+                ),
+                whitespace_after=SimpleWhitespace(
+                    value=' ',
+                ),
+            ),
+            comparator=BinaryOperation(
+                left=Call(
+                    func=Name(
+                        value='len',
+                        lpar=[],
+                        rpar=[],
+                    ),
+                    args=[
+                        Arg(
+                            value=Name(
+                                value='arg_names',
+                                lpar=[],
+                                rpar=[],
+                            ),
+                            keyword=None,
+                            equal=MaybeSentinel.DEFAULT,
+                            comma=MaybeSentinel.DEFAULT,
+                            star='',
+                            whitespace_after_star=SimpleWhitespace(
+                                value='',
+                            ),
+                            whitespace_after_arg=SimpleWhitespace(
+                                value='',
+                            ),
+                        ),
+                    ],
+                    lpar=[],
+                    rpar=[],
+                    whitespace_after_func=SimpleWhitespace(
+                        value='',
+                    ),
+                    whitespace_before_args=SimpleWhitespace(
+                        value='',
+                    ),
+                ),
+                operator=Subtract(
+                    whitespace_before=SimpleWhitespace(
+                        value=' ',
+                    ),
+                    whitespace_after=SimpleWhitespace(
+                        value=' ',
+                    ),
+                ),
+                right=Name(
+                    value='num_defaults',
+                    lpar=[],
+                    rpar=[],
+                ),
+                lpar=[],
+                rpar=[],
+            ),
+        ),
+    ],
+    lpar=[],
+    rpar=[],
+)
+  - Name: default_value
+    - Assigned In: repr_args, Value: Subscript(
+    value=Name(
+        value='defaults',
+        lpar=[],
+        rpar=[],
+    ),
+    slice=[
+        SubscriptElement(
+            slice=Index(
+                value=BinaryOperation(
+                    left=Name(
+                        value='i',
+                        lpar=[],
+                        rpar=[],
+                    ),
+                    operator=Subtract(
+                        whitespace_before=SimpleWhitespace(
+                            value=' ',
+                        ),
+                        whitespace_after=SimpleWhitespace(
+                            value=' ',
+                        ),
+                    ),
+                    right=Name(
+                        value='num_requireds',
+                        lpar=[],
+                        rpar=[],
+                    ),
+                    lpar=[],
+                    rpar=[],
+                ),
+                star=None,
+                whitespace_after_star=None,
+            ),
+            comma=MaybeSentinel.DEFAULT,
+        ),
+    ],
+    lbracket=LeftSquareBracket(
+        whitespace_after=SimpleWhitespace(
+            value='',
+        ),
+    ),
+    rbracket=RightSquareBracket(
+        whitespace_before=SimpleWhitespace(
+            value='',
+        ),
+    ),
+    lpar=[],
+    rpar=[],
+    whitespace_after_value=SimpleWhitespace(
+        value='',
+    ),
+)
+  - Name: value
+    - Assigned In: repr_args, Value: Subscript(
+    value=Name(
+        value='args',
+        lpar=[],
+        rpar=[],
+    ),
+    slice=[
+        SubscriptElement(
+            slice=Index(
+                value=Name(
+                    value='i',
+                    lpar=[],
+                    rpar=[],
+                ),
+                star=None,
+                whitespace_after_star=None,
+            ),
+            comma=MaybeSentinel.DEFAULT,
+        ),
+    ],
+    lbracket=LeftSquareBracket(
+        whitespace_after=SimpleWhitespace(
+            value='',
+        ),
+    ),
+    rbracket=RightSquareBracket(
+        whitespace_before=SimpleWhitespace(
+            value='',
+        ),
+    ),
+    lpar=[],
+    rpar=[],
+    whitespace_after_value=SimpleWhitespace(
+        value='',
+    ),
+)
+    - Assigned In: repr_args, Value: Subscript(
+    value=Name(
+        value='kwargs',
+        lpar=[],
+        rpar=[],
+    ),
+    slice=[
+        SubscriptElement(
+            slice=Index(
+                value=Name(
+                    value='arg_name',
+                    lpar=[],
+                    rpar=[],
+                ),
+                star=None,
+                whitespace_after_star=None,
+            ),
+            comma=MaybeSentinel.DEFAULT,
+        ),
+    ],
+    lbracket=LeftSquareBracket(
+        whitespace_after=SimpleWhitespace(
+            value='',
+        ),
+    ),
+    rbracket=RightSquareBracket(
+        whitespace_before=SimpleWhitespace(
+            value='',
+        ),
+    ),
+    lpar=[],
+    rpar=[],
+    whitespace_after_value=SimpleWhitespace(
+        value='',
+    ),
+)
+  - Name: prefix
+    - Assigned In: repr_args, Value: ''
+    - Assigned In: repr_args, Value: {'left': 'arg_name', 'operator': "Add(\n    whitespace_before=SimpleWhitespace(\n        value=' ',\n    ),\n    whitespace_after=SimpleWhitespace(\n        value=' ',\n    ),\n)", 'right': "'='"}
+  - Name: value_is_default
+    - Assigned In: repr_args, Value: BooleanOperation(
+    left=Name(
+        value='has_default',
+        lpar=[],
+        rpar=[],
+    ),
+    operator=And(
+        whitespace_before=SimpleWhitespace(
+            value=' ',
+        ),
+        whitespace_after=SimpleWhitespace(
+            value=' ',
+        ),
+    ),
+    right=Comparison(
+        left=Name(
+            value='value',
+            lpar=[],
+            rpar=[],
+        ),
+        comparisons=[
+            ComparisonTarget(
+                operator=Equal(
+                    whitespace_before=SimpleWhitespace(
+                        value=' ',
+                    ),
+                    whitespace_after=SimpleWhitespace(
+                        value=' ',
+                    ),
+                ),
+                comparator=Name(
+                    value='default_value',
+                    lpar=[],
+                    rpar=[],
+                ),
+            ),
+        ],
+        lpar=[],
+        rpar=[],
+    ),
+    lpar=[],
+    rpar=[],
+)
+    - Assigned In: repr_args, Value: BooleanOperation(
+    left=Name(
+        value='has_default',
+        lpar=[],
+        rpar=[],
+    ),
+    operator=And(
+        whitespace_before=SimpleWhitespace(
+            value=' ',
+        ),
+        whitespace_after=SimpleWhitespace(
+            value=' ',
+        ),
+    ),
+    right=Comparison(
+        left=Name(
+            value='value',
+            lpar=[],
+            rpar=[],
+        ),
+        comparisons=[
+            ComparisonTarget(
+                operator=Equal(
+                    whitespace_before=SimpleWhitespace(
+                        value=' ',
+                    ),
+                    whitespace_after=SimpleWhitespace(
+                        value=' ',
+                    ),
+                ),
+                comparator=Name(
+                    value='default_value',
+                    lpar=[],
+                    rpar=[],
+                ),
+            ),
+        ],
+        lpar=[],
+        rpar=[],
+    ),
+    lpar=[],
+    rpar=[],
+)
+    - Assigned In: repr_args, Value: True
+
+Control Flow:
+
+Classes:
+========================================
+Analyzing: helium\helium\_impl\util\lang.py
+Import Statements:
+Modules: []
+Aliases: []
+From Modules: []
+
+Function Definitions:
+  - Name: isbound, Parameters: ['method_or_fn'], Has Docstring: False
+
+Function Calls:
+
+Comment Count: 1
+
+Variables:
+
+Control Flow:
+
+Classes:
+  - Name: TemporaryAttrValue
+    Methods: ['__init__', '__enter__', '__exit__']
+    Attributes: []
+========================================
+Analyzing: helium\helium\_impl\util\path.py
+Import Statements:
+Modules: []
+Aliases: []
+From Modules: []
+
+Function Definitions:
+  - Name: get_components, Parameters: ['path'], Has Docstring: False
+  - Name: ensure_exists, Parameters: ['path'], Has Docstring: True
+
+Function Calls:
+  - Name: split, Args: ['path'], From Object: 
+  - Name: append, Args: ['folder'], From Object: folders
+  - Name: append, Args: ['path'], From Object: folders
+  - Name: list, Args: [{'name': 'reversed', 'args': ["Arg(\n    value=Name(\n        value='folders',\n        lpar=[],\n        rpar=[],\n    ),\n    keyword=None,\n    equal=MaybeSentinel.DEFAULT,\n    comma=MaybeSentinel.DEFAULT,\n    star='',\n    whitespace_after_star=SimpleWhitespace(\n        value='',\n    ),\n    whitespace_after_arg=SimpleWhitespace(\n        value='',\n    ),\n)"]}], From Object: 
+  - Name: reversed, Args: ['folders'], From Object: 
+  - Name: makedirs, Args: ['path', 'True'], From Object: 
+  - Name: makedirs, Args: ['path'], From Object: 
+  - Name: isdir, Args: ['path'], From Object: 
+
+Comment Count: 2
+
+Variables:
+  - Name: folders
+    - Assigned In: get_components, Value: []
+
+Control Flow:
+
+Classes:
+========================================
+Analyzing: helium\helium\_impl\util\system.py
+Import Statements:
+Modules: []
+Aliases: []
+From Modules: []
+
+Function Definitions:
+  - Name: is_windows, Parameters: [], Has Docstring: False
+  - Name: is_mac, Parameters: [], Has Docstring: False
+  - Name: is_linux, Parameters: [], Has Docstring: False
+  - Name: get_canonical_os_name, Parameters: [], Has Docstring: False
+
+Function Calls:
+  - Name: startswith, Args: ["'linux'"], From Object: Attribute(
+    value=Name(
+        value='sys',
+        lpar=[],
+        rpar=[],
+    ),
+    attr=Name(
+        value='platform',
+        lpar=[],
+        rpar=[],
+    ),
+    dot=Dot(
+        whitespace_before=SimpleWhitespace(
+            value='',
+        ),
+        whitespace_after=SimpleWhitespace(
+            value='',
+        ),
+    ),
+    lpar=[],
+    rpar=[],
+)
+  - Name: is_windows, Args: [], From Object: 
+  - Name: is_mac, Args: [], From Object: 
+  - Name: is_linux, Args: [], From Object: 
+
+Comment Count: 0
+
+Variables:
+
+Control Flow:
+
+Classes:
+========================================
+Analyzing: helium\helium\_impl\util\xpath.py
+Import Statements:
+Modules: []
+Aliases: []
+From Modules: []
+
+Function Definitions:
+  - Name: lower, Parameters: ['text'], Has Docstring: False
+  - Name: replace_nbsp, Parameters: ['text', 'by'], Has Docstring: False
+  - Name: predicate, Parameters: ['condition'], Has Docstring: False
+  - Name: predicate_or, Parameters: [], Has Docstring: False
+
+Function Calls:
+  - Name: lower, Args: [], From Object: alphabet
+  - Name: predicate, Args: [{'name': 'join', 'from_obj': 'SimpleString(\n    value="\' or \'",\n    lpar=[],\n    rpar=[],\n)', 'args': ["Arg(\n    value=ListComp(\n        elt=Name(\n            value='c',\n            lpar=[],\n            rpar=[],\n        ),\n        for_in=CompFor(\n            target=Name(\n                value='c',\n                lpar=[],\n                rpar=[],\n            ),\n            iter=Name(\n                value='conditions',\n                lpar=[],\n                rpar=[],\n            ),\n            ifs=[\n                CompIf(\n                    test=Name(\n                        value='c',\n                        lpar=[],\n                        rpar=[],\n                    ),\n                    whitespace_before=SimpleWhitespace(\n                        value=' ',\n                    ),\n                    whitespace_before_test=SimpleWhitespace(\n                        value=' ',\n                    ),\n                ),\n            ],\n            inner_for_in=None,\n            asynchronous=None,\n            whitespace_before=SimpleWhitespace(\n                value=' ',\n            ),\n            whitespace_after_for=SimpleWhitespace(\n                value=' ',\n            ),\n            whitespace_before_in=SimpleWhitespace(\n                value=' ',\n            ),\n            whitespace_after_in=SimpleWhitespace(\n                value=' ',\n            ),\n        ),\n        lbracket=LeftSquareBracket(\n            whitespace_after=SimpleWhitespace(\n                value='',\n            ),\n        ),\n        rbracket=RightSquareBracket(\n            whitespace_before=SimpleWhitespace(\n                value='',\n            ),\n        ),\n        lpar=[],\n        rpar=[],\n    ),\n    keyword=None,\n    equal=MaybeSentinel.DEFAULT,\n    comma=MaybeSentinel.DEFAULT,\n    star='',\n    whitespace_after_star=SimpleWhitespace(\n        value='',\n    ),\n    whitespace_after_arg=SimpleWhitespace(\n        value='',\n    ),\n)"]}], From Object: 
+  - Name: join, Args: ["ListComp(\n    elt=Name(\n        value='c',\n        lpar=[],\n        rpar=[],\n    ),\n    for_in=CompFor(\n        target=Name(\n            value='c',\n            lpar=[],\n            rpar=[],\n        ),\n        iter=Name(\n            value='conditions',\n            lpar=[],\n            rpar=[],\n        ),\n        ifs=[\n            CompIf(\n                test=Name(\n                    value='c',\n                    lpar=[],\n                    rpar=[],\n                ),\n                whitespace_before=SimpleWhitespace(\n                    value=' ',\n                ),\n                whitespace_before_test=SimpleWhitespace(\n                    value=' ',\n                ),\n            ),\n        ],\n        inner_for_in=None,\n        asynchronous=None,\n        whitespace_before=SimpleWhitespace(\n            value=' ',\n        ),\n        whitespace_after_for=SimpleWhitespace(\n            value=' ',\n        ),\n        whitespace_before_in=SimpleWhitespace(\n            value=' ',\n        ),\n        whitespace_after_in=SimpleWhitespace(\n            value=' ',\n        ),\n    ),\n    lbracket=LeftSquareBracket(\n        whitespace_after=SimpleWhitespace(\n            value='',\n        ),\n    ),\n    rbracket=RightSquareBracket(\n        whitespace_before=SimpleWhitespace(\n            value='',\n        ),\n    ),\n    lpar=[],\n    rpar=[],\n)"], From Object: SimpleString(
+    value="' or '",
+    lpar=[],
+    rpar=[],
+)
+
+Comment Count: 1
+
+Variables:
+  - Name: alphabet
+    - Assigned In: lower, Value: 'ABCDEFGHIJKLMNOPQRSTUVWXYZÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖ×ØÙÚÛÜÝ'
+
+Control Flow:
+
+Classes:
+========================================
+Analyzing: helium\helium\_impl\util\__init__.py
+Import Statements:
+Modules: []
+Aliases: []
+From Modules: []
+
+Function Definitions:
+
+Function Calls:
+
+Comment Count: 0
+
+Variables:
+
+Control Flow:
+
+Classes:
+========================================
+Analyzing: helium\tests\__init__.py
+Import Statements:
+Modules: []
+Aliases: []
+From Modules: []
+
+Function Definitions:
+
+Function Calls:
+
+Comment Count: 0
+
+Variables:
+
+Control Flow:
+
+Classes:
+========================================
+Analyzing: helium\tests\api\test_alert.py
+Import Statements:
+Modules: []
+Aliases: []
+From Modules: []
+
+Function Definitions:
+
+Function Calls:
+
+Comment Count: 6
+
+Variables:
+
+Control Flow:
+
+Classes:
+  - Name: AlertAT
+    Methods: ['get_page', 'get_link_to_open_alert', 'get_expected_alert_text', 'get_expected_alert_accepted_result', 'get_expected_alert_dismissed_result', 'setUp', 'tearDown', 'test_alert_exists', 'test_alert_text_exists', 'test_alert_text_not_exists', 'test_alert_text', 'test_alert_accept', 'test_alert_dismiss', 'test_click_with_open_alert_raises_exception', 'test_press_with_open_alert_raises_exception', '_expect_result', '_get_unhandled_alert_exception_msg']
+    Attributes: []
+  - Name: AlertTest
+    Methods: ['get_link_to_open_alert', 'get_expected_alert_text', 'get_expected_alert_accepted_result']
+    Attributes: []
+  - Name: ConfirmationDialogTest
+    Methods: ['get_link_to_open_alert', 'get_expected_alert_text', 'get_expected_alert_accepted_result', 'get_expected_alert_dismissed_result']
+    Attributes: []
+  - Name: PromptTest
+    Methods: ['get_link_to_open_alert', 'get_expected_alert_text', 'get_expected_alert_accepted_result', 'test_write_value', 'test_write_into_label_raises_exception', 'test_write_into_text_field_raises_exception', 'test_write_into_non_existent_label_raises_exception', 'test_write_into_alert', 'test_write_into_labelled_alert', 'test_write_into_non_existent_alert']
+    Attributes: []
+========================================
+Analyzing: helium\tests\api\test_aria.py
+Import Statements:
+Modules: []
+Aliases: []
+From Modules: []
+
+Function Definitions:
+
+Function Calls:
+
+Comment Count: 0
+
+Variables:
+
+Control Flow:
+
+Classes:
+  - Name: AriaTest
+    Methods: ['get_page', 'test_aria_label_button_exists', 'test_aria_label_button_is_enabled', 'test_aria_label_disabled_button_is_enabled', 'test_aria_label_non_existent_button', 'test_aria_label_div_button_exists', 'test_aria_label_div_button_is_enabled', 'test_aria_label_div_disabled_button_is_enabled', 'test_aria_label_submit_button_exists', 'test_aria_textbox_exists', 'test_aria_textbox_value']
+    Attributes: []
+========================================
+Analyzing: helium\tests\api\test_click.py
+Import Statements:
+Modules: []
+Aliases: []
+From Modules: []
+
+Function Definitions:
+
+Function Calls:
+
+Comment Count: 0
+
+Variables:
+
+Control Flow:
+
+Classes:
+  - Name: ClickTest
+    Methods: ['get_page', 'test_click', 'test_click_non_existent_element']
+    Attributes: []
+========================================
+Analyzing: helium\tests\api\test_doubleclick.py
+Import Statements:
+Modules: []
+Aliases: []
+From Modules: []
+
+Function Definitions:
+
+Function Calls:
+
+Comment Count: 0
+
+Variables:
+
+Control Flow:
+
+Classes:
+  - Name: DoubleclickTest
+    Methods: ['get_page', 'test_double_click']
+    Attributes: []
+========================================
+Analyzing: helium\tests\api\test_drag.py
+Import Statements:
+Modules: []
+Aliases: []
+From Modules: []
+
+Function Definitions:
+
+Function Calls:
+
+Comment Count: 0
+
+Variables:
+
+Control Flow:
+
+Classes:
+  - Name: DragTest
+    Methods: ['setUp', 'get_page', 'test_drag', 'test_drag_to_point']
+    Attributes: []
+  - Name: Html5DragIT
+    Methods: ['get_page', 'test_html5_drag']
+    Attributes: []
+========================================
+Analyzing: helium\tests\api\test_file_upload.py
+Import Statements:
+Modules: []
+Aliases: []
+From Modules: []
+
+Function Definitions:
+
+Function Calls:
+
+Comment Count: 0
+
+Variables:
+
+Control Flow:
+
+Classes:
+  - Name: FileUploadTest
+    Methods: ['get_page', 'setUp', 'test_normal_file_upload_is_not_text_field', 'test_attach_file_to_normal_file_upload', 'test_attach_file_no_to', 'test_attach_file_to_point', 'test_drag_file_to_appearing_drop_area']
+    Attributes: []
+========================================
+Analyzing: helium\tests\api\test_find_all.py
+Import Statements:
+Modules: []
+Aliases: []
+From Modules: []
+
+Function Definitions:
+
+Function Calls:
+
+Comment Count: 6
+
+Variables:
+
+Control Flow:
+
+Classes:
+  - Name: FindAllTest
+    Methods: ['get_page', 'test_find_all_duplicate_button', 'test_find_all_duplicate_button_to_right_of', 'test_find_all_duplicate_button_below_to_right_of', 'test_find_all_nested_search_areas', 'test_find_all_non_existent_button', 'test_find_all_yields_api_elements', 'test_interact_with_found_elements']
+    Attributes: []
+========================================
+Analyzing: helium\tests\api\test_gui_elements.py
+Import Statements:
+Modules: []
+Aliases: []
+From Modules: []
+
+Function Definitions:
+
+Function Calls:
+
+Comment Count: 12
+
+Variables:
+
+Control Flow:
+
+Classes:
+  - Name: GUIElementsTest
+    Methods: ['get_page', 'setUpClass', 'tearDownClass', 'test_button_exists', 'test_submit_button_exists', 'test_submit_button_exists_lower_case', 'test_input_button_exists', 'test_button_not_exists', 'test_text_field_does_not_exist_as_button', 'test_enabled_button', 'test_disabled_button', 'test_button_no_text', 'test_div_button_exists', 'test_button_tag_button_exists', 'test_submit_button_can_be_found_by_title', 'test_text_field_exists', 'test_text_field_lower_case_exists', 'test_text_field_in_second_col_exists', 'test_text_field_not_exists', 'test_text_field_is_editable_false', 'test_text_field_is_editable', 'test_text_field_is_enabled', 'test_text_field_is_enabled_false', 'test_text_field_value', 'test_text_field_with_placeholder_exists', 'test_text_field_no_type_specified_with_placeholder_exists', 'test_empty_text_field_value', 'test_read_readonly_text_field', 'test_read_disabled_text_field', 'test_read_german_text_field', 'test_text_field_input_type_upper_case_text', 'test_write_into_labelled_text_field', 'test_required_text_field_marked_with_asterisk_exists', 'test_text_field_labelled_by_free_text', 'test_input_type_tel', 'test_input_type_date', 'test_input_type_time', 'test_text_field_to_right_of_text_field', 'test_contenteditable_paragrapth', 'test_combo_box_exists', 'test_combo_box_exists_lower_case', 'test_drop_down_list_is_editable_false', 'test_editable_combo_box_is_editable', 'test_combo_box_options', 'test_reads_value_of_combo_box', 'test_select_value_from_combo_box', 'test_combo_box_identified_by_value', 'test_combo_box_preceded_by_combo_with_name_as_label', 'test_check_box_exists', 'test_check_box_exists_lower_case', 'test_left_hand_side_check_box_exists', 'test_check_box_not_exists', 'test_text_field_does_not_exist_as_check_box', 'test_ticked_check_box_exists', 'test_ticked_check_box_is_enabled', 'test_right_labelled_check_box_exists', 'test_left_labelled_check_box_exists', 'test_disabled_check_box_exists', 'test_ticked_check_box_is_checked', 'test_right_labelled_check_box_is_not_checked', 'test_left_labelled_check_box_is_not_checked', 'test_disabled_check_box_is_not_checked', 'test_untick_check_box', 'test_disabled_check_box_is_not_enabled', 'test_check_box_enclosed_by_label', 'test_checkboxes_labelled_by_free_text', 'test_first_radio_button_exists', 'test_first_radio_button_exists_lower_case', 'test_second_radio_button_exists', 'test_left_labelled_radio_button_one_exists', 'test_left_labelled_radio_button_two_exists', 'test_first_radio_button_is_selected', 'test_second_radio_button_is_not_selected', 'test_select_second_radio_button', 'test_radio_button_not_exists', 'test_text_field_is_not_a_radio_button', 'test_radiobuttons_labelled_by_free_text', 'test_text_exists_submit_button', 'test_text_exists_submit_button_lower_case', 'test_text_exists_link_with_title', 'test_text_exists_link_with_title_lower_case', 'test_text_with_leading_nbsp_exists', 'test_read_text_value', 'test_free_text_not_surrounded_by_tags_exists', 'test_text_with_apostrophe', 'test_text_with_double_quotes', 'test_text_with_single_and_double_quotes', 'test_text_uppercase_umlaut', 'test_link_exists', 'test_link_with_title_exists', 'test_link_no_text', 'test_span_with_role_link_exists_as_link', 'test_link_href', 'test_link_empty_href', 'test_list_item_no_text', 'test_image_not_exists', 'test_image_exists', 'test_text_field_combo_box_with_same_name']
+    Attributes: []
+========================================
+Analyzing: helium\tests\api\test_highlight.py
+Import Statements:
+Modules: []
+Aliases: []
+From Modules: []
+
+Function Definitions:
+
+Function Calls:
+
+Comment Count: 0
+
+Variables:
+
+Control Flow:
+
+Classes:
+  - Name: HighlightTest
+    Methods: ['get_page', 'test_highlight', 'test_highlight_string', 'test_highlight_nonexistent', '_check_is_highlighted']
+    Attributes: []
+========================================
+Analyzing: helium\tests\api\test_hover.py
+Import Statements:
+Modules: []
+Aliases: []
+From Modules: []
+
+Function Definitions:
+
+Function Calls:
+
+Comment Count: 5
+
+Variables:
+
+Control Flow:
+
+Classes:
+  - Name: HoverTest
+    Methods: ['get_page', 'setUp', '_move_mouse_cursor_to_origin', 'test_hover_one', 'test_hover_two_consecutively', 'test_hover_hidden']
+    Attributes: []
+========================================
+Analyzing: helium\tests\api\test_iframe.py
+Import Statements:
+Modules: []
+Aliases: []
+From Modules: []
+
+Function Definitions:
+
+Function Calls:
+
+Comment Count: 4
+
+Variables:
+
+Control Flow:
+
+Classes:
+  - Name: IframeTest
+    Methods: ['get_page', 'test_test_text_in_iframe_exists', 'test_text_in_nested_iframe_exists', 'test_finds_element_in_parent_iframe', 'test_access_attributes_across_iframes', 'test_repr']
+    Attributes: []
+========================================
+Analyzing: helium\tests\api\test_implicit_wait.py
+Import Statements:
+Modules: []
+Aliases: []
+From Modules: []
+
+Function Definitions:
+
+Function Calls:
+
+Comment Count: 0
+
+Variables:
+
+Control Flow:
+
+Classes:
+  - Name: ImplicitWaitTest
+    Methods: ['get_page', 'test_click_text_implicit_wait', 'test_click_text_no_implicit_wait', 'test_click_text_too_small_implicit_wait_secs']
+    Attributes: []
+========================================
+Analyzing: helium\tests\api\test_kill_service_at_exit.py
+Import Statements:
+Modules: []
+Aliases: []
+From Modules: []
+
+Function Definitions:
+
+Function Calls:
+
+Comment Count: 2
+
+Variables:
+
+Control Flow:
+
+Classes:
+  - Name: KillServiceAtExitAT
+    Methods: ['test_kill_service_at_exit', 'start_browser_in_sub_process', 'get_new_running_services', 'setUp', 'tearDown', 'get_new_running_browsers', 'get_running_services', 'get_running_browsers', '_get_running_processes', 'get_service_process_names', 'get_browser_process_name', 'start_browser']
+    Attributes: []
+========================================
+Analyzing: helium\tests\api\test_kill_service_at_exit_chrome.py
+Import Statements:
+Modules: []
+Aliases: []
+From Modules: []
+
+Function Definitions:
+
+Function Calls:
+
+Comment Count: 0
+
+Variables:
+
+Control Flow:
+ - Type: if
+    Test: Comparison(
+    left=Name(
+        value='__name__',
+        lpar=[],
+        rpar=[],
+    ),
+    comparisons=[
+        ComparisonTarget(
+            operator=Equal(
+                whitespace_before=SimpleWhitespace(
+                    value=' ',
+                ),
+                whitespace_after=SimpleWhitespace(
+                    value=' ',
+                ),
+            ),
+            comparator=SimpleString(
+                value="'__main__'",
+                lpar=[],
+                rpar=[],
+            ),
+        ),
+    ],
+    lpar=[],
+    rpar=[],
+)
+    Body: ["SimpleStatementLine(\n    body=[\n        Expr(\n            value=Call(\n                func=Attribute(\n                    value=Name(\n                        value='ChromeInSubProcess',\n                        lpar=[],\n                        rpar=[],\n                    ),\n                    attr=Name(\n                        value='main',\n                        lpar=[],\n                        rpar=[],\n                    ),\n                    dot=Dot(\n                        whitespace_before=SimpleWhitespace(\n                            value='',\n                        ),\n                        whitespace_after=SimpleWhitespace(\n                            value='',\n                        ),\n                    ),\n                    lpar=[],\n                    rpar=[],\n                ),\n                args=[],\n                lpar=[],\n                rpar=[],\n                whitespace_after_func=SimpleWhitespace(\n                    value='',\n                ),\n                whitespace_before_args=SimpleWhitespace(\n                    value='',\n                ),\n            ),\n            semicolon=MaybeSentinel.DEFAULT,\n        ),\n    ],\n    leading_lines=[],\n    trailing_whitespace=TrailingWhitespace(\n        whitespace=SimpleWhitespace(\n            value='',\n        ),\n        comment=None,\n        newline=Newline(\n            value=None,\n        ),\n    ),\n)"]
+
+Classes:
+  - Name: KillServiceAtExitChromeTest
+    Methods: ['get_service_process_names', 'get_browser_process_name', 'start_browser_in_sub_process']
+    Attributes: []
+  - Name: ChromeInSubProcess
+    Methods: ['main']
+    Attributes: []
+========================================
+Analyzing: helium\tests\api\test_no_driver.py
+Import Statements:
+Modules: []
+Aliases: []
+From Modules: []
+
+Function Definitions:
+
+Function Calls:
+
+Comment Count: 0
+
+Variables:
+
+Control Flow:
+
+Classes:
+  - Name: NoDriverTest
+    Methods: ['test_go_to_requires_driver', 'test_write_requires_driver', 'test_press_requires_driver', 'test_click_requires_driver', 'test_doubleclick_requires_driver', 'test_drag_requires_driver', 'test_find_all_requires_driver', 'test_scroll_down_requires_driver', 'test_scroll_up_requires_driver', 'test_scroll_right_requires_driver', 'test_scroll_left_requires_driver', 'test_hover_requires_driver', 'test_rightclick_requires_driver', 'test_select_requires_driver', 'test_drag_file_requires_driver', 'test_attach_file_requires_driver', 'test_refresh_requires_driver', 'test_wait_until_requires_driver', 'test_switch_to_requires_driver', 'test_kill_browser_requires_driver', 'test_highlight_requires_driver', 'test_s_requires_driver', 'test_text_requires_driver', 'test_link_requires_driver', 'test_list_item_requires_driver', 'test_button_requires_driver', 'test_image_requires_driver', 'test_text_field_requires_driver', 'test_combo_box_requires_driver', 'test_check_box_requires_driver', 'test_radio_button_requires_driver', 'test_window_requires_driver', 'test_alert_requires_driver', '_check_requires_driver']
+    Attributes: []
+========================================
+Analyzing: helium\tests\api\test_point.py
+Import Statements:
+Modules: []
+Aliases: []
+From Modules: []
+
+Function Definitions:
+
+Function Calls:
+
+Comment Count: 7
+
+Variables:
+
+Control Flow:
+
+Classes:
+  - Name: PointTest
+    Methods: ['get_page', 'setUp', 'test_top_left', 'assert_is_in_range', 'assert_around', 'test_click_top_left', 'test_click_point', 'test_click_top_left_offset', 'test_hover_top_left', 'test_hover_point', 'test_hover_top_left_offset', 'test_rightclick_top_left', 'test_rightclick_point', 'test_rightclick_top_left_offset', 'test_doubleclick_top_left', 'test_doubleclick_point', 'test_doubleclick_top_left_offset', 'test_drag_point', 'assert_result_is', '_extract_offset']
+    Attributes: []
+========================================
+Analyzing: helium\tests\api\test_press.py
+Import Statements:
+Modules: []
+Aliases: []
+From Modules: []
+
+Function Definitions:
+
+Function Calls:
+
+Comment Count: 0
+
+Variables:
+
+Control Flow:
+
+Classes:
+  - Name: PressTest
+    Methods: ['get_page', 'test_press_single_character', 'test_press_upper_case_character', 'test_press_shift_plus_lower_case_character']
+    Attributes: []
+========================================
+Analyzing: helium\tests\api\test_repr.py
+Import Statements:
+Modules: []
+Aliases: []
+From Modules: []
+
+Function Definitions:
+
+Function Calls:
+
+Comment Count: 6
+
+Variables:
+
+Control Flow:
+
+Classes:
+  - Name: UnboundReprTest
+    Methods: ['get_page', 'test_unbound_s_repr', 'test_unbound_s_repr_below', 'test_unbound_text_repr', 'test_unbound_link_repr', 'test_unbound_list_item_repr', 'test_unbound_button_repr', 'test_unbound_image_repr', 'test_unbound_text_field_repr', 'test_unbound_combo_box_repr', 'test_unbound_check_box_repr', 'test_unbound_radio_button_repr', 'test_unbound_window_repr', 'test_unbound_alert_repr', 'test_unbound_alert_repr_with_search_text']
+    Attributes: []
+  - Name: BoundReprTest
+    Methods: ['get_page', 'test_bound_s_repr', 'test_bound_s_repr_long_content', 'test_bound_button_repr', 'test_bound_link_repr_nested_tag', 'test_bound_repr_duplicate_button', 'test_bound_window_repr', 'test_bound_window_repr_with_search_text', '_bind', '_assertHtmlEltWithMultipleAttributesEquals']
+    Attributes: []
+  - Name: BoundAlertReprTest
+    Methods: ['get_page', 'setUp', 'test_bound_alert_repr', 'test_bound_alert_repr_with_partial_search_text', 'tearDown']
+    Attributes: []
+========================================
+Analyzing: helium\tests\api\test_rightclick.py
+Import Statements:
+Modules: []
+Aliases: []
+From Modules: []
+
+Function Definitions:
+
+Function Calls:
+
+Comment Count: 0
+
+Variables:
+
+Control Flow:
+
+Classes:
+  - Name: RightclickTest
+    Methods: ['get_page', 'test_simple_rightclick', 'test_rightclick_select_normal_item']
+    Attributes: []
+========================================
+Analyzing: helium\tests\api\test_s.py
+Import Statements:
+Modules: []
+Aliases: []
+From Modules: []
+
+Function Definitions:
+
+Function Calls:
+
+Comment Count: 0
+
+Variables:
+
+Control Flow:
+
+Classes:
+  - Name: STest
+    Methods: ['get_page', 'test_find_by_id', 'test_find_by_name', 'test_find_by_class', 'test_find_by_xpath', 'test_find_by_css_selector']
+    Attributes: []
+========================================
+Analyzing: helium\tests\api\test_scroll.py
+Import Statements:
+Modules: []
+Aliases: []
+From Modules: []
+
+Function Definitions:
+
+Function Calls:
+
+Comment Count: 2
+
+Variables:
+
+Control Flow:
+
+Classes:
+  - Name: ScrollTest
+    Methods: ['get_page', 'test_scroll_up_when_at_top_of_page', 'test_scroll_down', 'test_scroll_down_then_up', 'test_scroll_down_then_up_pixels', 'test_scroll_left_when_at_start_of_page', 'test_scroll_right', 'test_scroll_right_then_left', 'test_scroll_right_then_left_pixels', 'tearDown', 'assert_scroll_position_equals']
+    Attributes: []
+========================================
+Analyzing: helium\tests\api\test_start_go_to.py
+Import Statements:
+Modules: []
+Aliases: []
+From Modules: []
+
+Function Definitions:
+
+Function Calls:
+
+Comment Count: 0
+
+Variables:
+
+Control Flow:
+
+Classes:
+  - Name: StartGoToTest
+    Methods: ['setUp', 'test_go_to', 'assertUrlEquals', 'test_start_with_url', 'tearDown']
+    Attributes: []
+========================================
+Analyzing: helium\tests\api\test_tables.py
+Import Statements:
+Modules: []
+Aliases: []
+From Modules: []
+
+Function Definitions:
+
+Function Calls:
+
+Comment Count: 0
+
+Variables:
+
+Control Flow:
+
+Classes:
+  - Name: TablesTest
+    Methods: ['get_page', 'test_s_below_above', 'test_s_read_table_column', 'test_text_below_to_left_of']
+    Attributes: []
+========================================
+Analyzing: helium\tests\api\test_text_impl.py
+Import Statements:
+Modules: []
+Aliases: []
+From Modules: []
+
+Function Definitions:
+
+Function Calls:
+
+Comment Count: 0
+
+Variables:
+
+Control Flow:
+
+Classes:
+  - Name: TextImplTest
+    Methods: ['get_page', 'test_empty_search_text_xpath']
+    Attributes: []
+========================================
+Analyzing: helium\tests\api\test_wait_until.py
+Import Statements:
+Modules: []
+Aliases: []
+From Modules: []
+
+Function Definitions:
+
+Function Calls:
+
+Comment Count: 0
+
+Variables:
+
+Control Flow:
+
+Classes:
+  - Name: WaitUntilTest
+    Methods: ['get_page', 'test_wait_until_text_exists', 'test_wait_until_presence_of_element_located', 'test_wait_until_lambda_expires', 'test_wait_until_lambda_with_driver_expires']
+    Attributes: []
+========================================
+Analyzing: helium\tests\api\test_window.py
+Import Statements:
+Modules: []
+Aliases: []
+From Modules: []
+
+Function Definitions:
+
+Function Calls:
+
+Comment Count: 1
+
+Variables:
+
+Control Flow:
+
+Classes:
+  - Name: WindowTest
+    Methods: ['get_page', 'test_window_exists', 'test_window_not_exists', 'test_no_arg_window_exists', 'test_handle', 'test_title']
+    Attributes: []
+  - Name: MultipleWindowTest
+    Methods: ['setUpClass', 'test_popup_window_exists', 'setUp', 'tearDownClass']
+    Attributes: []
+========================================
+Analyzing: helium\tests\api\test_window_handling.py
+Import Statements:
+Modules: []
+Aliases: []
+From Modules: []
+
+Function Definitions:
+
+Function Calls:
+
+Comment Count: 0
+
+Variables:
+
+Control Flow:
+
+Classes:
+  - Name: WindowHandlingTest
+    Methods: ['get_page', 'test_write_writes_in_active_window', 'test_write_searches_in_active_window', 'test_switch_to_search_text_field', 'test_handles_closed_window_gracefully', 'test_switch_to_after_window_closed', 'setUp', 'tearDown', '_get_value', '_open_popup', '_is_in_popup']
+    Attributes: []
+  - Name: WindowHandlingOnStartBrowserTest
+    Methods: ['get_page', 'test_switches_to_popup']
+    Attributes: []
+========================================
+Analyzing: helium\tests\api\test_write.py
+Import Statements:
+Modules: []
+Aliases: []
+From Modules: []
+
+Function Definitions:
+
+Function Calls:
+
+Comment Count: 0
+
+Variables:
+
+Control Flow:
+
+Classes:
+  - Name: WriteTest
+    Methods: ['get_page', 'test_write', 'test_write_into', 'test_write_into_text_field_to_right_of', 'test_write_into_input_type_date', 'test_write_into_input_type_time']
+    Attributes: []
+========================================
+Analyzing: helium\tests\api\util.py
+Import Statements:
+Modules: []
+Aliases: []
+From Modules: []
+
+Function Definitions:
+  - Name: get_data_file, Parameters: [], Has Docstring: False
+  - Name: get_data_file_url, Parameters: ['data_file'], Has Docstring: False
+
+Function Calls:
+  - Name: join, Args: [{'name': 'dirname', 'args': ["Arg(\n    value=Name(\n        value='__file__',\n        lpar=[],\n        rpar=[],\n    ),\n    keyword=None,\n    equal=MaybeSentinel.DEFAULT,\n    comma=MaybeSentinel.DEFAULT,\n    star='',\n    whitespace_after_star=SimpleWhitespace(\n        value='',\n    ),\n    whitespace_after_arg=SimpleWhitespace(\n        value='',\n    ),\n)"]}, "'data'", 'rel_path'], From Object: 
+  - Name: dirname, Args: ['__file__'], From Object: 
+  - Name: as_uri, Args: [], From Object: Call(
+    func=Name(
+        value='Path',
+        lpar=[],
+        rpar=[],
+    ),
+    args=[
+        Arg(
+            value=Call(
+                func=Name(
+                    value='get_data_file',
+                    lpar=[],
+                    rpar=[],
+                ),
+                args=[
+                    Arg(
+                        value=Name(
+                            value='data_file',
+                            lpar=[],
+                            rpar=[],
+                        ),
+                        keyword=None,
+                        equal=MaybeSentinel.DEFAULT,
+                        comma=MaybeSentinel.DEFAULT,
+                        star='',
+                        whitespace_after_star=SimpleWhitespace(
+                            value='',
+                        ),
+                        whitespace_after_arg=SimpleWhitespace(
+                            value='',
+                        ),
+                    ),
+                ],
+                lpar=[],
+                rpar=[],
+                whitespace_after_func=SimpleWhitespace(
+                    value='',
+                ),
+                whitespace_before_args=SimpleWhitespace(
+                    value='',
+                ),
+            ),
+            keyword=None,
+            equal=MaybeSentinel.DEFAULT,
+            comma=MaybeSentinel.DEFAULT,
+            star='',
+            whitespace_after_star=SimpleWhitespace(
+                value='',
+            ),
+            whitespace_after_arg=SimpleWhitespace(
+                value='',
+            ),
+        ),
+    ],
+    lpar=[],
+    rpar=[],
+    whitespace_after_func=SimpleWhitespace(
+        value='',
+    ),
+    whitespace_before_args=SimpleWhitespace(
+        value='',
+    ),
+)
+  - Name: Path, Args: [{'name': 'get_data_file', 'args': ["Arg(\n    value=Name(\n        value='data_file',\n        lpar=[],\n        rpar=[],\n    ),\n    keyword=None,\n    equal=MaybeSentinel.DEFAULT,\n    comma=MaybeSentinel.DEFAULT,\n    star='',\n    whitespace_after_star=SimpleWhitespace(\n        value='',\n    ),\n    whitespace_after_arg=SimpleWhitespace(\n        value='',\n    ),\n)"]}], From Object: 
+  - Name: get_data_file, Args: ['data_file'], From Object: 
+
+Comment Count: 2
+
+Variables:
+
+Control Flow:
+
+Classes:
+  - Name: InSubProcess
+    Methods: ['__init__', '__enter__', 'wait_for_sub_process', 'synchronize_with_parent_process', '__exit__']
+    Attributes: []
+========================================
+Analyzing: helium\tests\api\__init__.py
+Import Statements:
+Modules: []
+Aliases: []
+From Modules: []
+
+Function Definitions:
+  - Name: test_browser_name, Parameters: [], Has Docstring: False
+  - Name: setUpModule, Parameters: [], Has Docstring: False
+  - Name: tearDownModule, Parameters: [], Has Docstring: False
+  - Name: start_browser, Parameters: ['url'], Has Docstring: False
+
+Function Calls:
+  - Name: start_browser, Args: [], From Object: 
+  - Name: kill_browser, Args: [], From Object: 
+  - Name: test_browser_name, Args: [], From Object: 
+  - Name: Subscript(
+    value=Name(
+        value='_TEST_BROWSERS',
+        lpar=[],
+        rpar=[],
+    ),
+    slice=[
+        SubscriptElement(
+            slice=Index(
+                value=Name(
+                    value='browser_name',
+                    lpar=[],
+                    rpar=[],
+                ),
+                star=None,
+                whitespace_after_star=None,
+            ),
+            comma=MaybeSentinel.DEFAULT,
+        ),
+    ],
+    lbracket=LeftSquareBracket(
+        whitespace_after=SimpleWhitespace(
+            value='',
+        ),
+    ),
+    rbracket=RightSquareBracket(
+        whitespace_before=SimpleWhitespace(
+            value='',
+        ),
+    ),
+    lpar=[],
+    rpar=[],
+    whitespace_after_value=SimpleWhitespace(
+        value='',
+    ),
+), Args: ['url', 'kwargs'], From Object: 
+
+Comment Count: 0
+
+Variables:
+  - Name: browser_name
+    - Assigned In: test_browser_name, Value: Subscript(
+    value=Attribute(
+        value=Name(
+            value='os',
+            lpar=[],
+            rpar=[],
+        ),
+        attr=Name(
+            value='environ',
+            lpar=[],
+            rpar=[],
+        ),
+        dot=Dot(
+            whitespace_before=SimpleWhitespace(
+                value='',
+            ),
+            whitespace_after=SimpleWhitespace(
+                value='',
+            ),
+        ),
+        lpar=[],
+        rpar=[],
+    ),
+    slice=[
+        SubscriptElement(
+            slice=Index(
+                value=SimpleString(
+                    value="'TEST_BROWSER'",
+                    lpar=[],
+                    rpar=[],
+                ),
+                star=None,
+                whitespace_after_star=None,
+            ),
+            comma=MaybeSentinel.DEFAULT,
+        ),
+    ],
+    lbracket=LeftSquareBracket(
+        whitespace_after=SimpleWhitespace(
+            value='',
+        ),
+    ),
+    rbracket=RightSquareBracket(
+        whitespace_before=SimpleWhitespace(
+            value='',
+        ),
+    ),
+    lpar=[],
+    rpar=[],
+    whitespace_after_value=SimpleWhitespace(
+        value='',
+    ),
+)
+    - Assigned In: start_browser, Value: {'name': 'test_browser_name', 'args': []}
+  - Name: _TEST_BROWSER
+    - Assigned In: setUpModule, Value: {'name': 'start_browser', 'args': []}
+    - Assigned In: tearDownModule, Value: None
+  - Name: kwargs
+    - Assigned In: start_browser, Value: Dict(
+    elements=[],
+    lbrace=LeftCurlyBrace(
+        whitespace_after=SimpleWhitespace(
+            value='',
+        ),
+    ),
+    rbrace=RightCurlyBrace(
+        whitespace_before=SimpleWhitespace(
+            value='',
+        ),
+    ),
+    lpar=[],
+    rpar=[],
+)
+
+Control Flow:
+
+Classes:
+  - Name: BrowserAT
+    Methods: ['setUpClass', 'setUp', 'get_url', 'get_page', 'read_result_from_browser', 'assertFindsEltWithId', 'tearDownClass']
+    Attributes: []
+========================================
+Analyzing: helium\tests\unit\__init__.py
+Import Statements:
+Modules: []
+Aliases: []
+From Modules: []
+
+Function Definitions:
+
+Function Calls:
+
+Comment Count: 0
+
+Variables:
+
+Control Flow:
+
+Classes:
+========================================
+Analyzing: helium\tests\unit\test__impl\test_selenium_wrappers.py
+Import Statements:
+Modules: []
+Aliases: []
+From Modules: []
+
+Function Definitions:
+
+Function Calls:
+
+Comment Count: 6
+
+Variables:
+
+Control Flow:
+
+Classes:
+  - Name: FrameIteratorTest
+    Methods: ['test_only_main_frame', 'test_one_frame', 'test_two_frames', 'test_nested_frame', 'test_complex', 'test_disappearing_frame']
+    Attributes: []
+  - Name: StubWebDriver
+    Methods: ['__init__']
+    Attributes: []
+  - Name: StubTargetLocator
+    Methods: ['__init__', 'default_content', 'frame']
+    Attributes: []
+  - Name: Frame
+    Methods: ['__init__']
+    Attributes: []
+  - Name: TargetLocatorFailingAfterNFrameSwitches
+    Methods: ['__init__', 'frame']
+    Attributes: []
+========================================
+Analyzing: helium\tests\unit\test__impl\__init__.py
+Import Statements:
+Modules: []
+Aliases: []
+From Modules: []
+
+Function Definitions:
+
+Function Calls:
+
+Comment Count: 0
+
+Variables:
+
+Control Flow:
+
+Classes:
+========================================
+Analyzing: helium\tests\unit\test__impl\test_util\test_dictionary.py
+Import Statements:
+Modules: []
+Aliases: []
+From Modules: []
+
+Function Definitions:
+
+Function Calls:
+
+Comment Count: 0
+
+Variables:
+
+Control Flow:
+
+Classes:
+  - Name: InverseTest
+    Methods: ['test_inverse_empty', 'test_inverse']
+    Attributes: []
+========================================
+Analyzing: helium\tests\unit\test__impl\test_util\test_html.py
+Import Statements:
+Modules: []
+Aliases: []
+From Modules: []
+
+Function Definitions:
+
+Function Calls:
+
+Comment Count: 0
+
+Variables:
+
+Control Flow:
+
+Classes:
+  - Name: GetEasilyReadableSnippetTest
+    Methods: ['test_no_tag', 'test_completely_empty_tag', 'test_empty_tag_with_attributes', 'test_tag_with_nested_tags', 'test_tag_with_long_content']
+    Attributes: []
+  - Name: NormalizeWhitespaceTest
+    Methods: ['test_string_without_whitespace', 'test_string_one_whitespace', 'test_string_leading_whitespace', 'test_string_complex_whitespace', 'test_tag_with_spaces_around_inner_html']
+    Attributes: []
+========================================
+Analyzing: helium\tests\unit\test__impl\test_util\test_xpath.py
+Import Statements:
+Modules: []
+Aliases: []
+From Modules: []
+
+Function Definitions:
+
+Function Calls:
+
+Comment Count: 0
+
+Variables:
+
+Control Flow:
+
+Classes:
+  - Name: PredicateOrTest
+    Methods: ['test_no_args', 'test_one_arg', 'test_two_args', 'test_one_empty_arg', 'test_empty_arg_among_normal_args']
+    Attributes: []
+========================================
+Analyzing: helium\tests\unit\test__impl\test_util\__init__.py
+Import Statements:
+Modules: []
+Aliases: []
+From Modules: []
+
+Function Definitions:
+
+Function Calls:
+
+Comment Count: 0
+
+Variables:
+
+Control Flow:
+
+Classes:
+========================================
