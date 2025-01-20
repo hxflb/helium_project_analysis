@@ -1,0 +1,509 @@
+# ===============================================================================================
+# The following shows the last analyze fail log message.
+# ===============================================================================================
+
+----------------------------------------------------
+- Caught exception:
+----------------------------------------------------
+For 'MatMul' the input dimensions must be equal, but got 'x1_col': 262144 and 'x2_row': 65536.
+
+----------------------------------------------------
+- C++ Call Stack: (For framework developers)
+----------------------------------------------------
+mindspore\ops\infer\ops_func_impl\matmul.cc:77 mindspore::ops::MatMulFuncImpl::InferShape2D
+
+----------------------------------------------------
+- The Traceback of Net Construct Code:
+----------------------------------------------------
+# 0 In file F:\人工智能大作业\model.py:53, 15~28
+        return self.model(x)
+               ^~~~~~~~~~~~~
+# 1 In file E:\anaconda3\Lib\site-packages\mindspore\nn\layer\container.py:294~295, 8~41
+        for cell in self.cell_list:
+# 2 In file E:\anaconda3\Lib\site-packages\mindspore\nn\layer\container.py:295, 25~41
+            input_data = cell(input_data)
+                         ^~~~~~~~~~~~~~~~
+# 3 In file E:\anaconda3\Lib\site-packages\mindspore\nn\layer\container.py:294, 20~34
+        for cell in self.cell_list:
+                    ^~~~~~~~~~~~~~
+# 4 In file E:\anaconda3\Lib\site-packages\mindspore\nn\layer\basic.py:743~744, 8~43
+        if self.has_bias:
+# 5 In file E:\anaconda3\Lib\site-packages\mindspore\nn\layer\basic.py:744, 12~43
+            x = self.bias_add(x, self.bias)
+            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+# 6 In file E:\anaconda3\Lib\site-packages\mindspore\nn\layer\basic.py:745~746, 8~34
+        if self.activation_flag:
+# 7 In file E:\anaconda3\Lib\site-packages\mindspore\nn\layer\basic.py:747~749, 8~42
+        if len(x_shape) != 2:
+# 8 In file E:\anaconda3\Lib\site-packages\mindspore\nn\layer\basic.py:742, 12~39
+        x = self.matmul(x, self.weight)
+            ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+# ===============================================================================================
+# The following shows the IR when the function graphs evaluation fails to help locate the problem.
+# You can search the last ------------------------> to the node which is evaluated failure.
+# Refer to https://www.mindspore.cn/search?inputValue=analyze_fail.ir to get more instructions.
+# ===============================================================================================
+
+# IR entry: @__main___CNN_construct_15
+# Total subgraphs: 0
+
+# Total params: 6
+# Params:
+%para1_x: <null>
+%para2_model.0.weight: <Ref[Tensor[Float32]], (16, 1, 3, 3), ref_key=model.0.weight>  :  has_default
+%para3_model.3.weight: <Ref[Tensor[Float32]], (32, 16, 3, 3), ref_key=model.3.weight>  :  has_default
+%para4_model.6.weight: <Ref[Tensor[Float32]], (64, 32, 3, 3), ref_key=model.6.weight>  :  has_default
+%para5_model.9.weight: <Ref[Tensor[Float32]], (128, 64, 3, 3), ref_key=model.9.weight>  :  has_default
+%para6_model.13.weight: <Ref[Tensor[Float32]], (512, 65536), ref_key=model.13.weight>  :  has_default
+
+subgraph attr:
+subgraph instance: __main___CNN_construct_15 : 000001875B07D9F0
+# In file F:\人工智能大作业\model.py:52~53, 4~28/    def construct(self, x):/
+subgraph @__main___CNN_construct_15() {
+  %0(CNode_27) = resolve(NameSpace[Entry: '__main__.CNN.construct'], __main__.CNN.construct)
+      : (<External, NoShape>, <External, NoShape>) -> (<Func, NoShape>)
+      #scope: (Default)
+
+#------------------------> 0
+  %1(CNode_28) = %0(%para1_x)
+      : (<Tensor[Float32], (1, 1, 1024, 512)>) -> (<null>)
+      #scope: (Default)
+  Return(%1)
+      : (<null>)
+      #scope: (Default)
+      # In file F:\人工智能大作业\model.py:53, 8~28/        return self.model(x)/
+}
+# Order:
+#   1: @__main___CNN_construct_15:CNode_27{[0]: ValueNode<Primitive> resolve, [1]: ValueNode<NameSpace> Entry: '__main__.CNN.construct', [2]: ValueNode<Symbol> __main__.CNN.construct}
+#   2: @__main___CNN_construct_15:CNode_28{[0]: CNode_27, [1]: param_x}
+#   3: @__main___CNN_construct_15:CNode_29{[0]: ValueNode<Primitive> Return, [1]: CNode_28}
+
+
+subgraph attr:
+subgraph instance: __main___CNN_construct_15 : 000001875B081720
+# In file F:\人工智能大作业\model.py:52~53, 4~28/    def construct(self, x):/
+subgraph @__main___CNN_construct_15(%para0_x) {
+  %0(CNode_30) = resolve(NameSpace[ClassMember: 'Namespace:__main__..<CNN::1680904285904>'], model)
+      : (<External, NoShape>, <External, NoShape>) -> (<Func, NoShape>)
+      #scope: (Default)
+      # In file F:\人工智能大作业\model.py:53, 15~25/        return self.model(x)/
+
+#------------------------> 1
+  %1(CNode_31) = %0(%para0_x)
+      : (<Tensor[Float32], (1, 1, 1024, 512)>) -> (<null>)
+      #scope: (Default)
+      # In file F:\人工智能大作业\model.py:53, 15~28/        return self.model(x)/
+  Return(%1)
+      : (<null>)
+      #scope: (Default)
+      # In file F:\人工智能大作业\model.py:53, 8~28/        return self.model(x)/
+}
+# Order:
+#   1: @__main___CNN_construct_15:CNode_30{[0]: ValueNode<Primitive> resolve, [1]: ValueNode<NameSpace> ClassMember: 'Namespace:__main__..<CNN::1680904285904>', [2]: ValueNode<Symbol> model}
+#   2: @__main___CNN_construct_15:CNode_32{[0]: ValueNode<Primitive> resolve, [1]: ValueNode<NameSpace> CommonOPS: 'Namespace:mindspore._extends.parse.trope', [2]: ValueNode<Symbol> MakeTuple}
+#   4: @__main___CNN_construct_15:CNode_31{[0]: CNode_30, [1]: param_x}
+#   5: @__main___CNN_construct_15:CNode_29{[0]: ValueNode<Primitive> Return, [1]: CNode_31}
+
+
+subgraph attr:
+subgraph instance: mindspore_nn_layer_container_SequentialCell_construct_16 : 000001875B080670
+# In file E:\anaconda3\Lib\site-packages\mindspore\nn\layer\container.py:293~296, 4~25/    def construct(self, input_data):/
+subgraph @mindspore_nn_layer_container_SequentialCell_construct_16(%para0_input_data) {
+
+#------------------------> 2
+  %0(CNode_33) = call @mindspore_nn_layer_container_SequentialCell_construct_17(I64(0), %para0_input_data)
+      : (<Int64, NoShape>, <Tensor[Float32], (1, 1, 1024, 512)>) -> (<null>)
+      #scope: (Default/model-SequentialCell)
+      # In file E:\anaconda3\Lib\site-packages\mindspore\nn\layer\container.py:294~295, 8~41/        for cell in self.cell_list:/
+  Return(%0)
+      : (<null>)
+      #scope: (Default/model-SequentialCell)
+      # In file E:\anaconda3\Lib\site-packages\mindspore\nn\layer\container.py:294~295, 8~41/        for cell in self.cell_list:/
+}
+# Order:
+#   1: @mindspore_nn_layer_container_SequentialCell_construct_16:CNode_34{[0]: ValueNode<Primitive> resolve, [1]: ValueNode<NameSpace> CommonOPS: 'Namespace:mindspore._extends.parse.trope', [2]: ValueNode<Symbol> len}
+#   2: @mindspore_nn_layer_container_SequentialCell_construct_16:CNode_35{[0]: ValueNode<Primitive> resolve, [1]: ValueNode<NameSpace> CommonOPS: 'Namespace:mindspore._extends.parse.trope', [2]: ValueNode<Symbol> getitem}
+#   3: @mindspore_nn_layer_container_SequentialCell_construct_16:CNode_36{[0]: ValueNode<Primitive> resolve, [1]: ValueNode<NameSpace> CommonOPS: 'Namespace:mindspore._extends.parse.trope', [2]: ValueNode<Symbol> iter}
+#   4: @mindspore_nn_layer_container_SequentialCell_construct_16:CNode_37{[0]: ValueNode<Primitive> resolve, [1]: ValueNode<NameSpace> ClassMember: 'Namespace:mindspore.nn.layer.container..<SequentialCell::1680905159984>', [2]: ValueNode<Symbol> cell_list}
+#   5: @mindspore_nn_layer_container_SequentialCell_construct_16:CNode_38{[0]: CNode_36, [1]: CNode_37}
+#   6: @mindspore_nn_layer_container_SequentialCell_construct_16:CNode_39{[0]: CNode_34, [1]: CNode_38}
+#   7: @mindspore_nn_layer_container_SequentialCell_construct_16:CNode_33{[0]: ValueNode<FuncGraph> mindspore_nn_layer_container_SequentialCell_construct_17, [1]: ValueNode<Int64Imm> 0, [2]: param_input_data}
+#   8: @mindspore_nn_layer_container_SequentialCell_construct_16:CNode_40{[0]: ValueNode<Primitive> Return, [1]: CNode_33}
+
+
+subgraph attr:
+subgraph instance: mindspore_nn_layer_container_SequentialCell_construct_17 : 000001875B081CB0
+# In file E:\anaconda3\Lib\site-packages\mindspore\nn\layer\container.py:293~296, 4~25/    def construct(self, input_data):/
+subgraph @mindspore_nn_layer_container_SequentialCell_construct_17 parent: [subgraph @mindspore_nn_layer_container_SequentialCell_construct_16](%para0_@CNode_18, %para0_phi_input_data) {
+  %0(CNode_34) = resolve(NameSpace[CommonOPS: 'Namespace:mindspore._extends.parse.trope'], len)
+      : (<External, NoShape>, <External, NoShape>) -> (<Func, NoShape>)
+      #scope: (Default/model-SequentialCell)
+      # In file E:\anaconda3\Lib\site-packages\mindspore\nn\layer\container.py:294~295, 8~41/        for cell in self.cell_list:/
+  %1(CNode_36) = resolve(NameSpace[CommonOPS: 'Namespace:mindspore._extends.parse.trope'], iter)
+      : (<External, NoShape>, <External, NoShape>) -> (<Func, NoShape>)
+      #scope: (Default/model-SequentialCell)
+      # In file E:\anaconda3\Lib\site-packages\mindspore\nn\layer\container.py:294~295, 8~41/        for cell in self.cell_list:/
+  %2(CNode_37) = resolve(NameSpace[ClassMember: 'Namespace:mindspore.nn.layer.container..<SequentialCell::1680905159984>'], cell_list)
+      : (<External, NoShape>, <External, NoShape>) -> (<Tuple[Func*17], TupleShape(NoShape, NoShape, NoShape, NoShape, NoShape, NoShape, NoShape, NoShape, NoShape, NoShape, NoShape, NoShape, NoShape, NoShape, NoShape, NoShape, NoShape)>)
+      #scope: (Default/model-SequentialCell)
+      # In file E:\anaconda3\Lib\site-packages\mindspore\nn\layer\container.py:294, 20~34/        for cell in self.cell_list:/
+  %3(CNode_38) = %1(%2)
+      : (<Tuple[Func*17], TupleShape(NoShape, NoShape, NoShape, NoShape, NoShape, NoShape, NoShape, NoShape, NoShape, NoShape, NoShape, NoShape, NoShape, NoShape, NoShape, NoShape, NoShape)>) -> (<Tuple[Func*17], TupleShape(NoShape, NoShape, NoShape, NoShape, NoShape, NoShape, NoShape, NoShape, NoShape, NoShape, NoShape, NoShape, NoShape, NoShape, NoShape, NoShape, NoShape)>)
+      #scope: (Default/model-SequentialCell)
+      # In file E:\anaconda3\Lib\site-packages\mindspore\nn\layer\container.py:294~295, 8~41/        for cell in self.cell_list:/
+  %4(CNode_39) = %0(%3)
+      : (<Tuple[Func*17], TupleShape(NoShape, NoShape, NoShape, NoShape, NoShape, NoShape, NoShape, NoShape, NoShape, NoShape, NoShape, NoShape, NoShape, NoShape, NoShape, NoShape, NoShape)>) -> (<Int64, NoShape>)
+      #scope: (Default/model-SequentialCell)
+      # In file E:\anaconda3\Lib\site-packages\mindspore\nn\layer\container.py:294~295, 8~41/        for cell in self.cell_list:/
+  %5(CNode_41) = MultitypeFuncGraph_less{(Number, Number), (String, String), (Tuple, Tuple), (Tensor, Tensor), (Number, Tensor), (Tensor, Number), (List, List)}(%para0_@CNode_18, %4)
+      : (<Int64, NoShape>, <Int64, NoShape>) -> (<Bool, NoShape>)
+      #scope: (Default/model-SequentialCell)
+      # In file E:\anaconda3\Lib\site-packages\mindspore\nn\layer\container.py:294~295, 8~41/        for cell in self.cell_list:/
+  %6(CNode_42) = Switch(%5, @mindspore_nn_layer_container_SequentialCell_construct_19, @mindspore_nn_layer_container_SequentialCell_construct_43)
+      : (<Bool, NoShape>, <Func, NoShape>, <Func, NoShape>) -> (<Func, NoShape>)
+      #scope: (Default/model-SequentialCell)
+      # In file E:\anaconda3\Lib\site-packages\mindspore\nn\layer\container.py:294~295, 8~41/        for cell in self.cell_list:/
+
+#------------------------> 29
+  %7(CNode_44) = %6()
+      #scope: (Default/model-SequentialCell)
+      # In file E:\anaconda3\Lib\site-packages\mindspore\nn\layer\container.py:294~295, 8~41/        for cell in self.cell_list:/
+  Return(%7)
+      : (<null>)
+      #scope: (Default/model-SequentialCell)
+      # In file E:\anaconda3\Lib\site-packages\mindspore\nn\layer\container.py:294~295, 8~41/        for cell in self.cell_list:/
+}
+# Order:
+#   1: @mindspore_nn_layer_container_SequentialCell_construct_17:CNode_41{[0]: ValueNode<MultitypeFuncGraph> MetaFuncGraph-less.9, [1]: param_@CNode_18, [2]: CNode_39}
+#   2: @mindspore_nn_layer_container_SequentialCell_construct_17:CNode_42{[0]: ValueNode<Primitive> Switch, [1]: CNode_41, [2]: ValueNode<FuncGraph> mindspore_nn_layer_container_SequentialCell_construct_19, [3]: ValueNode<FuncGraph> mindspore_nn_layer_container_SequentialCell_construct_43}
+#   3: @mindspore_nn_layer_container_SequentialCell_construct_17:CNode_44{[0]: CNode_42}
+#   4: @mindspore_nn_layer_container_SequentialCell_construct_17:CNode_45{[0]: ValueNode<Primitive> Return, [1]: CNode_44}
+
+
+subgraph attr:
+subgraph instance: mindspore_nn_layer_container_SequentialCell_construct_19 : 000001875B0827D0
+# In file E:\anaconda3\Lib\site-packages\mindspore\nn\layer\container.py:293~296, 4~25/    def construct(self, input_data):/
+subgraph @mindspore_nn_layer_container_SequentialCell_construct_19 parent: [subgraph @mindspore_nn_layer_container_SequentialCell_construct_17]() {
+  %0(CNode_18) = MultitypeFuncGraph_add{(Number, Number), (String, String), (Tensor, Tuple), (Number, Tensor), (Tensor, Number), (List, Tensor), (Tuple, Tensor), (NoneType, NoneType), (Tensor, List), (List, List), (Tensor, Tensor), (RowTensor, Tensor), (COOTensor, COOTensor), (Tuple, Tuple), (CSRTensor, CSRTensor), (COOTensor, Tensor), (Tensor, COOTensor), (Dictionary, Dictionary)}($(@mindspore_nn_layer_container_SequentialCell_construct_17:para0_@CNode_18), I64(1))
+      : (<Int64, NoShape>, <Int64, NoShape>) -> (<Int64, NoShape>)
+      #scope: (Default/model-SequentialCell)
+      # In file E:\anaconda3\Lib\site-packages\mindspore\nn\layer\container.py:294~295, 8~41/        for cell in self.cell_list:/
+  %1(CNode_46) = StopGradient(%0)
+      : (<Int64, NoShape>) -> (<Int64, NoShape>)
+      #scope: (Default/model-SequentialCell)
+      # In file E:\anaconda3\Lib\site-packages\mindspore\nn\layer\container.py:293~296, 4~25/    def construct(self, input_data):/
+  %2(CNode_35) = resolve(NameSpace[CommonOPS: 'Namespace:mindspore._extends.parse.trope'], getitem)
+      : (<External, NoShape>, <External, NoShape>) -> (<Func, NoShape>)
+      #scope: (Default/model-SequentialCell)
+      # In file E:\anaconda3\Lib\site-packages\mindspore\nn\layer\container.py:294~295, 8~41/        for cell in self.cell_list:/
+  %3(CNode_36) = resolve(NameSpace[CommonOPS: 'Namespace:mindspore._extends.parse.trope'], iter)
+      : (<External, NoShape>, <External, NoShape>) -> (<Func, NoShape>)
+      #scope: (Default/model-SequentialCell)
+      # In file E:\anaconda3\Lib\site-packages\mindspore\nn\layer\container.py:294~295, 8~41/        for cell in self.cell_list:/
+  %4(CNode_37) = resolve(NameSpace[ClassMember: 'Namespace:mindspore.nn.layer.container..<SequentialCell::1680905159984>'], cell_list)
+      : (<External, NoShape>, <External, NoShape>) -> (<Tuple[Func*17], TupleShape(NoShape, NoShape, NoShape, NoShape, NoShape, NoShape, NoShape, NoShape, NoShape, NoShape, NoShape, NoShape, NoShape, NoShape, NoShape, NoShape, NoShape)>)
+      #scope: (Default/model-SequentialCell)
+      # In file E:\anaconda3\Lib\site-packages\mindspore\nn\layer\container.py:294, 20~34/        for cell in self.cell_list:/
+  %5(CNode_38) = %3(%4)
+      : (<Tuple[Func*17], TupleShape(NoShape, NoShape, NoShape, NoShape, NoShape, NoShape, NoShape, NoShape, NoShape, NoShape, NoShape, NoShape, NoShape, NoShape, NoShape, NoShape, NoShape)>) -> (<Tuple[Func*17], TupleShape(NoShape, NoShape, NoShape, NoShape, NoShape, NoShape, NoShape, NoShape, NoShape, NoShape, NoShape, NoShape, NoShape, NoShape, NoShape, NoShape, NoShape)>)
+      #scope: (Default/model-SequentialCell)
+      # In file E:\anaconda3\Lib\site-packages\mindspore\nn\layer\container.py:294~295, 8~41/        for cell in self.cell_list:/
+  %6(cell) = %2(%5, $(@mindspore_nn_layer_container_SequentialCell_construct_17:para0_@CNode_18))
+      : (<Tuple[Func*17], TupleShape(NoShape, NoShape, NoShape, NoShape, NoShape, NoShape, NoShape, NoShape, NoShape, NoShape, NoShape, NoShape, NoShape, NoShape, NoShape, NoShape, NoShape)>, <Int64, NoShape>) -> (<Func, NoShape>)
+      #scope: (Default/model-SequentialCell)
+      # In file E:\anaconda3\Lib\site-packages\mindspore\nn\layer\container.py:294~295, 8~41/        for cell in self.cell_list:/
+
+#------------------------> 30
+  %7(input_data) = %6($(@mindspore_nn_layer_container_SequentialCell_construct_17:para0_phi_input_data))
+      : (<Tensor[Float32], (1, 1, 1024, 512)>) -> (<Tensor[Float32], (1, 16, 1024, 512)>)
+      #scope: (Default/model-SequentialCell)
+      # In file E:\anaconda3\Lib\site-packages\mindspore\nn\layer\container.py:295, 25~41/            input_data = cell(input_data)/
+
+#------------------------> 28
+  %8(CNode_47) = call @mindspore_nn_layer_container_SequentialCell_construct_17(%0, %7)
+      : (<Int64, NoShape>, <Tensor[Float32], (1, 16, 1024, 512)>) -> (<null>)
+      #scope: (Default/model-SequentialCell)
+      # In file E:\anaconda3\Lib\site-packages\mindspore\nn\layer\container.py:294~295, 8~41/        for cell in self.cell_list:/
+  %9(CNode_48) = Depend(%8, %1) primitive_attrs: {side_effect_propagate: I64(1)} cnode_attrs: {topo_sort_rhs_first: Bool(1)}
+      : (<null>, <Int64, NoShape>) -> (<null>)
+      #scope: (Default/model-SequentialCell)
+      # In file E:\anaconda3\Lib\site-packages\mindspore\nn\layer\container.py:294~295, 8~41/        for cell in self.cell_list:/
+  Return(%9)
+      : (<null>)
+      #scope: (Default/model-SequentialCell)
+      # In file E:\anaconda3\Lib\site-packages\mindspore\nn\layer\container.py:294~295, 8~41/        for cell in self.cell_list:/
+}
+# Order:
+#   1: @mindspore_nn_layer_container_SequentialCell_construct_19:cell{[0]: CNode_35, [1]: CNode_38, [2]: param_@CNode_18}
+#   2: @mindspore_nn_layer_container_SequentialCell_construct_19:CNode_18{[0]: ValueNode<MultitypeFuncGraph> MetaFuncGraph-add.49, [1]: param_@CNode_18, [2]: ValueNode<Int64Imm> 1}
+#   3: @mindspore_nn_layer_container_SequentialCell_construct_19:CNode_50{[0]: ValueNode<Primitive> resolve, [1]: ValueNode<NameSpace> CommonOPS: 'Namespace:mindspore._extends.parse.trope', [2]: ValueNode<Symbol> MakeTuple}
+#   5: @mindspore_nn_layer_container_SequentialCell_construct_19:input_data{[0]: cell, [1]: param_phi_input_data}
+#   6: @mindspore_nn_layer_container_SequentialCell_construct_19:CNode_47{[0]: ValueNode<FuncGraph> mindspore_nn_layer_container_SequentialCell_construct_17, [1]: CNode_18, [2]: input_data}
+#   8: @mindspore_nn_layer_container_SequentialCell_construct_19:CNode_51{[0]: ValueNode<Primitive> Return, [1]: CNode_48}
+
+
+subgraph attr:
+subgraph instance: mindspore_nn_layer_basic_Dense_construct_20 : 000001876633F630
+# In file E:\anaconda3\Lib\site-packages\mindspore\nn\layer\basic.py:738~750, 4~16/    def construct(self, x):/
+subgraph @mindspore_nn_layer_basic_Dense_construct_20(%para0_x) {
+  %0(CNode_52) = resolve(NameSpace[Ast: 'Namespace:mindspore._extends.parse.trope'], ne)
+      : (<External, NoShape>, <External, NoShape>) -> (<Func, NoShape>)
+      #scope: (Default/model-SequentialCell/13-Dense)
+      # In file E:\anaconda3\Lib\site-packages\mindspore\nn\layer\basic.py:740, 11~28/        if len(x_shape) != 2:/
+  %1(CNode_53) = resolve(NameSpace[SymbolStr: 'Namespace:mindspore.nn.layer.basic'], len)
+      : (<External, NoShape>, <External, NoShape>) -> (<Func, NoShape>)
+      #scope: (Default/model-SequentialCell/13-Dense)
+      # In file E:\anaconda3\Lib\site-packages\mindspore\nn\layer\basic.py:740, 11~14/        if len(x_shape) != 2:/
+  %2(CNode_54) = resolve(NameSpace[ClassMember: 'Namespace:mindspore.nn.layer.basic..<Dense::1680904910128>'], shape_op)
+      : (<External, NoShape>, <External, NoShape>) -> (<Func, NoShape>)
+      #scope: (Default/model-SequentialCell/13-Dense)
+      # In file E:\anaconda3\Lib\site-packages\mindspore\nn\layer\basic.py:739, 18~31/        x_shape = self.shape_op(x)/
+  %3(x_shape) = %2(%para0_x)
+      : (<Tensor[Float32], (1, 262144)>) -> (<Tuple[Int64*2], TupleShape(NoShape, NoShape)>)
+      #scope: (Default/model-SequentialCell/13-Dense)
+      # In file E:\anaconda3\Lib\site-packages\mindspore\nn\layer\basic.py:739, 18~34/        x_shape = self.shape_op(x)/
+  %4(CNode_55) = %1(%3)
+      : (<Tuple[Int64*2], TupleShape(NoShape, NoShape)>) -> (<Int64, NoShape>)
+      #scope: (Default/model-SequentialCell/13-Dense)
+      # In file E:\anaconda3\Lib\site-packages\mindspore\nn\layer\basic.py:740, 11~23/        if len(x_shape) != 2:/
+  %5(CNode_56) = %0(%4, I64(2))
+      : (<Int64, NoShape>, <Int64, NoShape>) -> (<Bool, NoShape>)
+      #scope: (Default/model-SequentialCell/13-Dense)
+      # In file E:\anaconda3\Lib\site-packages\mindspore\nn\layer\basic.py:740, 11~28/        if len(x_shape) != 2:/
+  %6(CNode_57) = Cond(%5, Bool(0))
+      : (<Bool, NoShape>, <Bool, NoShape>) -> (<Bool, NoShape>)
+      #scope: (Default/model-SequentialCell/13-Dense)
+      # In file E:\anaconda3\Lib\site-packages\mindspore\nn\layer\basic.py:740~741, 8~50/        if len(x_shape) != 2:/
+  %7(CNode_58) = Switch(%6, @mindspore_nn_layer_basic_Dense_construct_59, @mindspore_nn_layer_basic_Dense_construct_60)
+      : (<Bool, NoShape>, <Func, NoShape>, <Func, NoShape>) -> (<Func, NoShape>)
+      #scope: (Default/model-SequentialCell/13-Dense)
+      # In file E:\anaconda3\Lib\site-packages\mindspore\nn\layer\basic.py:740~741, 8~50/        if len(x_shape) != 2:/
+  %8(CNode_61) = %7()
+      #scope: (Default/model-SequentialCell/13-Dense)
+      # In file E:\anaconda3\Lib\site-packages\mindspore\nn\layer\basic.py:740~741, 8~50/        if len(x_shape) != 2:/
+
+#------------------------> 31
+  %9(CNode_62) = call @mindspore_nn_layer_basic_Dense_construct_21(%8)
+      : (<Tensor[Float32], (1, 262144)>) -> (<null>)
+      #scope: (Default/model-SequentialCell)
+      # In file E:\anaconda3\Lib\site-packages\mindspore\nn\layer\container.py:294, 20~34/        for cell in self.cell_list:/
+  Return(%9)
+      : (<null>)
+      #scope: (Default/model-SequentialCell/13-Dense)
+      # In file E:\anaconda3\Lib\site-packages\mindspore\nn\layer\basic.py:740~741, 8~50/        if len(x_shape) != 2:/
+}
+# Order:
+#   1: @mindspore_nn_layer_basic_Dense_construct_20:CNode_54{[0]: ValueNode<Primitive> resolve, [1]: ValueNode<NameSpace> ClassMember: 'Namespace:mindspore.nn.layer.basic..<Dense::1680904910128>', [2]: ValueNode<Symbol> shape_op}
+#   2: @mindspore_nn_layer_basic_Dense_construct_20:CNode_63{[0]: ValueNode<Primitive> resolve, [1]: ValueNode<NameSpace> CommonOPS: 'Namespace:mindspore._extends.parse.trope', [2]: ValueNode<Symbol> MakeTuple}
+#   4: @mindspore_nn_layer_basic_Dense_construct_20:x_shape{[0]: CNode_54, [1]: param_x}
+#   5: @mindspore_nn_layer_basic_Dense_construct_20:CNode_53{[0]: ValueNode<Primitive> resolve, [1]: ValueNode<NameSpace> SymbolStr: 'Namespace:mindspore.nn.layer.basic', [2]: ValueNode<Symbol> len}
+#   6: @mindspore_nn_layer_basic_Dense_construct_20:CNode_64{[0]: ValueNode<Primitive> resolve, [1]: ValueNode<NameSpace> CommonOPS: 'Namespace:mindspore._extends.parse.trope', [2]: ValueNode<Symbol> MakeTuple}
+#   8: @mindspore_nn_layer_basic_Dense_construct_20:CNode_55{[0]: CNode_53, [1]: x_shape}
+#   9: @mindspore_nn_layer_basic_Dense_construct_20:CNode_52{[0]: ValueNode<Primitive> resolve, [1]: ValueNode<NameSpace> Ast: 'Namespace:mindspore._extends.parse.trope', [2]: ValueNode<Symbol> ne}
+#  10: @mindspore_nn_layer_basic_Dense_construct_20:CNode_56{[0]: CNode_52, [1]: CNode_55, [2]: ValueNode<Int64Imm> 2}
+#  11: @mindspore_nn_layer_basic_Dense_construct_20:CNode_57{[0]: ValueNode<Primitive> Cond, [1]: CNode_56, [2]: ValueNode<BoolImm> false}
+#  12: @mindspore_nn_layer_basic_Dense_construct_20:CNode_58{[0]: ValueNode<Primitive> Switch, [1]: CNode_57, [2]: ValueNode<FuncGraph> mindspore_nn_layer_basic_Dense_construct_59, [3]: ValueNode<FuncGraph> mindspore_nn_layer_basic_Dense_construct_60}
+#  13: @mindspore_nn_layer_basic_Dense_construct_20:CNode_61{[0]: CNode_58}
+#  14: @mindspore_nn_layer_basic_Dense_construct_20:CNode_62{[0]: ValueNode<FuncGraph> mindspore_nn_layer_basic_Dense_construct_21, [1]: CNode_61}
+#  15: @mindspore_nn_layer_basic_Dense_construct_20:CNode_65{[0]: ValueNode<Primitive> Return, [1]: CNode_62}
+#  16: @mindspore_nn_layer_basic_Dense_construct_20:CNode_66{[0]: ValueNode<Primitive> resolve, [1]: ValueNode<NameSpace> ClassMember: 'Namespace:mindspore.nn.layer.basic..<Dense::1680904910128>', [2]: ValueNode<Symbol> weight}
+#  17: @mindspore_nn_layer_basic_Dense_construct_20:CNode_67{[0]: ValueNode<Primitive> resolve, [1]: ValueNode<NameSpace> ClassMember: 'Namespace:mindspore.nn.layer.basic..<Dense::1680904910128>', [2]: ValueNode<Symbol> bias}
+#  18: @mindspore_nn_layer_basic_Dense_construct_20:CNode_68{[0]: ValueNode<Primitive> resolve, [1]: ValueNode<NameSpace> SymbolStr: 'Namespace:mindspore.nn.layer.basic', [2]: ValueNode<Symbol> F}
+
+
+subgraph attr:
+after_block: 1
+subgraph instance: mindspore_nn_layer_basic_Dense_construct_21 : 000001876633DFF0
+# In file E:\anaconda3\Lib\site-packages\mindspore\nn\layer\basic.py:738~750, 4~16/    def construct(self, x):/
+subgraph @mindspore_nn_layer_basic_Dense_construct_21 parent: [subgraph @mindspore_nn_layer_basic_Dense_construct_20](%para0_phi_x) {
+
+#------------------------> 32
+  %0(CNode_69) = call @mindspore_nn_layer_basic_Dense_construct_22()
+      #scope: (Default/model-SequentialCell/13-Dense)
+      # In file E:\anaconda3\Lib\site-packages\mindspore\nn\layer\basic.py:743~744, 8~43/        if self.has_bias:/
+  Return(%0)
+      : (<null>)
+      #scope: (Default/model-SequentialCell/13-Dense)
+      # In file E:\anaconda3\Lib\site-packages\mindspore\nn\layer\basic.py:743~744, 8~43/        if self.has_bias:/
+}
+# Order:
+#   1: @mindspore_nn_layer_basic_Dense_construct_21:CNode_70{[0]: ValueNode<Primitive> resolve, [1]: ValueNode<NameSpace> ClassMember: 'Namespace:mindspore.nn.layer.basic..<Dense::1680904910128>', [2]: ValueNode<Symbol> matmul}
+#   3: @mindspore_nn_layer_basic_Dense_construct_21:CNode_71{[0]: ValueNode<Primitive> resolve, [1]: ValueNode<NameSpace> CommonOPS: 'Namespace:mindspore._extends.parse.trope', [2]: ValueNode<Symbol> MakeTuple}
+#   5: @mindspore_nn_layer_basic_Dense_construct_21:x{[0]: CNode_70, [1]: param_phi_x, [2]: CNode_66}
+#   6: @mindspore_nn_layer_basic_Dense_construct_21:CNode_69{[0]: ValueNode<FuncGraph> mindspore_nn_layer_basic_Dense_construct_22}
+#   7: @mindspore_nn_layer_basic_Dense_construct_21:CNode_72{[0]: ValueNode<Primitive> Return, [1]: CNode_69}
+
+
+subgraph attr:
+subgraph instance: mindspore_nn_layer_basic_Dense_construct_22 : 000001876633C420
+# In file E:\anaconda3\Lib\site-packages\mindspore\nn\layer\basic.py:738~750, 4~16/    def construct(self, x):/
+subgraph @mindspore_nn_layer_basic_Dense_construct_22 parent: [subgraph @mindspore_nn_layer_basic_Dense_construct_21]() {
+
+#------------------------> 33
+  %0(CNode_73) = call @mindspore_nn_layer_basic_Dense_construct_23()
+      #scope: (Default/model-SequentialCell/13-Dense)
+      # In file E:\anaconda3\Lib\site-packages\mindspore\nn\layer\basic.py:744, 12~43/            x = self.bias_add(x, self.bias)/
+  Return(%0)
+      : (<null>)
+      #scope: (Default/model-SequentialCell/13-Dense)
+      # In file E:\anaconda3\Lib\site-packages\mindspore\nn\layer\basic.py:744, 12~43/            x = self.bias_add(x, self.bias)/
+}
+# Order:
+#   1: @mindspore_nn_layer_basic_Dense_construct_22:CNode_74{[0]: ValueNode<Primitive> resolve, [1]: ValueNode<NameSpace> ClassMember: 'Namespace:mindspore.nn.layer.basic..<Dense::1680904910128>', [2]: ValueNode<Symbol> bias_add}
+#   2: @mindspore_nn_layer_basic_Dense_construct_22:CNode_75{[0]: ValueNode<Primitive> resolve, [1]: ValueNode<NameSpace> CommonOPS: 'Namespace:mindspore._extends.parse.trope', [2]: ValueNode<Symbol> MakeTuple}
+#   4: @mindspore_nn_layer_basic_Dense_construct_22:x{[0]: CNode_74, [1]: x, [2]: CNode_67}
+#   5: @mindspore_nn_layer_basic_Dense_construct_22:CNode_73{[0]: ValueNode<FuncGraph> mindspore_nn_layer_basic_Dense_construct_23}
+#   6: @mindspore_nn_layer_basic_Dense_construct_22:CNode_76{[0]: ValueNode<Primitive> Return, [1]: CNode_73}
+
+
+subgraph attr:
+subgraph instance: mindspore_nn_layer_basic_Dense_construct_23 : 000001876633CF40
+# In file E:\anaconda3\Lib\site-packages\mindspore\nn\layer\basic.py:738~750, 4~16/    def construct(self, x):/
+subgraph @mindspore_nn_layer_basic_Dense_construct_23 parent: [subgraph @mindspore_nn_layer_basic_Dense_construct_22]() {
+
+#------------------------> 34
+  %0(CNode_77) = call @mindspore_nn_layer_basic_Dense_construct_24()
+      #scope: (Default/model-SequentialCell/13-Dense)
+      # In file E:\anaconda3\Lib\site-packages\mindspore\nn\layer\basic.py:745~746, 8~34/        if self.activation_flag:/
+  Return(%0)
+      : (<null>)
+      #scope: (Default/model-SequentialCell/13-Dense)
+      # In file E:\anaconda3\Lib\site-packages\mindspore\nn\layer\basic.py:745~746, 8~34/        if self.activation_flag:/
+}
+# Order:
+#   1: @mindspore_nn_layer_basic_Dense_construct_23:CNode_77{[0]: ValueNode<FuncGraph> mindspore_nn_layer_basic_Dense_construct_24}
+#   2: @mindspore_nn_layer_basic_Dense_construct_23:CNode_78{[0]: ValueNode<Primitive> Return, [1]: CNode_77}
+
+
+subgraph attr:
+subgraph instance: mindspore_nn_layer_basic_Dense_construct_24 : 000001876633DA60
+# In file E:\anaconda3\Lib\site-packages\mindspore\nn\layer\basic.py:738~750, 4~16/    def construct(self, x):/
+subgraph @mindspore_nn_layer_basic_Dense_construct_24 parent: [subgraph @mindspore_nn_layer_basic_Dense_construct_22]() {
+
+#------------------------> 35
+  %0(CNode_79) = call @mindspore_nn_layer_basic_Dense_construct_25()
+      #scope: (Default/model-SequentialCell/13-Dense)
+      # In file E:\anaconda3\Lib\site-packages\mindspore\nn\layer\basic.py:745~746, 8~34/        if self.activation_flag:/
+  Return(%0)
+      : (<null>)
+      #scope: (Default/model-SequentialCell/13-Dense)
+      # In file E:\anaconda3\Lib\site-packages\mindspore\nn\layer\basic.py:745~746, 8~34/        if self.activation_flag:/
+}
+# Order:
+#   1: @mindspore_nn_layer_basic_Dense_construct_24:CNode_79{[0]: ValueNode<FuncGraph> mindspore_nn_layer_basic_Dense_construct_25}
+#   2: @mindspore_nn_layer_basic_Dense_construct_24:CNode_80{[0]: ValueNode<Primitive> Return, [1]: CNode_79}
+
+
+subgraph attr:
+subgraph instance: mindspore_nn_layer_basic_Dense_construct_25 : 000001876633E580
+# In file E:\anaconda3\Lib\site-packages\mindspore\nn\layer\basic.py:738~750, 4~16/    def construct(self, x):/
+subgraph @mindspore_nn_layer_basic_Dense_construct_25 parent: [subgraph @mindspore_nn_layer_basic_Dense_construct_22]() {
+  %0(CNode_81) = resolve(NameSpace[Ast: 'Namespace:mindspore._extends.parse.trope'], ne)
+      : (<External, NoShape>, <External, NoShape>) -> (<Func, NoShape>)
+      #scope: (Default/model-SequentialCell/13-Dense)
+      # In file E:\anaconda3\Lib\site-packages\mindspore\nn\layer\basic.py:747, 11~28/        if len(x_shape) != 2:/
+  %1(CNode_53) = resolve(NameSpace[SymbolStr: 'Namespace:mindspore.nn.layer.basic'], len)
+      : (<External, NoShape>, <External, NoShape>) -> (<Func, NoShape>)
+      #scope: (Default/model-SequentialCell/13-Dense)
+      # In file E:\anaconda3\Lib\site-packages\mindspore\nn\layer\basic.py:740, 11~14/        if len(x_shape) != 2:/
+  %2(CNode_54) = resolve(NameSpace[ClassMember: 'Namespace:mindspore.nn.layer.basic..<Dense::1680904910128>'], shape_op)
+      : (<External, NoShape>, <External, NoShape>) -> (<Func, NoShape>)
+      #scope: (Default/model-SequentialCell/13-Dense)
+      # In file E:\anaconda3\Lib\site-packages\mindspore\nn\layer\basic.py:739, 18~31/        x_shape = self.shape_op(x)/
+  %3(x_shape) = %2(%para0_x)
+      : (<Tensor[Float32], (1, 262144)>) -> (<Tuple[Int64*2], TupleShape(NoShape, NoShape)>)
+      #scope: (Default/model-SequentialCell/13-Dense)
+      # In file E:\anaconda3\Lib\site-packages\mindspore\nn\layer\basic.py:739, 18~34/        x_shape = self.shape_op(x)/
+  %4(CNode_82) = %1(%3)
+      : (<Tuple[Int64*2], TupleShape(NoShape, NoShape)>) -> (<Int64, NoShape>)
+      #scope: (Default/model-SequentialCell/13-Dense)
+      # In file E:\anaconda3\Lib\site-packages\mindspore\nn\layer\basic.py:747, 11~23/        if len(x_shape) != 2:/
+  %5(CNode_83) = %0(%4, I64(2))
+      : (<Int64, NoShape>, <Int64, NoShape>) -> (<Bool, NoShape>)
+      #scope: (Default/model-SequentialCell/13-Dense)
+      # In file E:\anaconda3\Lib\site-packages\mindspore\nn\layer\basic.py:747, 11~28/        if len(x_shape) != 2:/
+  %6(CNode_84) = Cond(%5, Bool(0))
+      : (<Bool, NoShape>, <Bool, NoShape>) -> (<Bool, NoShape>)
+      #scope: (Default/model-SequentialCell/13-Dense)
+      # In file E:\anaconda3\Lib\site-packages\mindspore\nn\layer\basic.py:747~749, 8~42/        if len(x_shape) != 2:/
+  %7(CNode_85) = Switch(%6, @mindspore_nn_layer_basic_Dense_construct_86, @mindspore_nn_layer_basic_Dense_construct_26)
+      : (<Bool, NoShape>, <Func, NoShape>, <Func, NoShape>) -> (<Func, NoShape>)
+      #scope: (Default/model-SequentialCell/13-Dense)
+      # In file E:\anaconda3\Lib\site-packages\mindspore\nn\layer\basic.py:747~749, 8~42/        if len(x_shape) != 2:/
+
+#------------------------> 36
+  %8(CNode_87) = %7()
+      #scope: (Default/model-SequentialCell/13-Dense)
+      # In file E:\anaconda3\Lib\site-packages\mindspore\nn\layer\basic.py:747~749, 8~42/        if len(x_shape) != 2:/
+  %9(CNode_88) = call @mindspore_nn_layer_basic_Dense_construct_89(%8)
+      : (<null>) -> (<null>)
+      #scope: (Default/model-SequentialCell)
+      # In file E:\anaconda3\Lib\site-packages\mindspore\nn\layer\container.py:294, 20~34/        for cell in self.cell_list:/
+  Return(%9)
+      : (<null>)
+      #scope: (Default/model-SequentialCell/13-Dense)
+      # In file E:\anaconda3\Lib\site-packages\mindspore\nn\layer\basic.py:747~749, 8~42/        if len(x_shape) != 2:/
+}
+# Order:
+#   1: @mindspore_nn_layer_basic_Dense_construct_25:CNode_90{[0]: ValueNode<Primitive> resolve, [1]: ValueNode<NameSpace> CommonOPS: 'Namespace:mindspore._extends.parse.trope', [2]: ValueNode<Symbol> MakeTuple}
+#   3: @mindspore_nn_layer_basic_Dense_construct_25:CNode_82{[0]: CNode_53, [1]: x_shape}
+#   4: @mindspore_nn_layer_basic_Dense_construct_25:CNode_81{[0]: ValueNode<Primitive> resolve, [1]: ValueNode<NameSpace> Ast: 'Namespace:mindspore._extends.parse.trope', [2]: ValueNode<Symbol> ne}
+#   5: @mindspore_nn_layer_basic_Dense_construct_25:CNode_83{[0]: CNode_81, [1]: CNode_82, [2]: ValueNode<Int64Imm> 2}
+#   6: @mindspore_nn_layer_basic_Dense_construct_25:CNode_84{[0]: ValueNode<Primitive> Cond, [1]: CNode_83, [2]: ValueNode<BoolImm> false}
+#   7: @mindspore_nn_layer_basic_Dense_construct_25:CNode_85{[0]: ValueNode<Primitive> Switch, [1]: CNode_84, [2]: ValueNode<FuncGraph> mindspore_nn_layer_basic_Dense_construct_86, [3]: ValueNode<FuncGraph> mindspore_nn_layer_basic_Dense_construct_26}
+#   8: @mindspore_nn_layer_basic_Dense_construct_25:CNode_87{[0]: CNode_85}
+#   9: @mindspore_nn_layer_basic_Dense_construct_25:CNode_88{[0]: ValueNode<FuncGraph> mindspore_nn_layer_basic_Dense_construct_89, [1]: CNode_87}
+#  10: @mindspore_nn_layer_basic_Dense_construct_25:CNode_91{[0]: ValueNode<Primitive> Return, [1]: CNode_88}
+
+
+subgraph attr:
+subgraph instance: mindspore_nn_layer_basic_Dense_construct_26 : 000001876633F0A0
+# In file E:\anaconda3\Lib\site-packages\mindspore\nn\layer\basic.py:738~750, 4~16/    def construct(self, x):/
+subgraph @mindspore_nn_layer_basic_Dense_construct_26 parent: [subgraph @mindspore_nn_layer_basic_Dense_construct_22]() {
+  %0(CNode_74) = resolve(NameSpace[ClassMember: 'Namespace:mindspore.nn.layer.basic..<Dense::1680904910128>'], bias_add)
+      : (<External, NoShape>, <External, NoShape>) -> (<null>)
+      #scope: (Default/model-SequentialCell/13-Dense)
+      # In file E:\anaconda3\Lib\site-packages\mindspore\nn\layer\basic.py:744, 16~29/            x = self.bias_add(x, self.bias)/
+  %1(CNode_70) = resolve(NameSpace[ClassMember: 'Namespace:mindspore.nn.layer.basic..<Dense::1680904910128>'], matmul)
+      : (<External, NoShape>, <External, NoShape>) -> (<Func, NoShape>)
+      #scope: (Default/model-SequentialCell/13-Dense)
+      # In file E:\anaconda3\Lib\site-packages\mindspore\nn\layer\basic.py:742, 12~23/        x = self.matmul(x, self.weight)/
+  %2(CNode_66) = resolve(NameSpace[ClassMember: 'Namespace:mindspore.nn.layer.basic..<Dense::1680904910128>'], weight)
+      : (<External, NoShape>, <External, NoShape>) -> (<Ref[Tensor[Float32]], (512, 65536)>)
+      #scope: (Default/model-SequentialCell/13-Dense)
+      # In file E:\anaconda3\Lib\site-packages\mindspore\nn\layer\basic.py:742, 27~38/        x = self.matmul(x, self.weight)/
+
+#------------------------> 37
+  %3(x) = %1(%para0_phi_x, %2)
+      : (<Tensor[Float32], (1, 262144)>, <Ref[Tensor[Float32]], (512, 65536)>) -> (<null>)
+      #scope: (Default/model-SequentialCell/13-Dense)
+      # In file E:\anaconda3\Lib\site-packages\mindspore\nn\layer\basic.py:742, 12~39/        x = self.matmul(x, self.weight)/
+  %4(CNode_67) = resolve(NameSpace[ClassMember: 'Namespace:mindspore.nn.layer.basic..<Dense::1680904910128>'], bias)
+      : (<null>, <null>) -> (<null>)
+      #scope: (Default/model-SequentialCell/13-Dense)
+      # In file E:\anaconda3\Lib\site-packages\mindspore\nn\layer\basic.py:744, 33~42/            x = self.bias_add(x, self.bias)/
+  %5(x) = %0(%3, %4)
+      : (<null>, <null>) -> (<null>)
+      #scope: (Default/model-SequentialCell/13-Dense)
+      # In file E:\anaconda3\Lib\site-packages\mindspore\nn\layer\basic.py:744, 16~43/            x = self.bias_add(x, self.bias)/
+  Return(%5)
+      : (<null>)
+      #scope: (Default/model-SequentialCell/13-Dense)
+      # In file E:\anaconda3\Lib\site-packages\mindspore\nn\layer\basic.py:747~749, 8~42/        if len(x_shape) != 2:/
+}
+# Order:
+#   1: @mindspore_nn_layer_basic_Dense_construct_26:CNode_92{[0]: ValueNode<FuncGraph> mindspore_nn_layer_basic_Dense_construct_89, [1]: x}
+#   2: @mindspore_nn_layer_basic_Dense_construct_26:CNode_93{[0]: ValueNode<Primitive> Return, [1]: x}
+
+
+# ===============================================================================================
+# The total of function graphs in evaluation stack: 12/40 (Ignored 28 internal frames).
+# ===============================================================================================
+
+
+# ===============================================================================================
+# The rest function graphs are the following:
+# ===============================================================================================
+No more function graphs.
+
