@@ -1,4 +1,5 @@
-引    言\
+引    言
+
 Helium 是一个用于 Web 自动化的 Python 库，支持 Chrome 和 Firefox 浏览器。它通过提供更高级别的 API，简化了 Selenium 的复杂性，使 Web 自动化脚本更短、更易读，并且对网页变化更具稳定性。\
 Helium 最初由 Michael Herrmann 在2013年为波兰 IT 初创公司 BugFree 软件开发。2019 年公司关闭后，开发者决定将 Helium 开源并现代化。\
 本小组通过爬取该流行库的历史提交信息，对历史提交信息进行数据分析统计和可视化处理，并使用libcst等库实现程序静态与动态分析。最后对所有的分析进行总结归纳，以探索其中的规律。\
@@ -8,10 +9,11 @@ Helium 最初由 Michael Herrmann 在2013年为波兰 IT 初创公司 BugFree �
 
 <img width="317" alt="爬取内容部分截图" src="https://github.com/user-attachments/assets/3336eedf-840f-4081-b3ff-11cf971f1e82" />
 
-图1.1  项目历史提交信息\
-\
+图1.1  项目历史提交信息
+
 2  对历史提交信息进行数据分析和可视化处理\
-该部分通过python 的pandas、re、 nltk、wordcloud等库对爬取内容进行数据分析与可视化处理。\
+该部分通过python 的pandas、re、 nltk、wordcloud等库对爬取内容进行数据分析与可视化处理。
+
 2.1提交统计分析
 提交统计图展示了不同贡献者对 Helium 项目的提交次数。\
 Michael Herrmann 是最主要的贡献者，其提交次数远远超过其他贡献者，显示出他在项目中的主导作用。\
@@ -36,12 +38,14 @@ Michael Herrmann 是最主要的贡献者，其提交次数远远超过其他贡
 词云图还显示了一些与编程和技术相关的术语，如“selenium”、“chromedriver”、“webdrivers”，这些是 Helium 项目中使用的关键技术和工具。\
 ![Most_mentioned](https://github.com/user-attachments/assets/015cc271-8d62-4b95-b668-2ea1751738f9)
 图2.3词云图分析
-\
+
 3程序静态分析
+
 3.1使用工具及分析方向
 
 3.11分析工具: 
-基于 `libcst`的自定义 Python 静态分析脚本\
+基于 `libcst`的自定义 Python 静态分析脚本
+
 3.12分析方向
 本部分包含了对 `helium` 项目代码的各项静态分析结果，包括：
 1.  导入语句分析: 记录每个文件中导入的模块和别名。
@@ -70,21 +74,28 @@ Michael Herrmann 是最主要的贡献者，其提交次数远远超过其他贡
 一致性:Helium 库的测试用例结构清晰，命名规范，且都有注释，方便阅读理解。\
 3.3.2未来改进方向
   数据流分析： 我考虑加入数据流分析功能，以检测数据在程序中的流向，从而帮助发现潜在的错误。\
-  更精细的代码检查: 考虑加入更多静态代码检查规则，例如 PEP8 代码规范检查等，提高代码质量。\
+  更精细的代码检查: 考虑加入更多静态代码检查规则，例如 PEP8 代码规范检查等，提高代码质量。
+  
 4程序动态分析
-本部分记录了使用 `helium` 库执行单个测试用例的过程，目标是 Google 首页。\
+
+本部分记录了使用 `helium` 库执行单个测试用例的过程，目标是 Google 首页。
+
 4.1 测试设置和环境:
 日志以测试用例的开始为标志。\
 日志显示使用了 Selenium Manager 来管理 WebDriver 的下载和安装，并记录了 Selenium Manager 可执行文件的路径。管理器检测到需要 ChromeDriver 来运行 Chrome 浏览器，并找到了缓存的版本 \(132.0.6834.83)。浏览器和驱动程序的路径被识别。\
-日志显示测试在 Windows 系统上运行。\
+日志显示测试在 Windows 系统上运行。
+
 4.2. 浏览器启动和连接:
  Selenium Manager 启动了 ChromeDriver 进程（PID 10856）。
  日志记录了与 ChromeDriver 服务器（localhost:49942）建立连接的过程，包括发送请求和接收响应。这部分日志显示了浏览器会话的创建和初始化。  `POST /session` 请求创建了一个新的浏览器会话，服务器返回会话 ID (`ec535e916627c537e3dc4db4cb79c23a`)。
+ 
 4.3 网页访问和标题检查
  测试用例使用 `go_to("https://www.google.com")` 访问 Google 首页。日志显示了发送 `POST /session/ ... /url` 请求来导航到指定 URL 的过程。\
- 测试用例获取页面标题，并使用 `self.assertIn("Google", title)` 断言来检查标题是否包含 "Google"。日志显示了获取标题 (`GET /session/ ... /title`) 的过程以及服务器返回的标题 "Google"。\
+ 测试用例获取页面标题，并使用 `self.assertIn("Google", title)` 断言来检查标题是否包含 "Google"。日志显示了获取标题 (`GET /session/ ... /title`) 的过程以及服务器返回的标题 "Google"。
+ 
 4.4浏览器关闭
- 测试用例执行完成后，`kill_browser()` 关闭了浏览器。日志显示了删除会话 (`DELETE /session/ ...`) 的过程。\
+ 测试用例执行完成后，`kill_browser()` 关闭了浏览器。日志显示了删除会话 (`DELETE /session/ ...`) 的过程。
+ 
 4.5  动态分析总结
 浏览器驱动程序的管理:Selenium Manager 如何下载和管理 ChromeDriver。\
 浏览器会话的创建和销毁: 浏览器会话的创建、URL 导航、标题获取以及会话的关闭。\
