@@ -1,0 +1,43 @@
+2025-01-15 22:16:08,492 - INFO - Starting test case
+2025-01-15 22:16:08,494 - DEBUG - Selenium Manager binary found at: C:\Users\songyida\miniconda3\envs\FIRST\Lib\site-packages\selenium\webdriver\common\windows\selenium-manager.exe
+2025-01-15 22:16:08,494 - DEBUG - Executing process: C:\Users\songyida\miniconda3\envs\FIRST\Lib\site-packages\selenium\webdriver\common\windows\selenium-manager.exe --browser chrome --debug --language-binding python --output json
+2025-01-15 22:16:08,792 - DEBUG - chromedriver not found in PATH
+2025-01-15 22:16:08,793 - DEBUG - chrome detected at C:\Program Files\Google\Chrome\Application\chrome.exe
+2025-01-15 22:16:08,793 - DEBUG - Running command: wmic datafile where name='C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe' get Version /value
+2025-01-15 22:16:08,793 - DEBUG - Output: ""
+2025-01-15 22:16:08,793 - DEBUG - Running command: REG QUERY HKCU\Software\Google\Chrome\BLBeacon /v version
+2025-01-15 22:16:08,793 - DEBUG - Output: "\r\nHKEY_CURRENT_USER\\Software\\Google\\Chrome\\BLBeacon\r\n    version    REG_SZ    132.0.6834.84\r\n"
+2025-01-15 22:16:08,793 - DEBUG - Detected browser: chrome 132.0.6834.84
+2025-01-15 22:16:08,793 - DEBUG - Required driver: chromedriver 132.0.6834.83
+2025-01-15 22:16:08,793 - DEBUG - chromedriver 132.0.6834.83 already in the cache
+2025-01-15 22:16:08,793 - DEBUG - Driver path: C:\Users\songyida\.cache\selenium\chromedriver\win64\132.0.6834.83\chromedriver.exe
+2025-01-15 22:16:08,793 - DEBUG - Browser path: C:\Program Files\Google\Chrome\Application\chrome.exe
+2025-01-15 22:16:08,828 - DEBUG - Started executable: `C:\Users\songyida\.cache\selenium\chromedriver\win64\132.0.6834.83\chromedriver.exe` in a child process with pid: 10856 using 0 to output -3
+2025-01-15 22:16:09,361 - DEBUG - POST http://localhost:49942/session {'capabilities': {'firstMatch': [{}], 'alwaysMatch': {'browserName': 'chrome', 'pageLoadStrategy': <PageLoadStrategy.normal: 'normal'>, 'browserVersion': None, 'goog:chromeOptions': {'excludeSwitches': ['enable-logging'], 'extensions': [], 'binary': 'C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe', 'args': []}}}}
+2025-01-15 22:16:09,361 - DEBUG - Starting new HTTP connection (1): localhost:49942
+2025-01-15 22:16:10,193 - DEBUG - http://localhost:49942 "POST /session HTTP/11" 200 0
+2025-01-15 22:16:10,193 - DEBUG - Remote response: status=200 | data={"value":{"capabilities":{"acceptInsecureCerts":false,"browserName":"chrome","browserVersion":"132.0.6834.84","chrome":{"chromedriverVersion":"132.0.6834.83 (03d59cf5ecf1d8444838ff9a1e96231304d4ff9c-refs/branch-heads/6834@{#3390})","userDataDir":"C:\\Users\\songyida\\AppData\\Local\\Temp\\scoped_dir10856_712160315"},"fedcm:accounts":true,"goog:chromeOptions":{"debuggerAddress":"localhost:49949"},"networkConnectionEnabled":false,"pageLoadStrategy":"normal","platformName":"windows","proxy":{},"setWindowRect":true,"strictFileInteractability":false,"timeouts":{"implicit":0,"pageLoad":300000,"script":30000},"unhandledPromptBehavior":"dismiss and notify","webauthn:extension:credBlob":true,"webauthn:extension:largeBlob":true,"webauthn:extension:minPinLength":true,"webauthn:extension:prf":true,"webauthn:virtualAuthenticators":true},"sessionId":"ec535e916627c537e3dc4db4cb79c23a"}} | headers=HTTPHeaderDict({'Content-Length': '884', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2025-01-15 22:16:10,193 - DEBUG - Finished Request
+2025-01-15 22:16:10,193 - INFO - Starting test_google_title
+2025-01-15 22:16:10,193 - DEBUG - GET http://localhost:49942/session/ec535e916627c537e3dc4db4cb79c23a/window/handles {}
+2025-01-15 22:16:10,195 - DEBUG - http://localhost:49942 "GET /session/ec535e916627c537e3dc4db4cb79c23a/window/handles HTTP/11" 200 0
+2025-01-15 22:16:10,195 - DEBUG - Remote response: status=200 | data={"value":["03E6E809F74E3DAFE71A404A5666D72D"]} | headers=HTTPHeaderDict({'Content-Length': '46', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2025-01-15 22:16:10,195 - DEBUG - Finished Request
+2025-01-15 22:16:10,195 - DEBUG - POST http://localhost:49942/session/ec535e916627c537e3dc4db4cb79c23a/url {'url': 'https://www.google.com'}
+2025-01-15 22:16:12,077 - DEBUG - http://localhost:49942 "POST /session/ec535e916627c537e3dc4db4cb79c23a/url HTTP/11" 200 0
+2025-01-15 22:16:12,077 - DEBUG - Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2025-01-15 22:16:12,077 - DEBUG - Finished Request
+2025-01-15 22:16:12,077 - DEBUG - GET http://localhost:49942/session/ec535e916627c537e3dc4db4cb79c23a/window/handles {}
+2025-01-15 22:16:12,079 - DEBUG - http://localhost:49942 "GET /session/ec535e916627c537e3dc4db4cb79c23a/window/handles HTTP/11" 200 0
+2025-01-15 22:16:12,079 - DEBUG - Remote response: status=200 | data={"value":["03E6E809F74E3DAFE71A404A5666D72D"]} | headers=HTTPHeaderDict({'Content-Length': '46', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2025-01-15 22:16:12,079 - DEBUG - Finished Request
+2025-01-15 22:16:12,079 - DEBUG - GET http://localhost:49942/session/ec535e916627c537e3dc4db4cb79c23a/title {}
+2025-01-15 22:16:12,083 - DEBUG - http://localhost:49942 "GET /session/ec535e916627c537e3dc4db4cb79c23a/title HTTP/11" 200 0
+2025-01-15 22:16:12,083 - DEBUG - Remote response: status=200 | data={"value":"Google"} | headers=HTTPHeaderDict({'Content-Length': '18', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2025-01-15 22:16:12,083 - DEBUG - Finished Request
+2025-01-15 22:16:12,083 - INFO - Finished test_google_title
+2025-01-15 22:16:12,083 - INFO - Finishing test case
+2025-01-15 22:16:12,084 - DEBUG - DELETE http://localhost:49942/session/ec535e916627c537e3dc4db4cb79c23a {}
+2025-01-15 22:16:12,128 - DEBUG - http://localhost:49942 "DELETE /session/ec535e916627c537e3dc4db4cb79c23a HTTP/11" 200 0
+2025-01-15 22:16:12,128 - DEBUG - Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2025-01-15 22:16:12,128 - DEBUG - Finished Request
