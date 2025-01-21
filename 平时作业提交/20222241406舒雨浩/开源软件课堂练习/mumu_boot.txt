@@ -1,0 +1,16 @@
+add_path_to_accelist path: D:\MuMuPlayer-12.0\vms\MuMuPlayer-12.0-base\system.vdi
+add_path_to_accelist path: D:\MuMuPlayer-12.0\vms\MuMuPlayer-12.0-0\data.vdi
+prefetch dlls takes 22 ms
+print meta data: data_type: 1
+type_1, type: 1, size: 430893056 B, ele_num: 7401
+type_2, type: 2, size: 430893056 B, ele_num: 731
+avail phys: 5754 MB
+prefetch system vdi 410.931641 MB takes 531 ms
+print meta data: data_type: 2
+type_1, type: 1, size: 16248832 B, ele_num: 1162
+type_2, type: 2, size: 16248832 B, ele_num: 515
+avail phys: 5770 MB
+prefetch data vdi 15.496094 MB takes 91 ms
+Qt5WebEngineCore Path: D:\MuMuPlayer-12.0\device\\..\EmulatorShell\Qt5WebEngineCore.dll
+PrefetchFileReader::open CreateFileW fail, err: 3
+prefetch webengine dll takes 0 ms
