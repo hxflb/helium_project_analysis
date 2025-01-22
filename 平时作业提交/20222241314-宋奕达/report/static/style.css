@@ -1,0 +1,147 @@
+body {
+    font-family: sans-serif;
+    margin: 0; /* 去除默认外边距 */
+    background-color: #f4f4f4; /* 设置背景颜色 */
+}
+
+.navbar {
+    background-color: #007bff; /* 深蓝色导航栏 */
+    color: white; /* 白色导航栏文本 */
+
+}
+
+.navbar-brand {
+    font-weight: bold;
+
+}
+
+
+.container {
+    padding: 20px;
+     margin-top: 20px;
+}
+
+h2 {
+    color: #333;
+    margin-bottom: 20px;
+
+
+}
+
+
+textarea#photos {
+    width: 100%;
+    height: 200px;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    resize: vertical;
+
+    font-size: 16px; /*  增加字体大小 */
+
+
+
+}
+
+.btn-primary {
+
+     background-color: #007bff; /* 蓝色按钮 */
+
+
+    border-color: #007bff;
+    color: white;
+
+
+
+    transition: background-color 0.3s ease; /* 添加过渡效果 */
+
+
+}
+
+
+.btn-primary:hover {
+
+    background-color: #0056b3; /*  悬停时颜色变深 */
+
+
+}
+
+
+#map-container, #map-container-custom {
+    height: 600px;
+    border: 1px solid #ccc;
+    margin-top: 20px;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+
+
+
+}
+
+
+#map-container iframe, #map-container-custom iframe {
+
+ width: 100%;
+
+ height: 100%;
+
+
+ border: none;
+
+}
+
+
+
+
+#custom-plan-content {
+
+     margin-top: 20px;
+
+
+
+
+}
+
+
+#custom-plan-content p {
+
+ white-space: pre-wrap;
+    font-size: 16px;
+
+
+
+}
+
+
+#custom-plan-content hr { /*  添加水平线样式 */
+
+
+
+    border: 1px solid #ccc;
+
+
+     margin-top: 20px;
+     margin-bottom: 20px;
+
+
+
+
+
+}
+
+
+
+
+#custom-plan-content h3{
+
+
+
+     color:#007bff; /*  使用深蓝色 */
+
+
+
+}
+
+
+.mt-3 {
+    margin-top: 1rem !important;
+}

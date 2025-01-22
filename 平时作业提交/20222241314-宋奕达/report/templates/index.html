@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>旅行助手</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <style>
+      /* 添加一些基本的样式 */
+       textarea#photos {
+           width: 100%;
+           height: 200px; /* 设置一个固定的高度 */
+           margin-bottom: 10px;
+           padding: 10px;
+           border: 1px solid #ccc;
+           resize: vertical; /* 只允许垂直方向调整大小 */
+
+       }
+    </style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">旅行助手</a>
+</nav>
+
+
+
+<div class="container mt-5">
+    <h2>旅行信息输入</h2>
+    <textarea id="photos" class="form-control" placeholder="输入照片信息，格式为 [{'time': '2024年9月17日 14:17', 'address': '黑龙江省哈尔滨市南岗区'}, ... ]"></textarea>
+    <button onclick="saveTravelInfo()" class="btn btn-primary">保存旅行信息</button> <br/> <br/>
+    <a href="/travel_journal" class="btn btn-primary mt-3">生成旅行地图</a>
+    <a href="/custom_plan" class="btn btn-primary mt-3">定制旅行计划</a>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+<script>
+    function saveTravelInfo() {
+        const photosData = document.getElementById('photos').value;
+        try {
+            const photos = JSON.parse(photosData);
+            axios.post("/", photos, {
+                headers: {
+                    'Content-Type': 'application/json'
+                }
+            })
+            .then(response => {
+                if (response.data.status === 'success') {
+                    alert('数据保存成功');
+                } else if (response.data.error) {
+                    alert(response.data.error);
+                }
+            })
+            .catch(error => {
+                console.error('保存失败', error);
+                alert("保存旅行信息失败，请检查输入数据和网络连接");
+            });
+        } catch (parseError) {
+            alert("输入数据不是有效的 JSON 格式");
+        }
+    }
+</script>
+
+</body>
+</html>

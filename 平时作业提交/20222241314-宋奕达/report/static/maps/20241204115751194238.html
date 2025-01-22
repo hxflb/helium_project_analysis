@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_10f6bb37d90825f98949399119a66761 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_10f6bb37d90825f98949399119a66761" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_10f6bb37d90825f98949399119a66761 = L.map(
+                "map_10f6bb37d90825f98949399119a66761",
+                {
+                    center: [42.44484, 124.1786245],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 5,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_484bfe35ed8d1cbf06aa45388dd3363b = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_484bfe35ed8d1cbf06aa45388dd3363b.addTo(map_10f6bb37d90825f98949399119a66761);
+        
+    
+            var marker_9f9fb46e855806194d3dfd07ac2800d8 = L.marker(
+                [45.802981, 126.53505],
+                {}
+            ).addTo(map_10f6bb37d90825f98949399119a66761);
+        
+    
+        var popup_ee3f8e6f9933053deae656027fb14282 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6bf1ea063434c58f3ec476516cd32e50 = $(`<div id="html_6bf1ea063434c58f3ec476516cd32e50" style="width: 100.0%; height: 100.0%;">黑龙江省哈尔滨市 2024年10月26日 10:00</div>`)[0];
+                popup_ee3f8e6f9933053deae656027fb14282.setContent(html_6bf1ea063434c58f3ec476516cd32e50);
+            
+        
+
+        marker_9f9fb46e855806194d3dfd07ac2800d8.bindPopup(popup_ee3f8e6f9933053deae656027fb14282)
+        ;
+
+        
+    
+    
+            var marker_50eb3f2b213ea5abde97c5ea852ff0ed = L.marker(
+                [39.916917, 116.411104],
+                {}
+            ).addTo(map_10f6bb37d90825f98949399119a66761);
+        
+    
+        var popup_261eaa47f2a3df6cfadc7f14a6a876d1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_fabb5f67d70b6a7810e55b200925a566 = $(`<div id="html_fabb5f67d70b6a7810e55b200925a566" style="width: 100.0%; height: 100.0%;">北京市王府井大街 2024年10月26日 12:30</div>`)[0];
+                popup_261eaa47f2a3df6cfadc7f14a6a876d1.setContent(html_fabb5f67d70b6a7810e55b200925a566);
+            
+        
+
+        marker_50eb3f2b213ea5abde97c5ea852ff0ed.bindPopup(popup_261eaa47f2a3df6cfadc7f14a6a876d1)
+        ;
+
+        
+    
+    
+            var marker_85d1b3b26cffb6b4bd698c3bac38a961 = L.marker(
+                [31.230525, 121.473667],
+                {}
+            ).addTo(map_10f6bb37d90825f98949399119a66761);
+        
+    
+        var popup_c4655d9cb1701436b13648c5b27dbafb = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d34fa0ce4848682ac148180247c98c73 = $(`<div id="html_d34fa0ce4848682ac148180247c98c73" style="width: 100.0%; height: 100.0%;">上海市东方明珠电视塔 2024年10月27日 09:00</div>`)[0];
+                popup_c4655d9cb1701436b13648c5b27dbafb.setContent(html_d34fa0ce4848682ac148180247c98c73);
+            
+        
+
+        marker_85d1b3b26cffb6b4bd698c3bac38a961.bindPopup(popup_c4655d9cb1701436b13648c5b27dbafb)
+        ;
+
+        
+    
+    
+            var marker_fe5a54f288b689dee0309ab658d17c0e = L.marker(
+                [39.086699, 121.822199],
+                {}
+            ).addTo(map_10f6bb37d90825f98949399119a66761);
+        
+    
+        var popup_283e0bb21e42004aec1f3025f384839b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ae868e879516ea51d7a9a66444f54561 = $(`<div id="html_ae868e879516ea51d7a9a66444f54561" style="width: 100.0%; height: 100.0%;">大连市大连理工大学开发区校区 2024年10月27日 14:00</div>`)[0];
+                popup_283e0bb21e42004aec1f3025f384839b.setContent(html_ae868e879516ea51d7a9a66444f54561);
+            
+        
+
+        marker_fe5a54f288b689dee0309ab658d17c0e.bindPopup(popup_283e0bb21e42004aec1f3025f384839b)
+        ;
+
+        
+    
+    
+            var poly_line_3680675e2cc196325f63bcd5e06027e9 = L.polyline(
+                [[45.802981, 126.53505], [39.916917, 116.411104], [31.230525, 121.473667], [39.086699, 121.822199]],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_10f6bb37d90825f98949399119a66761);
+        
+</script>
+</html>
